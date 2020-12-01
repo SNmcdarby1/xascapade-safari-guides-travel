@@ -1,126 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap|100,200,300,400,500,600,700');
 
-https: //stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
-
 /*-----------------------------------------------------------------------*/
 
 body {
-    font-family: Lato, san-serif ;
-    margin: 0 ;
-    padding: 0 ;
-    style:none;
-     opacity:.1;
+    font-family: Lato, san-serif;
+    margin: 0;
+    padding: 0;
+    style: none;
+    opacity: .1;
 }
 
-body{
-    background: url("../images/beach.jpg")no-repeat;
+body {
+    background: url("../images/background.jpg")no-repeat;
     background-size: cover;
-    width:200px;
+    width: 200px;
     height: 200px;
+    opacity: .8;
     font-family: lato;
     background-position: auto;
-    min-height: 2400px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-p {
-    color: black ;
-}
 
-.list-group{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;;
-
-}
-ul{margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    p {
+        color: black;
     }
 
-ul li {
-    float: left;
-    width: 200px;
-    height:40px;
-    background-color:#142221;
-    opacity: .8;
-    line-height: 40px;
-    text-align: center;
-    font-size: 20px;
-    margin-right: 2px;
-}
-ul li a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-}
-ul li a:hover{
-    background-color: green;
-}
-ul li ul li {
-    display: none;
-}
-ul li :hover ul li{
-    display:block;
-}
+    .list-group {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        background-color: rgb(73, 75, 73);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        ;
 
-@media all and (min-width: 36em) {
-    .main {
-        float: left ;
-        width: 60% ;
     }
 
+    ul {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    ul li {
+        float: left;
+        width: 200px;
+        height: 40px;
+        background-color: #d0e4e2;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        margin-right: 2px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: rgb(192, 190, 190);
+        display: block;
+    }
+
+    ul li a:hover {
+        background-color: rgb(241, 185, 64);
+    }
+
+    ul li ul li {
+        display: none;
+    }
+
+    ul li :hover ul li {
+        display: block;
+    }
+
+    @media all and (min-width: 36em) {
+        .main {
+            float: left;
+            width: 60%;
+        }
+
+        .sidebar {
+            float: left;
+            width: 40%;
+        }
+    }
+
+
+    @media all and (min-width: 50em) {
+        .main {
+            width: 70%;
+        }
+
+        .sidebar {
+            width: 30%;
+        }
+
+
+        H1 {
+            color: rgb(25, 25, 26);
+            font-size: 1.2em;
+        }
+    }
+
+    h1 {
+        color: rgb(36, 30, 30);
+    }
+
+    a:link {
+        color: rgb(243, 238, 237);
+    }
+
+
+    .main,
     .sidebar {
-        float: left ;
-        width: 40% ;
+        display: block;
+        width: 100%;
     }
 }
-
-
-@media all and (min-width: 50em) {
-    .main {
-        width: 70%;
-    }
-
-    .sidebar {
-        width: 30% ;
-    }
-
-
-    H1 {
-        color: rgb(45, 208, 236);
-        font-size: 1.2em ;
-    }
-}
-
-h1 {
-    color: rgb(36, 30, 30) ;
-}
-
-a:link {
-    color: rgb(148, 24, 5);
-}
-
-
-.main,
-.sidebar {
-    display: block ;
-    width: 100% ;
-}
-} 
 
 /*-----------------------------------------------------------------------------Section search*/
 .section-search input {
-    padding: 5px ;
-    font-size: 18px ;
-    width: 90% ;
-    border: #3f3d3d 3px solid ;
+    padding: 5px;
+    font-size: 18px;
+    width: 90%;
+    border: rgb(7, 141, 134)solid;
 }
 
 section-follow .fa-4x {
@@ -128,7 +133,7 @@ section-follow .fa-4x {
 }
 
 logo {
-    float: left ;
+    float: left;
 }
 
 .responsive {
@@ -143,9 +148,9 @@ logo {
 
 .img {
     padding: 0;
-    margin: 0 ;
-    width: 360px ;
-    height: 400px ;
+    margin: 0;
+    width: 360px;
+    height: 400px;
 
 }
 
@@ -166,24 +171,22 @@ body {
 
 input {
     border: 1px solid transparent;
-    background-color: #f54f4f;
-    padding: 10px;
+    background-color: rgb(216, 247, 245) padding: 10px;
     font-size: 16px;
 }
 
 input[type=text] {
-    background-color: #dd0a0a;
-    width: 100%;
+    background-color: rgb(7, 141, 134) width: 100%;
 }
 
 input[type=submit] {
-    background-color: DodgerBlue;
+    background-color: rgb(7, 141, 134);
     color: rgb(94, 88, 88);
 }
 
 .autocomplete-items {
     position: absolute;
-    border: 1px solid #524e4e;
+    border: 1px solid rgb(7, 141, 134);
     border-bottom: none;
     border-top: none;
     z-index: 99;
@@ -197,17 +200,20 @@ input[type=submit] {
     padding: 10px;
     cursor: pointer;
     background-color: #fff;
-    border-bottom: 1px solid #5a5656;
+    border-bottom: 1px solid rgb(7, 141, 134);
 }
+
+
+
 
 .autocomplete-items div:hover {
     /*when hovering an item:*/
-    background-color: #e9e9e9;
+    background-color: rgb(7, 141, 134);
 }
 
 .autocomplete-active {
     /*when navigating through the items using the arrow keys:*/
-    background-color: rgb(198, 233, 71) !important;
+    background-color: rgb(7, 141, 134);
     color: #ffffff;
 }
 
@@ -218,7 +224,7 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid rgb(19, 17, 17);
+    border: 1px solid rgb(7, 141, 134);
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
@@ -232,7 +238,7 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: rgb(126, 121, 121);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -287,11 +293,11 @@ input[type=submit] {
 
     /* For mobile phones: */
     [class*="container boxes card container-fluid"] {
-        width: 100% !important;
+        width: 100%;
 
         (max-width: 800px) {
                 {
-                margin: 10px 0 !important;
+                margin: 10px 0;
             }
 
         }
@@ -318,58 +324,63 @@ input[type=submit] {
     /*--------------------------------------------------------------------------------------code institute*/
 
 
-/*-----------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------*/
 
-/*--------------------------------------------------------------------------------------*/
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-    color: #142221;
-}
-.uppercase {
-    text-transform: uppercase;
-}
+    /*--------------------------------------------------------------------------------------*/
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin: 0;
+        color: #d8f1f0;
+    }
 
-/*--------------------------------------------------------------------------------------nav*/
+    .uppercase {
+        text-transform: uppercase;
+    }
 
-.title{
-    font-family: "Roboto",sans-serif;
-    font-weight: 200;
-    font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 90px;
-    color: rgba(228, 38, 13, 0.966);
-}
+    /*--------------------------------------------------------------------------------------nav*/
 
-/*--------------------------------------------------------------------------------------footer*/
+    .title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 200;
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 90px;
+        color: rgba(228, 38, 13, 0.966);
+    }
 
-.hvr-sweep-to-bottom:before {
-    background: rgb(160, 157, 157);
-    height: 120px;
-}
-.social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-    color: #774545;
-    background: #b4aeae;
-    transition: all 0.35s ease-in-out; 
-    -moz-transition: all 0.35s ease-in-out; 
-    -webkit-transition: all 0.35s ease-in-out; 
-    -o-transition: all 0.35s ease-in-out; 
-}
-.social-links li a i:hover{
-    background: #e84610;
-}
-#footer-details {
-    padding: 20px;
-}
-.footer-details{
-    padding: 20px;
-}
+    /*--------------------------------------------------------------------------------------footer*/
+
+    .hvr-sweep-to-bottom:before {
+        background: rgb(160, 157, 157);
+        height: 120px;
+    }
+
+    .social-links li a i {
+        width: 32px;
+        height: 32px;
+        padding: 12px 0;
+        border-radius: 50%;
+        font-size: 13px;
+        line-height: 7px;
+        text-align: center;
+        color: #774545;
+        background: #b4aeae;
+        transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+    }
+
+    .social-links li a i:hover {
+        background: #e84610;
+    }
+
+    #footer-details {
+        padding: 20px;
+    }
+
+    .footer-details {
+        padding: 20px;
+    }
