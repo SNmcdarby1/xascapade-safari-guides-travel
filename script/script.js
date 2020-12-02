@@ -4,6 +4,14 @@ M.SideNav.init(SideNav, {
     menu
 });
 
+const icons = document.querySelectorByClassName('toggle-button')[0]
+const navbarLinks = document.querySelectorByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click'.anchor() => {
+    navbarLinks.classLink.toggle('active')
+
+});
+
 
 //Autocomplete
 const ac = document.querySelector('.autocomplete');

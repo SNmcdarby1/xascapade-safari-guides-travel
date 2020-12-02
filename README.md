@@ -38,7 +38,7 @@ It is a holiday booking platform-MS2 project
 
 - I also added Adam live server to checking live open source for the pages while coding
 - Using console to rectify the 404 Error
--
+- youtube tutorial hamberger menu (web dev simplified)[https://www.youtube.com/watch?v=At4B7A4GOPg]
 -
 
 6 Testing
@@ -69,4 +69,3 @@ It is a holiday booking platform-MS2 project
   <span>Photo by <a href="https://unsplash.com/@nathananderson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nathan Anderson</a> on <a href="https://unsplash.com/s/photos/free-waterfalls-images?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
   <span>Photo by <a href="https://unsplash.com/@seantookthese?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sean O.</a> on <a href="https://unsplash.com/s/photos/free-travel-images?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
   - Acknowledgements
-

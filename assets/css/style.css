@@ -2,86 +2,146 @@
 
 /*-----------------------------------------------------------------------*/
 * {
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
 }
 
-nav {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
-    font-family: 'poppins', sans-serif;
+    background-color: #333;
+    color: white;
 }
 
-.logo {
-    color: teal;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 50px;
-    font-weight: 600;
-    justify-content: left;
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
 }
 
-.nav-link {
-    color: #b4aeae;
-    display: flex;
-    background-color: rgb(8, 94, 97);
-    justify-content: space-around;
-    width: 30%;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-}
-
-.nav-links li {
+.navbar-links li {
     list-style: none;
+
 }
 
-.nav-links a {
-    color: rgb(2, 31, 31);
+.navbar-links li a {
     text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
+    color: honeydew;
+    padding: 1rem;
+    display: block;
+
 }
 
+.navbar-links li:hover {
+    background-color: brown;
+}
 
-.burger {
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
     display: none;
+    flex-direction: none;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-
-.burger div {
-    width: 25;
+.toggle-button .bar {
     height: 3px;
-    background-color: #fff;
-    margin: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
+
+@media(max-width:400px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none width: 100%
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100% flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rerm 1rem;
+    }
+
+    .navbar-links .active {
+        display: flex;
+    }
+}
+
+
 
 
 
 ul {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    justify-content: right;
+    float: right;
+}
+
+
+ul {
+
+    padding: 20px;
+
+}
+
+li {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 15px;
+    padding-top: 5px;
+
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 25px;
     justify-content: right;
     float: right;
 }
 
 ul li {
     float: left;
-    width: 400px;
-    height: 100px;
+    width: 20px;
+    height: 10px;
     background-color: #d0e4e2;
-    line-height: 40px;
+    line-height: 20px;
     text-align: center;
     font-size: 20px;
-    margin-right: 5px;
+    margin-right: 3px;
 
 }
 
@@ -100,233 +160,45 @@ ul li :hover ul li {
 }
 
 
-body {
-    font-family: Lato, san-serif;
-    margin: 0;
-    padding: 0;
-    style: none;
-    opacity: .1;
+
+.nav-link {
+    justify-content: right;
+    display: inline-block;
+    font-size: 2px;
+    padding: 2px;
 }
 
-body {
-    background: url("../images/background.jpg")no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    opacity: .8;
-    font-family: lato;
-    background-position: cover;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+.nav-links li {
+    list-style: none;
+}
 
-    p {
-        color: black;
-    }
+.nav-links a {
+    color: rgb(2, 31, 31);
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
 
-    @media all and (max-width:1200px) {
 
-        .logo,
-        body {
-            display: none;
-        }
 
-        .nav-links {
-            width: 60px;
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 360px) {
 
-            .responsive {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        @media all screen and (max-width:768px) {
-
-            .nav-links,
-            .container,
-            .form,
-            .card,
-            .box {
-                position: absolute;
-                right: 0px;
-                height: 92vh;
-                top: 8vh;
-                background-color: teal;
-                display: flex;
-                flex-direction: column;
-                align-items: left;
-            }
-
-            img {
-                width: 100%;
-                height: 100%
-            }
-
-        }
-
-        H1 {
-            color: teal accent #774545;
-            font-size: 1.2em;
-        }
-    }
-
-    h1 {
-        color: rgb(36, 30, 30);
-    }
-
-    a:link:hover {
-        color: rgb(250, 84, 51);
-    }
-
-    .main,
-    .sidebar {
-        display: block;
-        width: 100%;
-    }
-
-    /*-----------------------------------------------------------------------------Section search*/
-    .section-search input {
-        padding: 5px;
-        font-size: 18px;
-        width: 90%;
-        border: rgb(7, 141, 134)solid;
-    }
-
-    .responsive {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /*-------------------------------------------------------------------------w3school-Autocomplete*/
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        font: 16px Lato;
-    }
-
-    .autocomplete {
-        /*the container must be positioned relative:*/
-        position: relative;
-        display: inline-block;
-    }
-
-    input {
-        border: 1px solid transparent;
-        background-color: rgb(216, 247, 245) padding: 10px;
-        font-size: 16px;
-    }
-
-    input[type=text] {
-        background-color: rgb(7, 141, 134) width: 100%;
-    }
-
+    .col-sm,
+    .col-md,
     input[type=submit] {
-        background-color: rgb(7, 141, 134);
-        color: rgb(94, 88, 88);
-    }
-
-    .autocomplete-items {
-        position: absolute;
-        border: 1px solid rgb(7, 141, 134);
-        border-bottom: none;
-        border-top: none;
-        z-index: 99;
-        /*position the autocomplete items to be the same width as the container:*/
-        top: 100%;
-        left: 0;
-        right: 0;
-    }
-
-    .autocomplete-items div {
-        padding: 10px;
-        cursor: pointer;
-        background-color: #fff;
-        border-bottom: 1px solid rgb(7, 141, 134);
-    }
-
-
-
-
-    .autocomplete-items div:hover {
-        /*when hovering an item:*/
-        background-color: rgb(7, 141, 134);
-    }
-
-    .autocomplete-active {
-        /*when navigating through the items using the arrow keys:*/
-        background-color: rgb(7, 141, 134);
-        color: #ffffff;
-    }
-
-    /*----------------------------------------------------3wschool contact form*/
-    /* Style inputs, select elements and textareas */
-    input[type=text],
-    select,
-    textarea {
         width: 100%;
-        padding: 12px;
-        border: 1px solid rgb(7, 141, 134);
-        border-radius: 4px;
-        box-sizing: border-box;
-        resize: vertical;
+        margin-top: 0;
     }
+}
 
-    /* Style the label to display next to the inputs */
-    label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-    }
-
-    /* Style the submit button */
-    input[type=submit] {
-        background-color: rgb(126, 121, 121);
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-    }
-
-    /* Style the container */
-    .container {
-        border-radius: 5px;
-        background-color: teal;
-        padding: 20px;
-    }
-
-    /* Floating column for labels: 25% width */
-    .col-25 {
-        float: left;
-        width: 25%;
-        margin-top: 6px;
-    }
-
-    /* Floating column for inputs: 75% width */
-    .col-75 {
-        float: left;
-        width: 75%;
-        margin-top: 6px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-
-        .col-25,
-        .col-75,
-        input[type=submit] {
-            width: 100%;
-            margin-top: 0;
-        }
+@media(min-width: 756px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0px, auto;
+        max-width: 50;
     }
 
     /*-------------------------------------------------------------media*/
@@ -347,16 +219,7 @@ body {
         }
 
         @media
-
         /*--------------------------------------------------------------------------------------media*/
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
 
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
@@ -378,26 +241,27 @@ body {
             color: rgb(2, 49, 49);
         }
 
+        .club-ethos {
+            height: 100px;
+            position: auto;
+        }
+
         .uppercase {
             text-transform: uppercase;
         }
 
         /*--------------------------------------------------------------------------------------nav*/
 
-        .title {
-            font-family: "Roboto", sans-serif;
-            font-weight: 200;
-            font-size: 28px;
-            margin-top: 20px;
-            margin-bottom: 90px;
-            color: rgba(228, 38, 13, 0.966);
-        }
 
         /*--------------------------------------------------------------------------------------footer*/
 
         a.hvr-sweep-to-bottom:before {
             background: rgb(88, 83, 83);
             height: 120px;
+        }
+
+        .social-links {
+            padding-bottom: 15px;
         }
 
         .social-links li a i {
@@ -417,26 +281,33 @@ body {
         }
 
         .social-links li a i:hover {
-            background: #e84610;
+            background: #f3eeec;
         }
 
-        #footer-details {
-            padding: 20px;
-        }
-
-        .footer-details {
-            padding: 20px;
-        }
-
-        .footer-details {
-            padding: 20px;
-        }
 
         footer-details {
             padding: 20px;
-        }   padding: 20px;
         }
 
-        footer-details {
-            padding: 20px;
+        // Extra small devices (portrait phones, less than 576px)
+        // No media query since this is the default in Bootstrap
+
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) {
+            ...
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) {
+            ...
+        }
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+            ...
+        }
+
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+            ...
         }
