@@ -11,12 +11,20 @@ body {
     padding: 0;
 }
 
+a {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    padding: 0;
+
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: teal;
+    color: rgb(116, 8, 8);
 }
 
 .brand-title {
@@ -32,13 +40,14 @@ body {
 .navbar-links li a {
     text-decoration: none;
     color: honeydew;
-    padding: 1rem;
+    padding: .2rem;
     display: block;
 
 }
 
 .navbar-links li:hover {
-    background-color: brown;
+    background-color: rgb(252, 122, 122);
+    display: absolute;
 }
 
 .toggle-button {
@@ -48,7 +57,7 @@ body {
     display: none;
     flex-direction: none;
     justify-content: space-between;
-    width: 30px;
+    width: 10px;
     height: 21px;
 }
 
@@ -91,9 +100,6 @@ body {
 }
 
 
-
-
-
 ul {
     margin: 0px;
     padding: 0px;
@@ -103,30 +109,25 @@ ul {
 
 
 ul {
-
-    padding: 20px;
-
+    padding: 10px;
 }
 
 li {
-    background-color: lightgrey;
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-}
+    background-color: rgb(233, 232, 232);
+    width: 150px;
+    border: 5px solid rgb(124, 128, 124);
+
 }
 
 ul li {
-    padding: 5px;
+    padding: 10px;
     margin-left: 15px;
     padding-top: 5px;
-
 }
 
 ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 20px;
     margin-top: 10px;
     margin-bottom: 25px;
     justify-content: right;
@@ -135,20 +136,17 @@ ul {
 
 ul li {
     float: left;
-    width: 20px;
-    height: 10px;
     background-color: #d0e4e2;
     line-height: 20px;
     text-align: center;
     font-size: 20px;
-    margin-right: 3px;
-
 }
-
 
 
 ul li a:hover {
     background-color: turquoise;
+    width: auto;
+    height: auto;
 }
 
 ul li ul li {
@@ -156,16 +154,20 @@ ul li ul li {
 }
 
 ul li :hover ul li {
-    color: turquoise;
+    color: rgb(238, 230, 223);
 }
 
+a.hvr-sweep-to-bottom:before {
+    background: rgb(250, 224, 76);
+    height: 60px;
+}
 
 
 .nav-link {
     justify-content: right;
     display: inline-block;
-    font-size: 2px;
-    padding: 2px;
+    font-size: 10px;
+    padding: 12px;
 }
 
 .nav-links li {
@@ -175,10 +177,334 @@ ul li :hover ul li {
 .nav-links a {
     color: rgb(2, 31, 31);
     text-decoration: none;
-    letter-spacing: 5px;
+    letter-spacing: 15px;
     font-weight: bold;
     font-size: 14px;
 }
+
+.card {
+    padding-top: 30px;
+    min-height: 240px;
+    margin: 0px, auto;
+    max-width: 50;
+    overflow-wrap: 1rem;
+    overflow-x: 50px;
+    overflow-y: -40px;
+
+}
+
+footer {
+    background-color: #414141;
+    color: #0ee7cab0;
+    min-height: 120px;
+    margin: 0;
+}
+
+.social-links li a i {
+    order: 2px solid red;
+    padding: 10px;
+    border-radius: 50px 20px;
+    line-height: 7px;
+    text-align: center;
+    color: #774545;
+    background: #b4aeae;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #064946;
+}
+
+#footer-details {
+    padding: 70px;
+}
+
+.footer-details {
+    padding: 20px;
+}
+
+
+.text {
+    display: flex;
+    padding: 0 40px;
+    background-color: rgb(23, 55, 63);
+    height: 80px;
+    align-item: center;
+    letter-spacing: 3px;
+    color: #0f979b;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0f9798;
+    width: 100%;
+    height: 80px;
+    align-item: auto;
+}
+
+footer ul {
+    margin: 0 auto 0 200px;
+}
+
+footer ul li {
+    list-style: none;
+    display: block;
+    font-size: 20px;
+    margin: 0;
+    font-weight: lighter;
+    color: #cfc8f8;
+}
+
+footer ul li hr {
+    width: 80px;
+    transform: translateY(20px);
+    border: 0.5px solid #b4aeae;
+}
+
+.footer-section {}
+
+nav a {
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+}
+
+nav h1 {
+    display: inline-block;
+    padding-left: 40px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 30px;
+    overflow: visible;
+    color: rgb(61, 194, 194);
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0 30px;
+    justify-items: start;
+}
+
+.nav-item {
+    margin-left: auto;
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 50px 15px 5px 15px;
+    margin: 0 8px;
+    text-align: wrap right justify fixed;
+    color: #250302;
+    letter-spacing: 2px;
+    overflow: visible;
+    cursor: pointer;
+}
+
+
+nav ul li:hover {
+    color: rgb(233, 233, 233);
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/*---------------------------------------------------------body*/
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.active {
+    background-color: rgb(120, 121, 121);
+    color: #0d726a;
+    font-weight: bold;
+}
+
+.social {
+    display: inline-block;
+    margin: 0;
+}
+
+.social i {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #a19e9d;
+}
+
+.overlay {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 90px;
+    top: 25%;
+    z-index: 1;
+}
+
+.box-1 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/rowing.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+}
+
+.box-2 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/yoga.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 200 10px;
+    transform: translateY(2px);
+}
+
+.box-3 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/nightcity.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 500 10px;
+    transform: translateY(-50px);
+}
+
+.box-4 {
+    width: 500px;
+    height: 500px;
+    position: overflow;
+    background: url("../images/palma.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+    transform: translateY(120px);
+}
+
+.box-5 {
+    width: 500px;
+    height: 500px;
+    display: -ms-inline-flexbox;
+    background: url("../images/background.jpg")no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin: 0 10px;
+}
+
+.box-6 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/summer.jpg")no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin: 0 10px;
+}
+
+.box-7 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/camping.jpg")no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin: 0 10px;
+}
+
+.box-8 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/.jpg")no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin: 0 10px;
+}
+
+
+main {
+    width: 50%;
+    float: right;
+    position: overflow;
+    z-index: 5;
+    top: 30%;
+}
+
+main h1 {
+    font-size: 120px;
+    position: overflow;
+    letter-spacing: 20px;
+    font-family: 'Bebas Neus', sans-serif;
+    transform: translateY(-80px);
+    padding-left: 50px;
+    color: #08303A;
+    line-height: 80px;
+    margin: 10;
+}
+
+main h1 span {
+    color: white;
+}
+
+main h5 {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    color: rgb(160, 10, 85);
+    transform: translateY(-20px);
+    text-align: center;
+}
+
+main p {
+    width: 50%;
+    position: relative;
+    text-align: justify;
+    transform: translateY(500PX);
+    font-weight: 500;
+    color: #bb8a05;
+    margin: 10;
+}
+
+main button {
+    width: 180px;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #008833;
+    text-transform: translateY(52%);
+    border-radius: none;
+    letter-spacing: 5px;
+    padding: 5px;
+    margin-top 25px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #083012;
+
+}
+
+
+
+
 
 
 
@@ -218,7 +544,7 @@ ul li :hover ul li {
             }
         }
 
-        @media
+
         /*--------------------------------------------------------------------------------------media*/
 
         @media (min-width: 768px) {
@@ -267,12 +593,12 @@ ul li :hover ul li {
         .social-links li a i {
             width: 32px;
             height: 32px;
-            padding: 12px 0;
+            padding: 22px 10;
             border-radius: 50%;
-            font-size: 13px;
-            line-height: 7px;
+            font-size: 20px;
+            line-height: 10px;
             text-align: center;
-            color: #774545;
+            color: #bebdb9;
             background: #b4aeae;
             transition: all 0.35s ease-in-out;
             -moz-transition: all 0.35s ease-in-out;
@@ -281,7 +607,7 @@ ul li :hover ul li {
         }
 
         .social-links li a i:hover {
-            background: #f3eeec;
+            background: #eb9b7b;
         }
 
 
