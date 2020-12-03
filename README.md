@@ -39,9 +39,9 @@ It is a holiday booking platform-MS2 project
 - I also added Adam live server to checking live open source for the pages while coding
 - Using console to rectify the 404 Error
 - youtube tutorial hamberger menu (web dev simplified)[https://www.youtube.com/watch?v=At4B7A4GOPg]
--
-
-6 Testing
+- 6 Troubleshooting
+  - i decide to change the li element to lo because the ux appearance was not suitable to the and user friendly
+    6 Testing
 
 7 Deployment
 
