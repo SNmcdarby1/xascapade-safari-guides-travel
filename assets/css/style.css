@@ -3,7 +3,7 @@
 /*-----------------------------------------------------------------------*/
 * {
 
-    box-sizing: border-box;
+    box-sizing: none;
 }
 
 body {
@@ -13,15 +13,14 @@ body {
 
 a {
     list-style: none;
-    padding: 0px;
-    margin: 0;
-    padding: 0;
+
 
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: static;
+    /*space-between*/
     align-items: center;
     background-color: teal;
     color: rgb(116, 8, 8);
@@ -41,7 +40,7 @@ a {
     text-decoration: none;
     color: honeydew;
     padding: .2rem;
-    display: block;
+    display: inline-block;
 
 }
 
@@ -68,7 +67,7 @@ a {
     border-radius: 10px;
 }
 
-@media(max-width:400px) {
+@media(max-width:300px) {
     .toggle-button {
         display: flex;
     }
@@ -83,7 +82,8 @@ a {
     }
 
     .navbar-links ul {
-        width: 100% flex-direction: column;
+        width: 100%;
+        flex-direction: column;
     }
 
     .navbar-links li {
@@ -115,7 +115,7 @@ ul {
 li {
     background-color: rgb(233, 232, 232);
     width: 150px;
-    border: 5px solid rgb(124, 128, 124);
+    border: 5px solid rgb(253, 253, 253);
 
 }
 
@@ -163,9 +163,74 @@ a.hvr-sweep-to-bottom:before {
 }
 
 
+main {
+    width: 50%;
+    float: right;
+    position: overflow;
+    z-index: 5;
+    top: 30%;
+}
+
+main h1 {
+    font-size: 120px;
+    position: overflow;
+    letter-spacing: 20px;
+    font-family: 'Bebas Neus', sans-serif;
+    transform: translateY(-80px);
+    padding-left: 50px;
+    color: #08303A;
+    line-height: 80px;
+    margin: 10;
+}
+
+main h1 span {
+    color: white;
+}
+
+main h5 {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    color: rgb(160, 10, 85);
+    transform: translateY(-20px);
+    text-align: center;
+}
+
+main p {
+    width: 50%;
+    position: relative;
+    text-align: justify;
+    transform: translateY(500PX);
+    font-weight: 500;
+    color: #bb8a05;
+    margin: 10;
+}
+
+main button {
+    width: 180px;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #008833;
+    text-transform: translateY(52%);
+    border-radius: none;
+    letter-spacing: 5px;
+    padding: 5px;
+    margin-top 25px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #083012;
+
+}
+
+
+
 .nav-link {
     justify-content: right;
-    display: inline-block;
+    display: relative;
     font-size: 10px;
     padding: 12px;
 }
@@ -176,20 +241,37 @@ a.hvr-sweep-to-bottom:before {
 
 .nav-links a {
     color: rgb(2, 31, 31);
+
+}
+
+li.collection-item {
     text-decoration: none;
     letter-spacing: 15px;
-    font-weight: bold;
     font-size: 14px;
+    display: list-item;
+    list-style: none;
+    margin: 0;
+    font-weight: lighter;
+    color: #cfc8f8;
+
+
+}
+
+li.collection-item a {
+    text-decoration: absolute;
+    letter-spacing: 15px;
+    font-size: 5px;
+    display: list-item;
+    list-style: none;
+    margin: 0;
+    font-weight: lighter;
+    color: #cfc8f8;
+
+
 }
 
 .card {
-    padding-top: 30px;
-    min-height: 240px;
-    margin: 0px, auto;
-    max-width: 50;
-    overflow-wrap: 1rem;
-    overflow-x: 50px;
-    overflow-y: -40px;
+    margin: 0;
 
 }
 
@@ -227,15 +309,6 @@ footer {
 }
 
 
-.text {
-    display: flex;
-    padding: 0 40px;
-    background-color: rgb(23, 55, 63);
-    height: 80px;
-    align-item: center;
-    letter-spacing: 3px;
-    color: #0f979b;
-}
 
 
 .footer {
@@ -244,18 +317,16 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: #0f9798;
-    width: 100%;
-    height: 80px;
-    align-item: auto;
+    align-items: auto;
 }
 
 footer ul {
-    margin: 0 auto 0 200px;
+    margin: 0 auto 0 10px;
 }
 
 footer ul li {
     list-style: none;
-    display: block;
+    display: inline-flexbox;
     font-size: 20px;
     margin: 0;
     font-weight: lighter;
@@ -265,14 +336,14 @@ footer ul li {
 footer ul li hr {
     width: 80px;
     transform: translateY(20px);
-    border: 0.5px solid #b4aeae;
+    border: solid;
 }
 
 .footer-section {}
 
 nav a {
     width: 120px;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: white;
     padding: 20px 10px;
@@ -332,7 +403,7 @@ header {
 .active {
     background-color: rgb(120, 121, 121);
     color: #0d726a;
-    font-weight: bold;
+    font-weight: 2rem;
 }
 
 .social {
@@ -341,7 +412,7 @@ header {
 }
 
 .social i {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: right;
     font-size: 30px;
@@ -439,70 +510,6 @@ header {
 }
 
 
-main {
-    width: 50%;
-    float: right;
-    position: overflow;
-    z-index: 5;
-    top: 30%;
-}
-
-main h1 {
-    font-size: 120px;
-    position: overflow;
-    letter-spacing: 20px;
-    font-family: 'Bebas Neus', sans-serif;
-    transform: translateY(-80px);
-    padding-left: 50px;
-    color: #08303A;
-    line-height: 80px;
-    margin: 10;
-}
-
-main h1 span {
-    color: white;
-}
-
-main h5 {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: 30px;
-    color: rgb(160, 10, 85);
-    transform: translateY(-20px);
-    text-align: center;
-}
-
-main p {
-    width: 50%;
-    position: relative;
-    text-align: justify;
-    transform: translateY(500PX);
-    font-weight: 500;
-    color: #bb8a05;
-    margin: 10;
-}
-
-main button {
-    width: 180px;
-    outline: none;
-    background-color: #fff;
-    border: 1px solid #008833;
-    text-transform: translateY(52%);
-    border-radius: none;
-    letter-spacing: 5px;
-    padding: 5px;
-    margin-top 25px;
-    cursor: pointer;
-}
-
-main button:hover {
-    background-color: #083012;
-
-}
-
-
 
 
 
@@ -519,121 +526,77 @@ main button:hover {
     }
 }
 
-@media(min-width: 756px) {
-    .center-form {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0px, auto;
-        max-width: 50;
-    }
-
-    /*-------------------------------------------------------------media*/
+/*--------------------------------------------------------------------------------------code institute*/
 
 
-    @media only screen and (min-width: 320px) {
+/*-----------------------------------------------------------------------------*/
 
-        /* For mobile phones: */
-        [class*="container boxes card container-fluid"] {
-            width: 100%;
+/*--------------------------------------------------------------------------------------*/
 
-            (max-width: 800px) {
-                    {
-                    margin: 10px 0;
-                }
+.uppercase {
+    text-transform: uppercase;
+}
 
-            }
-        }
+/*--------------------------------------------------------------------------------------nav*/
 
 
-        /*--------------------------------------------------------------------------------------media*/
+/*--------------------------------------------------------------------------------------footer*/
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
+a.hvr-sweep-to-bottom:before {
+    background: rgb(88, 83, 83);
+    height: 120px;
+}
 
-        /*--------------------------------------------------------------------------------------code institute*/
+.social-links {
+    padding-bottom: 15px;
+}
 
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 22px 10;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    color: #bebdb9;
+    background: #b4aeae;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
 
-        /*-----------------------------------------------------------------------------*/
-
-        /*--------------------------------------------------------------------------------------*/
-        h1,
-        h2,
-        h3,
-        h4 {
-            margin: 0;
-            color: rgb(2, 49, 49);
-        }
-
-        .club-ethos {
-            height: 100px;
-            position: auto;
-        }
-
-        .uppercase {
-            text-transform: uppercase;
-        }
-
-        /*--------------------------------------------------------------------------------------nav*/
+.social-links li a i:hover {
+    background: #eb9b7b;
+}
 
 
-        /*--------------------------------------------------------------------------------------footer*/
+footer-details {
+    padding: 20px;
+}
 
-        a.hvr-sweep-to-bottom:before {
-            background: rgb(88, 83, 83);
-            height: 120px;
-        }
+/*-----------------------------media*/
 
-        .social-links {
-            padding-bottom: 15px;
-        }
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
 
-        .social-links li a i {
-            width: 32px;
-            height: 32px;
-            padding: 22px 10;
-            border-radius: 50%;
-            font-size: 20px;
-            line-height: 10px;
-            text-align: center;
-            color: #bebdb9;
-            background: #b4aeae;
-            transition: all 0.35s ease-in-out;
-            -moz-transition: all 0.35s ease-in-out;
-            -webkit-transition: all 0.35s ease-in-out;
-            -o-transition: all 0.35s ease-in-out;
-        }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    ...
+}
 
-        .social-links li a i:hover {
-            background: #eb9b7b;
-        }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    ...
+}
 
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    ...
+}
 
-        footer-details {
-            padding: 20px;
-        }
-
-        // Extra small devices (portrait phones, less than 576px)
-        // No media query since this is the default in Bootstrap
-
-        // Small devices (landscape phones, 576px and up)
-        @media (min-width: 576px) {
-            ...
-        }
-
-        // Medium devices (tablets, 768px and up)
-        @media (min-width: 768px) {
-            ...
-        }
-
-        // Large devices (desktops, 992px and up)
-        @media (min-width: 992px) {
-            ...
-        }
-
-        // Extra large devices (large desktops, 1200px and up)
-        @media (min-width: 1200px) {
-            ...
-        }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    ...
+}
