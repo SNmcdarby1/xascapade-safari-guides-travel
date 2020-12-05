@@ -9,6 +9,24 @@
 body {
     margin: 0;
     padding: 0;
+    background: url("../images/backgrnd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: ;
+}
 }
 
 a {
@@ -235,7 +253,7 @@ main button:hover {
     padding: 12px;
 }
 
-.nav-links li {
+.nav-links a {
     list-style: none;
 }
 
@@ -244,7 +262,7 @@ main button:hover {
 
 }
 
-li.collection-item {
+a.collection-item {
     text-decoration: none;
     letter-spacing: 15px;
     font-size: 14px;
@@ -257,7 +275,7 @@ li.collection-item {
 
 }
 
-li.collection-item a {
+.collection-item a {
     text-decoration: absolute;
     letter-spacing: 15px;
     font-size: 5px;
@@ -283,7 +301,7 @@ footer {
 }
 
 .social-links li a i {
-    order: 2px solid red;
+    order: 2px red;
     padding: 10px;
     border-radius: 50px 20px;
     line-height: 7px;
@@ -599,6 +617,8 @@ footer-details {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     ...
-}media (min-width: 1200px) {
+}
+
+media (min-width: 1200px) {
     ...
 }

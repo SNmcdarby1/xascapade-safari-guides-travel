@@ -62,6 +62,7 @@ It is a holiday booking platform-MS2 project
 * Photo by Jake Melara
 * Photo by bady abbas
 * Photo by Louis Hansel @shotsoflouis
+Image by <a href="https://pixabay.com/users/eduardoortiz-12308282/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4161593">RUBEN EDUARDO ORTIZ MORALES</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4161593">Pixabay</a>
 
 - Youtube tutorial by (DevEd)[https:////www.youtube.com/watch?v=8x1mO1d6-4w] , (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg],
 
