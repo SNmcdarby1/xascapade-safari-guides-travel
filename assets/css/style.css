@@ -5,7 +5,9 @@
 
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
+}
+
+body {
     background: url("../images/backgrnd.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -14,6 +16,7 @@
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+}
 }
 
 p,
@@ -27,22 +30,17 @@ h5 {
 }
 
 a {
-=======
->>>>>>> 180567f0471bb431d48e4f779df543e7c17c0866
     list-style: none;
     list-style-image: none;
     list-style-position: flex;
 }
+
 .navbar {
-<<<<<<< HEAD
-    display: flex;
-=======
-    display: inline-flexbox;
->>>>>>> 180567f0471bb431d48e4f779df543e7c17c0866
     justify-content: space-between;
     align-items: center;
     color: rgb(8, 102, 119);
 }
+
 .brand-title {
     font-size: 1.5rem;
     margin: .5rem;
@@ -60,9 +58,11 @@ a {
     display: inline-block;
 
 }
+
 .navbar-links li:hover {
     background-color: rgb(239, 253, 253);
 }
+
 .toggle-button .bar {
     height: 3px;
     width: 100%;
@@ -85,7 +85,7 @@ a {
         margin-top: 25px;
         margin-bottom: 20px;
         padding: 25px;
-        margin-left:15px;
+        margin-left: 15px;
         display: inline-block;
     }
 
@@ -99,7 +99,7 @@ a {
         margin-top: 25px;
         margin-bottom: 20px;
         padding: 25px;
-        margin-left:15px;
+        margin-left: 15px;
         display: inline-block;
         border-radius: 15rem;
     }
@@ -108,7 +108,7 @@ a {
         padding: .5rerm 1rem;
         margin-top: 25px;
         margin-bottom: 20px;
-        margin-left:15px;
+        margin-left: 15px;
         display: inline-block;
     }
 
@@ -117,13 +117,11 @@ a {
         margin-top: 25px;
         margin-bottom: 20px;
         padding: 25px;
-        margin-left:15px;
+        margin-left: 15px;
     }
 }
 
-<<<<<<< HEAD
-
-ul {
+<<<<<<< HEAD ul {
     margin: 0px;
     padding: 0px;
     justify-content: right;
@@ -628,5 +626,5 @@ footer-details {
 media (min-width: 1200px) {
     ...
 }
-=======
->>>>>>> 180567f0471bb431d48e4f779df543e7c17c0866
+
+=======>>>>>>>180567f0471bb431d48e4f779df543e7c17c0866
