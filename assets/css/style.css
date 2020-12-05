@@ -294,10 +294,10 @@ a.collection-item {
 }
 
 footer {
-    background-color: #414141;
+    background-color: #141414;
     color: #0ee7cab0;
     min-height: 120px;
-    margin: 0;
+    margin: auto;
 }
 
 .social-links li a i {
