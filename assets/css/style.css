@@ -17,6 +17,17 @@ body {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    >.col,
+    >[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
 }
 
 p,
@@ -42,8 +53,8 @@ h5 {
 }
 
 .brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
+    font-size: 1.5rem !important;
+    margin: .5rem !important;
 }
 
 .navbar-links li {
@@ -53,7 +64,7 @@ h5 {
 
 a.nav-link {
     text-decoration: none !important !;
-    color: honeydew !important;
+    color: teal !important;
     font-size: 1rem !important;
     padding: 1rem !important;
     display: inline-block !important;
@@ -62,8 +73,8 @@ a.nav-link {
 
 .navbar-links li a {
     text-decoration: none !important;
-    color: honeydew !important;
-    padding: 1rem !important;
+    color: teal !important;
+    padding: 2rem !important;
     display: inline-block !important;
 
 }
@@ -73,19 +84,19 @@ a.nav-link {
 }
 
 .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
+    height: 3px !important;
+    width: 100% !important;
+    background-color: white !important;
+    border-radius: 5px !important;
 }
 
 @media(max-width:300px) {
     .toggle-button {
-        display: flex;
+        display: flex !important;
     }
 
     .navbar-links {
-        display: none;
+        display: none !important;
         width: 100% !important;
     }
 
@@ -139,41 +150,41 @@ ul {
 
 
 ul {
-    padding: 10px;
+    padding: 10px !important;
 }
 
 ul li {
-    padding: 10px;
-    margin-left: 15px;
-    padding-top: 5px;
+    padding: 10px !important;
+    margin-left: 15px !important;
+    padding-top: 5px !important;
 }
 
 ul {
-    justify-content: right;
-    float: right;
+    justify-content: right !important;
+    float: right !important;
 }
 
 ul li {
-    float: left;
-    background-color: #d0e4e2;
-    line-height: 20px;
-    text-align: center;
-    font-size: 20px;
+    float: left !important;
+    background-color: #d0e4e2 !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    font-size: 20px !important;
 }
 
 
 ul li a:hover {
-    background-color: turquoise;
-    width: auto;
-    height: auto;
+    background-color: turquoise !important;
+    width: auto !important;
+    height: auto !important;
 }
 
 ul li ul li {
-    display: none;
+    display: none !important;
 }
 
 ul li :hover ul li {
-    color: rgb(238, 230, 223);
+    color: rgb(238, 230, 223) !important;
 }
 
 p {
@@ -188,23 +199,23 @@ a.hvr-sweep-to-bottom:before {
 .card-img-top {
     width: 500px;
     height: 500px;
-    display: url("../images/.jpg")no-repeat;
-    background-size: cover;
-    background-position: center;
+    display: url("../images/.jpg")no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
     margin: 0 10px;
 }
 
 main {
     width: 50%;
-    float: right;
-    position: overflow;
-    z-index: 5;
-    top: 30%;
+    float: right !important;
+    position: overflow !important;
+    z-index: 5px !important;
+    top: 30% !important;
 }
 
 main h1 {
     font-size: 120px;
-    position: overflow;
+    position: overflow !important;
     letter-spacing: 20px;
     font-family: 'Bebas Neus', sans-serif;
     transform: translateY(-80px);

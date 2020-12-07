@@ -12,3 +12,49 @@ var countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Angu
 $('#myCarousel').on('slid.bs.carousel', function() {
     $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
 });
+return newFunction();
+card - columns {
+    @include media - breakpoint - only(lg) {
+        column - count: 4;
+    }
+    @include media - breakpoint - only(xl) {
+        column - count: 5;
+    }
+}
+
+function newFunction() {
+    $grid - columns;
+    12;
+    $grid - gutter - width;
+    30;
+    px;
+    $grid - breakpoints;
+    (xs: 0, _sm: 540, px, {
+        return: ,
+        md: ,
+        768: px,
+    }, {
+        return: ,
+        lg: ,
+        992: px,
+    }, {}) => ;
+    ();
+    return;
+    any;
+    xl: 1200;
+    px; {
+        return;
+        $container - max - widths;
+        () => {
+            540;
+            px,
+            720;
+            px,
+            960;
+            px,
+            1140;
+            px;
+        };
+        return;
+    };
+}
