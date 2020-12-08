@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url("../images/.jpg");
+    background: url("../images/swim.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,4 +142,9 @@ a.nav-link {
         padding: 5px !important;
         margin-left: 15px !important;
     }
+}
+
+p::content {
+    color: #ff0000;
+    font-variant: small-caps;
 }
