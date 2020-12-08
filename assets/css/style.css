@@ -36,7 +36,7 @@ h2,
 h3,
 h4,
 h5 {
-    color: ;
+    color: black;
 }
 }
 
@@ -73,7 +73,7 @@ a.nav-link {
 
 .navbar-links li a {
     text-decoration: none !important;
-    color: teal !important;
+    color: black !important;
     padding: 2rem !important;
     display: inline-block !important;
 
@@ -174,7 +174,7 @@ ul li {
 
 
 ul li a:hover {
-    background-color: turquoise !important;
+    background-color: teal !important;
     width: auto !important;
     height: auto !important;
 }
@@ -184,7 +184,7 @@ ul li ul li {
 }
 
 ul li :hover ul li {
-    color: rgb(238, 230, 223) !important;
+    color: teal !important;
 }
 
 p {
@@ -443,8 +443,8 @@ header {
 }
 
 .active {
-    background-color: rgb(120, 121, 121);
-    color: #0d726a;
+    inline-style: none;
+    color: white !important;
     font-weight: 2rem;
 }
 
