@@ -58,11 +58,23 @@ h5 {
 .brand-title {
     font-size: 1.5rem !important;
     margin: .5rem !important;
+    font-size: 35px !important;
+    font-weight: bold !important;
+    transition: 0.4s !important;
 }
 
 .navbar-links li {
     list-style: none !important;
 
+}
+
+.navbar {
+    justify-content: fixed !important;
+}
+
+#navbar a:hover {
+    background-color: #ddd !important;
+    color: black !important;
 }
 
 a.nav-link {
@@ -114,7 +126,7 @@ a.nav-link {
     }
 
     .navbar-links ul {
-        width: 100% important ! flex-direction: column;
+        width: 100% important ! flex-direction: column !important;
     }
 
     .navbar li {
@@ -127,12 +139,17 @@ a.nav-link {
         border-radius: 5rem !important;
     }
 
-    .navbar-links li a {
-        padding: 2rem 1rem;
-        margin-top: 5px;
-        margin-bottom: 0px;
-        margin-left: 5px;
-        display: inline-block;
+    #navbar a.active {
+        background-color: dodgerblue !important;
+        color: white !important;
+    }
+
+    #navbar-links li a {
+        padding: 2rem 1rem !important;
+        margin-top: 5px !important;
+        margin-bottom: 0px !important;
+        margin-left: 5px !important;
+        display: inline-block !important;
     }
 
     .navbar-links .active {
@@ -144,7 +161,114 @@ a.nav-link {
     }
 }
 
+#navbar a {
+    float: left !important;
+    color: black !important;
+    text-align: center !important;
+    padding: 12px !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    border-radius: 4px !important;
+}
+
 p::content {
-    color: #ff0000;
-    font-variant: small-caps;
+    color: #ff0000 !important;
+    font-variant: small-caps !important;
+}
+
+/* The sidebar menu */
+.sidebar {
+    height: 100% !important;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed !important;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111 !important;
+    /* Black*/
+    overflow-x: hidden !important;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px !important;
+    text-decoration: none !important;
+    font-size: 25px !important;
+    color: #818181 !important;
+    display: block !important;
+    transition: 0.3s !important;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1 !important;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute !important;
+    top: 0 !important;
+    right: 25px !important;
+    font-size: 36px !important;
+    margin-left: 50px !important;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px !important;
+    cursor: pointer !important;
+    background-color: #111 !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border: none !important;
+}
+
+.openbtn:hover {
+    background-color: #444 !important;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s !important;
+    /* If you want a transition effect */
+    padding: 20px !important;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px !important;
+    }
+
+    .sidebar a {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding: 20px 10px !important;
+        /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+
+    .navbar a {
+        float: none !important;
+        display: block !important;
+        text-align: left !important;
+    }
+
+    .navbar-left {
+        float: none !important;
+        justify-content: fixed;
+    }
 }
