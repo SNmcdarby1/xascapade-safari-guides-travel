@@ -8,14 +8,19 @@
 }
 
 body {
-    background: url("../images/swim.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 300px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+    background=image: url("../images/chris.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    min-height: 300px !important;
+    transition: all .5s ease-in-out !important;
+    -moz-transition: all .5s ease-in-out !important;
+    -webkit-transition: all .5s ease-in-out !important;
+}
+
+#form {
+    background-color: #000 !important;
+    height: 500px !important;
+    width: 700px !important;
 }
 
 .no-gutters {
