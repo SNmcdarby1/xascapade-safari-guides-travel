@@ -38,7 +38,7 @@ It is a holiday booking platform-MS2 project
 
 - I also added Adam live server to checking live open source for the pages while coding
 - Using console to rectify the 404 Error
-- youtube tutorial hamberger menu (web dev simplified)[https://www.youtube.com/watch?v=At4B7A4GOPg]
+- youtube tutorial hamberger menu (web dev simplified)[https://www.youtube.com/watch?v=At4B7A4GOPg]. [https://www.youtube.com/watch?v=uZNWak44SI8]
 
 
 6 Trouble shooting
