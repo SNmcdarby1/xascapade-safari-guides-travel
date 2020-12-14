@@ -6,15 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Xascapade Travel</title>
 
 </head>
-<section>
+<section class="container-fluid">
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <body class="container-fluid section-colunm">
+    <head class="container section-colunm no-gutter">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" <k rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integ k rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <title>Xascapade Travel</title>
+        <section>
+
+    <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">XASCAPADE </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,20 +37,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" aria-labelledby="navbarDropdown">About
+                        <a class="nav-link" href="about.html" aria-labelledby="navbarDropdown">About
                         </a>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="profile.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Profile
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Company</a>
-                            <a class="dropdown-item" href="#">Personal</a>
+                            <a class="dropdown-item" href="company.html">Company</a>
+                            <a class="dropdown-item" href="personal.html">Personal</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="contact.html">Something else here</a>
                         </div>
                     </li>
                     </li>
@@ -48,12 +61,12 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Flight bookings</a>
                             <a class="dropdown-item" href="#">Accommodation</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div> <a class="dropdown-item" href="#">Something else
+                                here</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enabled" href="#">Contact</a>
+                        <a class="nav-link enabled" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -62,6 +75,82 @@
                 </form>
             </div>
         </nav>
+        <div>
+            </nav>
+
+            <section class="container-fluid">
+                <div class="col">
+                    <section id="search" class="section section-search darken-1 white-text center scrollspy">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col s12">
+                                    <h3>Search Destinations</h3>
+                                    <div class="input-field">
+                                        <input type="text" class="white green-text autocomplete" id="autocomplete-input" placeholder="Dubai, Spain,Rio, etc....">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--Section: Icon Boxes  -->
+                    <section class="section section-icons grey lighten-4 center">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col s12 m4">
+                                    <div class="card-panel">
+                                        <img src="assets/images/.jpg" alt="naturewalk" class="responsive">
+                                        <i class="material-icons small teal-text">room</i>
+                                        <h4>Pick Where</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Architecto, incidunt minima, sunt, omnis unde maiores dicta
+                                            quos beatae nobis adipisci quaerat. Minus tempora enim, error
+                                            eligendi sint blanditiis quis ipsa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card-panel">
+                                        <img src="assets/images/.jpg" alt="beach" class="responsive">
+                                        <i class="material-icons small teal-text">Mall</i>
+                                        <h4>Amenities</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Architecto, incidunt minima, sunt, omnis unde maiores dicta
+                                            quos beatae nobis adipisci quaerat. Minus tempora enim, error
+                                            eligendi sint blanditiis quis ipsa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card-panel">
+                                        <img src="assets/images/.jpg" alt="sunbathing" class="responsive">
+                                        <i class="material-icons small teal-text">airplanemode_active</i>
+                                        <h4>Affordable Flights</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Architecto, incidunt minima, sunt, omnis unde maiores dicta
+                                            quos beatae nobis adipisci quaerat. Minus tempora enim, error
+                                            eligendi sint blanditiis quis ipsa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+        </div>
+        <section id="search" class="section scrollspy">
+            <div class="container-fluid">
+                <div class="col">
+                    <form autocomplete="on" action="/action_page.php">
+                        <div class="autocomplete" style="width:300px;">
+                            <input id="myInput" type="text" name="myCountry" placeholder="Country">
+                        </div>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
         <div class="col-sm-6">
             <div class=" col-md-4  section-column">
             </div>
@@ -91,215 +180,209 @@
                 </h3>
             </div>
         </div>
-        <div class="col-sm-6">
-            <div class=" col-md-4  section-column">
-                <img src="assets/images/nightcity.jpg"" alt=" beach" sizes="600px" srcset="">
-                <div class="col section-column">
-                </div>
-            </div>
-        </div>
-        <h5 class="uppercase general-sub">About us</h5>
-        <p class="inline-block">
-            Kitenge derives from the eastern part of african language known as Swahili. Kitenge is an african fabric found in East Africa known as Chitenge,
-            and the West Africa and Central African it is known as Ankara. We are a platform that supports and
-            showcase the authenticity of the new upcoming modern african designers in to the modern world.
-
-        </p>div>
     </div>
-</section>
-<section class="container-fluid">
-    <div class="col">
-        <section id="search" class="section section-search darken-1 white-text center scrollspy">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col s12">
-                        <h3>Search Destinations</h3>
-                        <div class="input-field">
-                            <input type="text" class="white green-text autocomplete" id="autocomplete-input" placeholder="Dubai, Spain,Rio, etc....">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Section: Icon Boxes  -->
-        <section class="section section-icons grey lighten-4 center">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="card-panel">
-                            <img src="assets/images/.jpg" alt="naturewalk" class="responsive">
-                            <i class="material-icons large teal-text">room</i>
-                            <h4>Pick Where</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Architecto, incidunt minima, sunt, omnis unde maiores dicta
-                                quos beatae nobis adipisci quaerat. Minus tempora enim, error
-                                eligendi sint blanditiis quis ipsa.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card-panel">
-                            <img src="assets/images/.jpg" alt="beach" class="responsive">
-                            <i class="material-icons large teal-text">Mall</i>
-                            <h4>Amenities</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Architecto, incidunt minima, sunt, omnis unde maiores dicta
-                                quos beatae nobis adipisci quaerat. Minus tempora enim, error
-                                eligendi sint blanditiis quis ipsa.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card-panel">
-                            <img src="assets/images/.jpg" alt="sunbathing" class="responsive">
-                            <i class="material-icons large teal-text">airplanemode_active</i>
-                            <h4>Affordable Flights</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Architecto, incidunt minima, sunt, omnis unde maiores dicta
-                                quos beatae nobis adipisci quaerat. Minus tempora enim, error
-                                eligendi sint blanditiis quis ipsa.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-    </div>
-    </div>
-    <section id="search" class="section scrollspy">
-        <div class="container-fluid">
+    </header>
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
             <div class="col">
-                <form autocomplete="on" action="/action_page.php">
-                    <div class="autocomplete" style="width:300px;">
-                        <input id="myInput" type="text" name="myCountry" placeholder="Country">
-                    </div>
-                    <input type="submit">
-                </form>
+                <h3 class="contact-heading uppercase text-center">would you like to place an order?</h3>
+                <h5 class="uppercase text-center">Get in touch!</h5>
+                <div class="center-form">
+                    <form>
+                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="project description" required></textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary">Send Your Inquiry</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <footer class="container-fluid">
+        <div id="footer-details" class="col">
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">About</h5>
+
+
+                <h5 class="uppercase general-sub">About us</h5>
+                <p class="inline-block">
+                    Kitenge derives from the eastern part of african language known as Swahili. Kitenge is an
+                    african
+                    fabric found in East Africa known as Chitenge,
+                    and the West Africa and Central African it is known as Ankara. We are a platform that
+                    supports and
+                    showcase the authenticity of the new upcoming modern african designers in to the modern
+                    world.
+
+                </p>div>
+            </div>
+</section>
+
+</div>
+</div>
+
+<footer class="container-fluid">
+    <div id="footer-details" class="row container-fluid">
+
+        <h1>XASCAPADE TRAVEL AGENCY</h1>
+        <p>Something short and leading about the collection below—its contents, the
+            creator,
+            etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+            <a href="Contact.html" class=" my-2">Book now</a>
+            <a href="Contact.html" class="my-2">Make Inqueries</a>
+        </p>
+    </div>
+    </div>
+    <div class="col offset-md-1 py-4">
+        <h4 class="text-white">Contact Us</h4>
+    </div>
+    <div class="row s12">
+        <div class="personal-info-item">
+            <div class="key">
+                <p class="uppercase">
+                    Address:
+                </p>
+            </div>
+            <div class="value">
+                <p>
+                    Greystones, Co. wicklow Ireland
+                </p>
             </div>
         </div>
-    </section>
+        <div class="personal-info-item">
+            <div class="key">
+                <p class="uppercase">
+                    Tel No:
+                </p>
+            </div>
+            <div class="value">
+                <p>
+                    555-346-2000
+                </p>
+            </div>
+        </div>
+        <div class="personal-info-item">
+            <div class="key">
+                <p class="uppercase">
+                    Email:
+                </p>
+            </div>
+            <div class="value">
+                <p>
+                    xascapadetravel@gmail.co.ie
+                </p>
+
+                <ul class="list-unstyled ">
+                    <h4> Xascapade Social</h4>
+                    <p>Follow us on !</p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    Here you will find more information about the travel.
+
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    <span class="sr-only">Download link</span>
+                    </a>
+                </p>
+
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Social</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/Kitenge-111914593983140">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/home">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.linkedin.com/in/mama-afrika-92579b1b7/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">linkedin</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.pinterest.ie/suezett31/pins/">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="youtube.html">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            <span class="sr-only">Whatsapp</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <li>
+                <a target="_blank" href="#" class="text-white">Follow on Twitter
+                    <i class="fa fa-twitter" aria-hidden="true">
+                    </i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+
+            </li>
+            <li>
+                <a target="_blank" href="#" class="text-white">Like on Facebook
+                    <i class="fa fa-facebook" aria-hidden="true">
+                    </i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="#" class="text-white">instagram
+                    <i class="fa fa-Instagram" aria-hidden="true">
+                    </i>
+                    <span class="sr-only">Instagram</span></a></a>
+            </li>
+            <li>
+                <a target="_blank" href="#" class="text-white">Email me
+                    <i class="fa fa-email" aria-hidden="true">
+                    </i>
+                    <span class="sr-only">Email</span></a></a>
+            </li>
+            </ul>
+            <p class="flow-text">Xascapade &copy;2020</p>
+            <div class="container">
+                <p class="float-right mb-1">
+                    <a href="#">Back to top</a>
+                </p>
+            </div>
+
+            <!-- Bootstrap core CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+            </body>
 
 
-    </div>
-    </div>
-
-    <footer class="container-fluid">
-        <div id="footer-details" class="row container-fluid">
-
-            <div class="col s12 m4">
-                <div class="col text-align-left ">
-                    <div class="col section-column">
-                        <div class="row py-lg-5">
-                            <div class="col-lg-6 col-md-8 mx-auto">
-                                <h1>XASCAPADE TRAVEL AGENCY</h1>
-                                <p>Something short and leading about the collection below—its contents, the
-                                    creator,
-                                    etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-                                <p>
-                                    <a href="Contact.html" class=" my-2">Book now</a>
-                                    <a href="Contact.html" class="my-2">Make Inqueries</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col offset-md-1 py-4">
-                            <h4 class="text-white">Contact Us</h4>
-                        </div>
-                        <div class="col s12">
-                            <div class="personal-info-item">
-                                <div class="key">
-                                    <p class="uppercase">
-                                        Address:
-                                    </p>
-                                </div>
-                                <div class="value">
-                                    <p>
-                                        Greystones, Co. wicklow Ireland
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="personal-info-item">
-                                <div class="key">
-                                    <p class="uppercase">
-                                        Tel No:
-                                    </p>
-                                </div>
-                                <div class="value">
-                                    <p>
-                                        555-346-2000
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="personal-info-item">
-                                <div class="key">
-                                    <p class="uppercase">
-                                        Email:
-                                    </p>
-                                </div>
-                                <div class="value">
-                                    <p>
-                                        xascapadetravel@gmail.co.ie
-                                    </p>
-
-                                    <ul class="list-unstyled ">
-                                        <h4> Xascapade Social</h4>
-                                        <p>Follow us on !</p>
-                                        <li>
-                                            <a target="_blank" href="#" class="text-white">Follow on Twitter
-                                                <i class="fa fa-twitter" aria-hidden="true">
-                                                </i>
-                                                <span class="sr-only">Twitter</span>
-                                            </a>
-
-                                        </li>
-                                        <li>
-                                            <a target="_blank" href="#" class="text-white">Like on Facebook
-                                                <i class="fa fa-facebook" aria-hidden="true">
-                                                </i>
-                                                <span class="sr-only">Facebook</span>
-                                            </a>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a target="_blank" href="#" class="text-white">instagram
-                                                <i class="fa fa-Instagram" aria-hidden="true">
-                                                </i>
-                                                <span class="sr-only">Instagram</span></a></a>
-                                        </li>
-                                        <li>
-                                            <a target="_blank" href="#" class="text-white">Email me
-                                                <i class="fa fa-email" aria-hidden="true">
-                                                </i>
-                                                <span class="sr-only">Email</span></a></a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <p class="flow-text">Xascapade &copy;2020</p>
-                            <div class="container">
-                                <p class="float-right mb-1">
-                                    <a href="#">Back to top</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-    </footer>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    </body>
+</footer>
 
 </html>
