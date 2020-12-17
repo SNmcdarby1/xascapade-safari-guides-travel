@@ -14,7 +14,7 @@ body {
     width: 100;
     height: 100vh;
     font-family: 'Verdana', sans-serif;
-    background-image: url("../images/bgm.jpg");
+    background-image: url("../images/.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-transition: all .5s ease-in-out;
@@ -177,611 +177,631 @@ header {
     margin: 40px 20px;
 }
 
-/*-------------------------------------------------------------Work history*/
-
-
-.history-heading {
-    color: #fafafa;
-    margin-bottom: 50px;
-}
-
-.club-ethos {
-    height: 100px;
-    position: auto;
-}
-
-#left-about {
-    padding-top: 30px;
-    width: 33%;
+/* w3school gallery snippet */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
     float: left;
-    background-color: blue;
+    width: 180px;
 }
 
-#right-about {
-    padding-top: 30px;
-    width: 33%;
-    float: right;
-    background-color: red;
+div.gallery:hover {
+    border: 1px solid #777;
 }
 
-#center-about {
-    padding-top: 30px;
-    width: 33%;
-    margin: 0 auto;
-    background-color: silver;
+div.gallery img {
+    width: 100%;
+    height: auto;
 }
 
-/*---------------------------------------------------------media queries*/
-@media(min-width: 762px)(max-width 360px) {
-    .center-form {
+div.desc {
+    padding: 15px;
+    text-align:
+    /*-------------------------------------------------------------Work history*/
+
+
+    .history-heading {
+        color: #fafafa;
+        margin-bottom: 50px;
+    }
+
+    .club-ethos {
+        height: 100px;
+        position: auto;
+    }
+
+    #left-about {
         padding-top: 30px;
-        min-height: 240px;
-        margin: 0px, auto;
-        max-width: 50;
-    }
-
-    /*----------------------------CAROUSEL*/
-    .corousel-item {
-        -radius: .2rem;
-        z-index: auto;
-        transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -webkit-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out;
-    }
-
-    .slide {
-        background-color: #8789aa
-    }
-
-    /*---------------------------------------------youtube*/
-    #youtube {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0px, auto;
-        max-width: 50;
-        z-index: auto;
-        transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -webkit-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out;
-    }
-
-    /*-------------------------------------------------------------Footer*/
-    footer {
-        background-color: #215627 color: #0ee7cab0;
-        min-height: 120px;
-        margin: 0;
-    }
-
-    .cv-pdf {
-        font-size: 18px;
-        color: #1b1717;
-        text-align: center;
-        padding-left: 5px;
-        transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -webkit-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out;
-    }
-
-    .cv-pdf i:hover {
-        color: #e84610
-    }
-
-    .active {
-        background-color: rgb(247, 253, 253);
-        color: #04796f;
-        font-weight: 2rem;
-    }
-
-    .social {
-        display: inline-block;
-        margin: 0;
-    }
-
-    .social i {
-        position: absolute;
-        display: flex;
-        justify-content: right;
-        font-size: 80px;
-        cursor: pointer;
-    }
-
-
-
-    .social-links {
-        padding-bottom: 15px;
-    }
-
-    .social-links li a i {
-        width: 32px;
-        height: 32px;
-        padding: 12px 0;
-        border-radius: 50%;
-        list-style: absolute;
-        font-size: 13px;
-        line-height: 7px;
-        text-align: center;
-        color: #774545;
-        background: #b4aeae;
-        transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -webkit-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out;
-    }
-
-    .social-links li a i:hover {
-        background: #e84610;
-    }
-
-    #footer-details {
-        padding: 20px;
-    }
-
-    .footer-details {
-        padding: 20px;
-    }
-
-    .social-links i {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-    }
-
-    nav-items a {
-        list-style: none;
-        list-style-image: none;
-        list-style-position: flex;
-    }
-
-    nav-link {
-        justify-content: space-between;
-        align-items: center;
-        color: rgb(8, 102, 119);
-    }
-
-    .brand-title {
-        font-size: 1.5rem;
-        margin: .5rem;
-        font-size: 35px;
-        font-weight: bold;
-        transition: 0.4s;
-    }
-
-    navbar-links li {
-        list-style: none;
-
-    }
-
-    .navbar {
-        justify-content: fixed;
-    }
-
-    .navbar a:hover {
-        background-color: #ddd;
-        color: rgb(241, 77, 77);
-    }
-
-    a.nav-link {
-        text-decoration: none;
-        color: teal;
-        font-size: 1rem;
-        padding: 1rem;
-        display: inline-block;
-
-    }
-
-    .navbar-links li a {
-        text-decoration: none;
-        color: rgb(82, 3, 3);
-        padding: 2rem;
-        display: inline-block;
-
-    }
-
-    .navbar-links li:hover {
-        background-color: rgb(239, 253, 253);
-    }
-
-    nav {
-        flex-direction: row-reverse;
-        align-items: flex-start;
-        margin-top: 5px;
-        margin-bottom: 0px;
-        padding: 5px;
-        margin-left: 5px;
-        display: inline-block;
-    }
-
-    navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    navbar li {
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 0px;
-        padding: 5px;
-        margin-left: 5px;
-        display: inline-block;
-        border-radius: 5rem;
-    }
-
-    .navbar-right a.active {
-        background-color: dodgerblue;
-        color: white;
-    }
-
-    navbar-links li a {
-        padding: 2rem 1rem;
-        margin-top: 5px;
-        margin-bottom: 0px;
-        margin-left: 5px;
-        display: inline-block;
-    }
-
-    navbar-links .active {
-        display: flex;
-        margin-top: 5px;
-        margin-bottom: 0px;
-        padding: 5px;
-        margin-left: 5px;
-    }
-
-    navbar a {
+        width: 33%;
         float: left;
-        color: black;
-        text-align: center;
-        padding: 2px;
-        text-decoration: none;
-        font-size: 18px;
-        line-height: 5px;
-        border-radius: 4px;
+        background-color: blue;
     }
 
-    .form {
-        background-color: rgb(163, 159, 159);
-        height: 500px;
-        width: 700px;
-    }
-
-    .no-gutters {
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    ul li a:hover {
-        background-color: turquoise;
-        width: auto;
-        height: auto;
-    }
-
-    ul li ul li {
-        display: none;
-    }
-
-    ul li :hover ul li {
-        color: rgb(238, 230, 223);
-    }
-
-    a.hvr-sweep-to-bottom:before {
-        background: rgb(250, 224, 76);
-        height: 60px;
-    }
-
-    main {
-        width: 50%;
+    #right-about {
+        padding-top: 30px;
+        width: 33%;
         float: right;
-        position: relative;
-        z-index: 5;
-        top: 30%;
+        background-color: red;
     }
 
-    main h1 {
-        font-size: 190px;
-        position: overflow;
-        letter-spacing: -25px;
-        font-family: 'Bebas Neus', sans-serif;
-        transform: translateY(500px);
-        padding-left: -620px;
-        color: rgb(55, 182, 214);
-        line-height: 50px;
-        margin: 0;
+    #center-about {
+        padding-top: 30px;
+        width: 33%;
+        margin: 0 auto;
+        background-color: silver;
     }
 
-    main h1 span {
-        color: rgb(146, 226, 250);
-    }
-
-    main h5 {
-        text-transform: uppercase;
-        position: relative;
-        font-size: 30px !important;
-        font-weight: 30;
-        letter-spacing: 5px;
-        color: #0f0f0f;
-        transform: translateY(30px) !important;
-        text-align: center;
-    }
-
-    main p {
-        width: 50%;
-        position: relative;
-        text-align: justify;
-        transform: translateY(700);
-        font-weight: 500;
-        color: #bb8a05;
-        margin: 10;
-    }
-
-    main button {
-        width: 180px;
-        outline: none;
-        background-color: #fff;
-        border: 1px solid #437e59;
-        text-transform: translateY(-500px);
-        border-radius: none;
-        letter-spacing: 5px;
-        padding: 5px;
-        margin-top: 5px;
-        cursor: pointer;
-    }
-
-    footer {
-        width: 180px;
-        outline: none;
-        background-color: #fff;
-        border: 1px solid #437e59;
-        text-transform: translateY(-900px);
-        border-radius: none;
-        letter-spacing: 5px;
-        padding: 5px;
-        margin-top: 5px;
-        cursor: pointer;
-        display: inline-block;
-    }
-
-    main button:hover {
-        background-color: #059c7c;
-
-    }
-
-    .nav-link {
-        justify-content: right;
-        display: relative;
-        font-size: 5px;
-        padding: 2px;
-    }
-
-    .nav-links li {
-        list-style: none;
-    }
-
-    .nav-links a {
-        color: rgb(2, 31, 31);
-
-    }
-
-    .active {
-        background-color: rgb(247, 253, 253);
-        color: #04796f;
-        font-weight: 2rem;
-    }
-
-    .social {
-        display: inline-block;
-        margin: 0;
-    }
-
-    .social i {
-        position: absolute;
-        display: flex;
-        justify-content: right;
-        font-size: 80px;
-        cursor: pointer;
-    }
-
-    .social i:hover {
-        color: #08303a;
-    }
-
-    .overlay {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        left: 90px;
-        top: 25%;
-        z-index: 1;
-    }
-
-    .box-1 {
-        width: 300px;
-        height: 400px;
-        background: url("../images/rowing.jpg")no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0 10px;
-    }
-
-    .box-2 {
-        width: 300px;
-        height: 400px;
-        background: url("../images/yoga.jpg")no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 200 10px;
-        transform: translateY(50px);
-    }
-
-    .box-3 {
-        width: 300px;
-        height: 400px;
-        background: url("../images/bridge.jpg") no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0 10px;
-        transform: translateY(-90);
-    }
-
-    .box-4 {
-        width: 300px;
-        height: 400px;
-        position: overflow;
-        background: url("../images/hamock.jpg")no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0 10px;
-        transform: translateY(60px);
-
-    }
-
-    .card {
-        margin: 0;
-
-    }
-
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        color: black;
-    }
-
-    .mt-0 {
-        margin-top: 0;
-    }
-
-    .toggle-button .bar {
-        height: 3px;
-        width: 100%;
-        background-color: white;
-        border-radius: 5px;
-    }
-
-    @media(max-width:300px) {
-        .toggle-button {
-            display: flex;
+    /*---------------------------------------------------------media queries*/
+    @media(min-width: 762px)(max-width 360px) {
+        .center-form {
+            padding-top: 30px;
+            min-height: 240px;
+            margin: 0px, auto;
+            max-width: 50;
         }
 
-        .navbar-links {
-            display: relative !important;
-            width: 100% !important;
+        /*----------------------------CAROUSEL*/
+        .corousel-item {
+            -radius: .2rem;
+            z-index: auto;
+            transition: all 0.35s ease-in-out;
+            -moz-transition: all 0.35s ease-in-out;
+            -webkit-transition: all 0.35s ease-in-out;
+            -o-transition: all 0.35s ease-in-out;
         }
 
-        p::content {
-            color: #faeaea !important;
-            font-variant: small-caps !important;
+        .slide {
+            background-color: #8789aa
         }
 
-    }
-
-    /* The sidebar menu */
-    .sidebar {
-        height: 100%;
-        /* 100% Full-height */
-        width: 0;
-        /* 0 width - change this with JavaScript */
-        position: fixed !important;
-        /* Stay in place */
-        z-index: 1;
-        /* Stay on top */
-        top: 0;
-        left: 0;
-        background-color: #111;
-        /* Black*/
-        overflow-x: hidden;
-        /* Disable horizontal scroll */
-        padding-top: 60px;
-        /* Place content 60px from the top */
-        transition: 0.5s;
-        /* 0.5 second transition effect to slide in the sidebar */
-    }
-
-    /* The sidebar links */
-    .sidebar a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #fdfafa;
-        display: block t;
-        transition: 0.3s;
-    }
-
-    /* When you mouse over the navigation links, change their color */
-    .sidebar a:hover {
-        color: #f1f1f1;
-    }
-
-    /* Position and style the close button (top right corner) */
-    .sidebar .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    /* The button used to open the sidebar */
-    .openbtn {
-        font-size: 20px;
-        cursor: pointer;
-        background-color: #111 !important;
-        color: white !important;
-        padding: 10px 15px !important;
-        border: none;
-    }
-
-    .openbtn:hover {
-        background-color: #444;
-    }
-
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-    #main {
-        transition: margin-left .5s;
-        /* If you want a transition effect */
-        padding: 20px;
-    }
-
-    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-    @media screen and (max-height: 450px) {
-        .sidebar {
-            padding-top: 15px;
+        /*---------------------------------------------youtube*/
+        #youtube {
+            padding-top: 30px;
+            min-height: 240px;
+            margin: 0px, auto;
+            max-width: 50;
+            z-index: auto;
+            transition: all 0.35s ease-in-out;
+            -moz-transition: all 0.35s ease-in-out;
+            -webkit-transition: all 0.35s ease-in-out;
+            -o-transition: all 0.35s ease-in-out;
         }
 
-        .sidebar a {
+        /*-------------------------------------------------------------Footer*/
+        footer {
+            background-color: #215627 color: #0ee7cab0;
+            min-height: 120px;
+            margin: 0;
+        }
+
+        .cv-pdf {
             font-size: 18px;
+            color: #1b1717;
+            text-align: center;
+            padding-left: 5px;
+            transition: all 0.35s ease-in-out;
+            -moz-transition: all 0.35s ease-in-out;
+            -webkit-transition: all 0.35s ease-in-out;
+            -o-transition: all 0.35s ease-in-out;
         }
-    }
 
-    @media screen and (max-width: 580px) {
+        .cv-pdf i:hover {
+            color: #e84610
+        }
+
+        .active {
+            background-color: rgb(247, 253, 253);
+            color: #04796f;
+            font-weight: 2rem;
+        }
+
+        .social {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .social i {
+            position: absolute;
+            display: flex;
+            justify-content: right;
+            font-size: 80px;
+            cursor: pointer;
+        }
+
+
+
+        social-links {
+            padding-bottom: 15px;
+        }
+
+        social-links li a i {
+            width: 32px;
+            height: 32px;
+            padding: 12px 0;
+            border-radius: 50%;
+            list-style: absolute;
+            font-size: 13px;
+            line-height: 7px;
+            text-align: center;
+            color: #774545;
+            background: #b4aeae;
+            transition: all 0.35s ease-in-out;
+            -moz-transition: all 0.35s ease-in-out;
+            -webkit-transition: all 0.35s ease-in-out;
+            -o-transition: all 0.35s ease-in-out;
+        }
+
+        social-links li a i:hover {
+            background: #e84610;
+        }
+
+        footer-details {
+            padding: 20px;
+        }
+
+        footer-details {
+            padding: 20px;
+        }
+
+        social-links i {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        nav-items a {
+            list-style: none;
+            list-style-image: none;
+            list-style-position: flex;
+        }
+
+        nav-link {
+            justify-content: space-between;
+            align-items: center;
+            color: rgb(8, 102, 119);
+        }
+
+        brand-title {
+            font-size: 1.5rem;
+            margin: .5rem;
+            font-size: 35px;
+            font-weight: bold;
+            transition: 0.4s;
+        }
+
+        navbar-links li {
+            list-style: none;
+
+        }
 
         .navbar {
-            padding: 20px 10px !important;
-            /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+            justify-content: fixed;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: rgb(241, 77, 77);
+        }
+
+        a.nav-link {
+            text-decoration: none;
+            color: teal;
+            font-size: 1rem;
+            padding: 1rem;
+            display: inline-block;
+
+        }
+
+        .navbar-links li a {
+            text-decoration: none;
+            color: rgb(82, 3, 3);
+            padding: 2rem;
+            display: inline-block;
+
+        }
+
+        .navbar-links li:hover {
+            background-color: rgb(239, 253, 253);
+        }
+
+        nav {
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            padding: 5px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+
+        navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navbar li {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            padding: 5px;
+            margin-left: 5px;
+            display: inline-block;
+            border-radius: 5rem;
+        }
+
+        .navbar-right a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        navbar-links li a {
+            padding: 2rem 1rem;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+
+        navbar-links .active {
+            display: flex;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            padding: 5px;
+            margin-left: 5px;
         }
 
         .navbar a {
-            float: none;
-            display: block;
-            text-align: left;
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 2px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 5px;
+            border-radius: 4px;
         }
 
-        .navbar-left {
-            float: none !important;
-            justify-content: fixed !important;
+        .form {
+            background-color: rgb(163, 159, 159);
+            height: 500px;
+            width: 700px;
         }
-    }
 
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        color: black;
-    }
+        .no-gutters {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        ul li a:hover {
+            background-color: turquoise;
+            width: auto;
+            height: auto;
+        }
+
+        ul li ul li {
+            display: none;
+        }
+
+        ul li :hover ul li {
+            color: rgb(238, 230, 223);
+        }
+
+        a.hvr-sweep-to-bottom:before {
+            background: rgb(250, 224, 76);
+            height: 60px;
+        }
+
+        main {
+            width: 50%;
+            float: right;
+            position: relative;
+            z-index: 5;
+            top: 30%;
+        }
+
+        main h1 {
+            font-size: 190px;
+            position: overflow;
+            letter-spacing: -25px;
+            font-family: 'Bebas Neus', sans-serif;
+            transform: translateY(500px);
+            padding-left: -620px;
+            color: rgb(55, 182, 214);
+            line-height: 50px;
+            margin: 0;
+        }
+
+        main h1 span {
+            color: rgb(146, 226, 250);
+        }
+
+        main h5 {
+            text-transform: uppercase;
+            position: relative;
+            font-size: 30px !important;
+            font-weight: 30;
+            letter-spacing: 5px;
+            color: #0f0f0f;
+            transform: translateY(30px) !important;
+            text-align: center;
+        }
+
+        main p {
+            width: 50%;
+            position: relative;
+            text-align: justify;
+            transform: translateY(700);
+            font-weight: 500;
+            color: #bb8a05;
+            margin: 10;
+        }
+
+        main button {
+            width: 180px;
+            outline: none;
+            background-color: #fff;
+            border: 1px solid #437e59;
+            text-transform: translateY(-500px);
+            border-radius: none;
+            letter-spacing: 5px;
+            padding: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            width: 180px;
+            outline: none;
+            background-color: #fff;
+            border: 1px solid #437e59;
+            text-transform: translateY(-900px);
+            border-radius: none;
+            letter-spacing: 5px;
+            padding: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        main button:hover {
+            background-color: #059c7c;
+
+        }
+
+        .nav-link {
+            justify-content: right;
+            display: relative;
+            font-size: 5px;
+            padding: 2px;
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgb(2, 31, 31);
+
+        }
+
+        .active {
+            background-color: rgb(247, 253, 253);
+            color: #04796f;
+            font-weight: 2rem;
+        }
+
+        .social {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .social i {
+            position: absolute;
+            display: flex;
+            justify-content: right;
+            font-size: 80px;
+            cursor: pointer;
+        }
+
+        .social i:hover {
+            color: #08303a;
+        }
+
+        .overlay {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            left: 90px;
+            top: 25%;
+            z-index: 1;
+        }
+
+        .box-1 {
+            width: 300px;
+            height: 400px;
+            background: url("../images/rowing.jpg")no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 10px;
+        }
+
+        .box-2 {
+            width: 300px;
+            height: 400px;
+            background: url("../images/yoga.jpg")no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 200 10px;
+            transform: translateY(50px);
+        }
+
+        .box-3 {
+            width: 300px;
+            height: 400px;
+            background: url("../images/bridge.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 10px;
+            transform: translateY(-90);
+        }
+
+        .box-4 {
+            width: 300px;
+            height: 400px;
+            position: overflow;
+            background: url("../images/hamock.jpg")no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 10px;
+            transform: translateY(60px);
+
+        }
+
+        .card {
+            margin: 0;
+
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: black;
+        }
+
+        .mt-0 {
+            margin-top: 0;
+        }
+
+        .toggle-button .bar {
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        @media(max-width:300px) {
+            .toggle-button {
+                display: flex;
+            }
+
+            .navbar-links {
+                display: relative !important;
+                width: 100% !important;
+            }
+
+            p::content {
+                color: #faeaea !important;
+                font-variant: small-caps !important;
+            }
+
+        }
+
+        /* The sidebar menu */
+        .sidebar {
+            height: 100%;
+            /* 100% Full-height */
+            width: 0;
+            /* 0 width - change this with JavaScript */
+            position: fixed !important;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            left: 0;
+            background-color: #111;
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 60px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidebar */
+        }
+
+        /* The sidebar links */
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #fdfafa;
+            display: block t;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* The button used to open the sidebar */
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111 !important;
+            color: white !important;
+            padding: 10px 15px !important;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+            transition: margin-left .5s;
+            /* If you want a transition effect */
+            padding: 20px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 580px) {
+
+            .navbar {
+                padding: 20px 10px !important;
+                /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+            }
+
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .navbar-left {
+                float: none !important;
+                justify-content: fixed !important;
+            }
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: black;
+        }
