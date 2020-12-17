@@ -69,6 +69,19 @@ It is a holiday booking platform-MS2 project
 * Photo by Kalen Emsley
 * Photo by Jake Melara
 * Photo by bady abbas
+* Photo by Dirk Gonçalves Martins on Unsplash New York
+
+* Photo by Luca Bravo on Unsplash San Francisco 
+* Photo by Tim Foster on Unsplash San Francisco 
+
+* Photo by Daiwei Lu on Unsplash Pisa Pisa
+
+* photo by Andrea Cevenini on Unsplash Paris Paris
+* Photo by Matthias Betz on Unsplash Austria mountains
+* Photo by Paul Keiffer on Unsplash Austria mountain
+* Photo by Simon Williams on Unsplash Norway
+* Photo by Alexsandre Almeida on Unsplash west coast norway
+
 * Photo by Louis Hansel @shotsoflouis
 Image by <a href="https://pixabay.com/users/eduardoortiz-12308282/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4161593">RUBEN EDUARDO ORTIZ MORALES</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4161593">Pixabay</a>
 
