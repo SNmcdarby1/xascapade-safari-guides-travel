@@ -40,6 +40,7 @@
 
                     </div>
             </span>
+
         </div>
     </div>
     </nav>
@@ -97,6 +98,7 @@
                         <p><button class="button dark-grey">Search Availability</button></p>
                     </div>
                 </div>
+
             </header>
             <div class="inline-block">
                 <picture class="d-inline-block text-truncate" style="max-width: 600px;">
@@ -145,6 +147,29 @@
                         <input class="input border" type="text" placeholder="Your Email address">
                         <button type="button" class="button red margin-top">Subscribe</button>
                     </div>
+                    <form action="action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
                 </div>
 
                 <!-- End page content -->
@@ -161,13 +186,25 @@
                     <i class="fa fa-twitter hover-opacity"></i>
                     <i class="fa fa-linkedin hover-opacity"></i>
                 </div>
-
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
 
                 <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green">Xascapade</a></p>
 
             </footer>
 
             <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
                 // Tabs
                 function openLink(evt, linkName) {
                     var i, x, tablinks;

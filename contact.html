@@ -115,14 +115,10 @@
             </div>
         </body>
         <!-- Newsletter -->
-
-        <!-- Contact -->
-
         <Section class="container-fluid inline-block">
             <div class="background-image" id="bgimg1">
                 <hr class="my-4 inline-block col-sm-4" id="bgimg1">
                 <div class="container">
-
                     <h2>Contact</h2>
                     <p>Let us book your next trip!</p>
                     <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
@@ -146,46 +142,144 @@
                         <button type="button" class="button red margin-top">Subscribe</button>
                     </div>
                 </div>
-                <!-- w3school snippet -->
-                <!-- End page content -->
-            </div>
 
-            <!-- Footer -->
-            <footer class="container-fluid  opacity margin-bottom">
-                <h5>Find Us On</h5>
-                <div class="xlarge padding-16">
-                    <i class="fa fa-facebook-official hover-opacity"></i>
-                    <i class="fa fa-instagram hover-opacity"></i>
-                    <i class="fa fa-snapchat hover-opacity"></i>
-                    <i class="fa fa-pinterest-p hover-opacity"></i>
-                    <i class="fa fa-twitter hover-opacity"></i>
-                    <i class="fa fa-linkedin hover-opacity"></i>
-                </div>
+                <!-- Contact -->
+
+                <Section class="container-fluid inline-block">
+                    <div class="background-image" id="bgimg1">
+                        <hr class="my-4 inline-block col-sm-4" id="bgimg1">
+                        <div class="container">
+
+                            <h2>Contact</h2>
+                            <p>Let us book your next trip!</p>
+                            <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+                            <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+                            <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                            <form action="/action_page.php" target="_blank">
+                                <p><input class="w3-input padding-16 border" type="text" placeholder="Name" required name="Name">
+                                </p>
+                                <p><input class="input padding-16 border" type="text" placeholder="Email" required name="Email">
+                                </p>
+                                <p><input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
+                                </p>
+                                <p><button class="button  padding-large" type="submit">SEND MESSAGE</button></p>
+                            </form>
+                            <div class="panel padding-16 white opacity card hover-opacity-off">
+                                <h2>Get the best offers first!</h2>
+
+                                <p>Join our newsletter.</p>
+                                <label>E-mail</label>
+                                <input class="input border" type="text" placeholder="Your Email address">
+                                <button type="button" class="button red margin-top">Subscribe</button>
+                            </div>
+                        </div>
+                        <!-- w3school snippet -->
+                        <div class="container">
+                            <form action="/action_page.php">
+
+                                <h2>Register Form</h2>
+                                <div class="input-container">
+                                    <i class="fa fa-user icon"></i>
+                                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                                </div>
+
+                                <div class="input-container">
+                                    <i class="fa fa-envelope icon"></i>
+                                    <input class="input-field" type="text" placeholder="Email" name="email">
+                                </div>
+
+                                <div class="input-container">
+                                    <i class="fa fa-key icon"></i>
+                                    <input class="input-field" type="password" placeholder="Password" name="psw">
+                                </div>
 
 
-                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green">Xascapade</a></p>
+                            </form>
 
-            </footer>
+                        </div>
 
-            <script>
-                // Tabs
-                function openLink(evt, linkName) {
-                    var i, x, tablinks;
-                    x = document.getElementsByClassName("myLink");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablink");
-                    for (i = 0; i < x.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" teal", "");
-                    }
-                    document.getElementById(linkName).style.display = "block";
-                    evt.currentTarget.className += " teal";
-                }
+                        <div class="bottom-container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <a href="#" style="color:teal" class="btn">Sign up</a>
+                                </div>
 
-                // Click on the first tablink on load
-                document.getElementsByClassName("tablink")[0].click();
-            </script>
+                                <div class="col-4">
+                                    <a href="#" style="color:teal" class="btn">Forgot password?</a>
+                                </div>
+                                <button type="submit" class="btn">Register</button>
+                            </div>
+                        </div>
+                        <!-- End page content -->
+                    </div>
+
+                    <!-- Footer -->
+                    <footer class="container-fluid  opacity margin-bottom">
+                        <h5>Find Us On</h5>
+
+                        <form action="/action_page.php">
+                            <div class="row">
+                                <h6 style="text-align:center">Login with Social Media or Manually</h2>
+                                    <div class="vl">
+                                        <span class="vl-innertext">or</span>
+                                    </div>
+
+                                    <div class="col">
+                                        <a href="#" class="fb btn">
+                                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                                        </a>
+                                        <a href="#" class="twitter btn">
+                                            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                                        </a>
+                                        <a href="#" class="google btn">
+                                            <i class="fa fa-google fa-fw"></i> Login with Google+
+                                        </a>
+                                    </div>
+
+
+                            </div>
+                            <div class="col">
+                                <div class="hide-md-lg">
+                                    <p>Or sign in manually:</p>
+                                </div>
+
+                                <input type="text" name="username" placeholder="Username" required>
+                                <input type="password" name="password" placeholder="Password" required>
+                                <input type="submit" value="Login">
+                            </div>
+
+                        </form>
+                        <div class="xlarge padding-16">
+                            <i class="fa fa-facebook-official btn hover-opacity"></i>
+                            <i class="fa fa-instagram  btn hover-opacity"></i>
+                            <i class="fa fa-snapchat btn hover-opacity"></i>
+                            <i class="fa fa-pinterest-p btn hover-opacity"></i>
+                            <i class="fa fa-twitter btn hover-opacity"></i>
+                            <i class="fa fa-linkedin btn hover-opacity"></i>
+                        </div>
+                        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green">Xascapade</a></p>
+
+                    </footer>
+
+                    <script>
+                        // Tabs
+                        function openLink(evt, linkName) {
+                            var i, x, tablinks;
+                            x = document.getElementsByClassName("myLink");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < x.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" teal", "");
+                            }
+                            document.getElementById(linkName).style.display = "block";
+                            evt.currentTarget.className += " teal";
+                        }
+
+                        // Click on the first tablink on load
+                        document.getElementsByClassName("tablink")[0].click();
+                    </script>
 
 </body>
 
