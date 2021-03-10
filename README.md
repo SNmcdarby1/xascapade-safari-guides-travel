@@ -262,7 +262,7 @@ I would like to thank
 - [stackoverflow](https://stackoverflow.com/) platform. I used to access coding problem solving when i got stack. 
 
 
-=======
+
 ### Table of Content
  1.Who we are
 
