@@ -1,236 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
-<head class="container section-colunm no-gutter">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integk rel="stylesheet" href="assets/css/style.css" type="text/css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xascapade Travel</title>
-    <section>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<body class="container-fluid ">
-    <div>
-        <div>
-            <span>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="index.html">XASCAPADE </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html" aria-labelledby="navbarDropdown">About
-                                </a>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+<div id="data"></div>
 
 
-                            <li class="nav-item">
-                                <a class="nav-link enabled" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-
-                    </div>
-            </span>
-        </div>
-    </div>
-    </nav>
-
-    <main>
-        <h1><span>XAS</span>CAPADE</h1>
-        <h5>Explore the World</h5>
-
-        <body class="light-grey">
-
-            <!-- Navigation Bar -->
-            <div class="bar white border-bottom xlarge">
-                <a href="#" class="bar-item button text-red hover-red"><b><i class="fa fa-map-marker margin-right"></i>Logo</b></a>
-                <a href="#" class="bar-item w3-button right hover-red text-grey"><i class="fa fa-search"></i></a>
-            </div>
-
-            <!-- Header -->
-            <header class="display-container content hide-small" style="max-width:1500px">
-                <div class="display-cover" style="width:65%">
-                    <div class="bar mr-6 tr-3 container-fluid">
-                        <button class="bar-item button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
-                        <button class="bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right"></i>Hotel</button>
-                        <button class="bar-item button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car margin-right"></i>Rental</button>
-
-                    </div>
-
-                    <!-- Tabs -->
-                    <div id="Flight" class="container white padding-16 myLink">
-                        <h3>Travel the world with us</h3>
-                        <div class="row-padding" style="margin:0 -16px;">
-                            <div class="half">
-                                <label>From</label>
-                                <input class="input border" type="text" placeholder="Departing from">
-                            </div>
-                            <div class="half">
-                                <label>To</label>
-                                <input class="input border" type="text" placeholder="Arriving at">
-                            </div>
-                        </div>
-                        <p><button class="button dark-grey">Search and find dates</button></p>
-                    </div>
-
-                    <div id="Hotel" class="container white padding-16 myLink">
-                        <h3>Find the best hotels</h3>
-                        <p>Book a hotel with us and get the best fares and promotions.</p>
-                        <p>We know hotels - we know comfort.</p>
-                        <p><button class="button dark-grey">Search Hotels</button></p>
-                    </div>
-
-                    <div id="Car" class="container white padding-16 myLink">
-                        <h3>Best car rental in the world!</h3>
-                        <p><span class="tag deep-orange">DISCOUNT!</span> Special offer if you book today: 25% off
-                            anywhere in the world with CarServiceRentalRUs</p>
-                        <input class="input border" type="text" placeholder="Pick-up point">
-                        <p><button class="button dark-grey">Search Availability</button></p>
-                    </div>
-                </div>
-            </header>
-            <!-- Newsletter -->
-
-            <!-- Contact -->
-
-            <!-- w3school snippet -->
+<body class="container-fluid"  id="page-top">
+       <!--body-->                       
+    
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-teal fixed-top" id="mainNav">
             <div class="container">
-                <div class="inline-block"></div>
-                <div class="gallery">
-                    <a target="_blank" href="assets/images/jade-m.jpg">
-                        <img src="assets/images/jade-m.jpg" alt="Cinque Terre" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="assets/images/jade-m.jpg">
-                        <img src="assets/images/jade-m.jpg" alt="Forest" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="assets/images/jade-m.jpg">
-                        <img src="assets/images/jade-m.jpg" alt="Northern Lights" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="assets/images/jade-m.jpg">
-                        <img src="assets/images/jade-m.jpg" alt="Mountains" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/images/xascapade.jpg" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Home
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                      <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="places.html">Places</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a></li>
+                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="map.html">Map</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="index.html">Home</a>
+  
                 </div>
             </div>
+        </nav>
+        
+ <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Xascapade Guided Tours.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/images/jump.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>Started in the year 2009-2011</h3>
+                                <h4 class="subheading">Take part and  experiense it all</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Xascapade imperative is to uplift the well being of the communities where we operate by providing social ,financial and enviromental programmes that benefits the local tour guides by empowering and educating them more about the Kenyan communities and the rich diverse of the Kenyan wildlife!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/images/ele.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">Services Inspired by</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Working together with the locals tour guides has been beyond the positive subconscious feeling generated by the community,It also gives you the sense of belonging and take in a whole new dimension of how we see things!</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/images/flaming.jpg" alt="group tours" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Guided tours</h4>
+                                <h4 class="subheading"> Service</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Xascapade guides offers you the chance to enjoy your holiday with the services we offer. let us help you find what you are looking for and get inspired by our leading tour guides!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/images/emma.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2014</h4>
+                                <h4 class="subheading">Experience rich culture</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> Beyond the positive subconscious feeling generated by the community,These services give you a chance to learn more about the locations and culture from our local experienced tour guides at different angles. From the local villages to the big cities,not forgetting the nitty gritty of the local experiences, Come join us!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <!-- End page content -->
+        </section>
+        <div class="col-sm-4" style="background-color:lavender;">
+                            <img src="assets/images/antelope.jpg" alt="xas2" style="width:100%">
+                            <h5>Amboseli National Park</h5>    
+                            <p> National Park</p>
+                           
+                        </div>
+                        <div class="col-sm-4" style="background-color:lavenderblush;">
+                            <img src="assets/images/lions.jpg" alt="xas1" style="width:100%">
+                            <h5>Cultural Visits</h5>
+                
+                            <p>Masai mara</p>
 
+                        </div>
+                        <div class="col-sm-4" style="background-color:lavender;">
+                            <img src="assets/images/cheetah-in-maasai-mara_1.jpg" alt="xas3" style="width:100%">
+                            <h5>Masaai Mara National Park</h5>
+                             <div class="text-block">
+                                <p>Safari drive</p>
 
-            <Section class="container-fluid inline-block">
-                <div class="background-image" id="bgimg1">
-                    <hr class="my-4 inline-block col-sm-4" id="bgimg1">
-                    <div class="container">
+                            </div>
+                           
+                        </div>
+        
+       <!--bootstrap starters snippet-->     
 
-                        <h2>Contact</h2>
-                        <p>Let us book your next trip!</p>
-                        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-                        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-                        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-                        <form action="/action_page.php" target="_blank">
-                            <p><input class="w3-input padding-16 border" type="text" placeholder="Name" required name="Name">
-                            </p>
-                            <p><input class="input padding-16 border" type="text" placeholder="Email" required name="Email">
-                            </p>
-                            <p><input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
-                            </p>
-                            <p><button class="button  padding-large" type="submit">SEND MESSAGE</button></p>
-                        </form>
-                        <div class="panel padding-16 white opacity card hover-opacity-off">
-                            <h2>Get the best offers first!</h2>
-
-                            <p>Join our newsletter.</p>
-                            <label>E-mail</label>
-                            <input class="input border" type="text" placeholder="Your Email address">
-                            <button type="button" class="button red margin-top">Subscribe</button>
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">GAME RESERVESE</h2>
+                    <h3 class="section-subheading text-muted"> SAFARI PARKS.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/giraffes-.jpg" alt="" />
+                            <h4>Nairobi National Park</h4>
+                            <p class="text-muted">Nairobi</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
-
-                    <!-- Footer -->
-                    <footer class="container-fluid  opacity margin-bottom">
-                        <h5>Find Us On</h5>
-                        <div class="xlarge padding-16">
-                            <i class="fa fa-facebook-official hover-opacity"></i>
-                            <i class="fa fa-instagram hover-opacity"></i>
-                            <i class="fa fa-snapchat hover-opacity"></i>
-                            <i class="fa fa-pinterest-p hover-opacity"></i>
-                            <i class="fa fa-twitter hover-opacity"></i>
-                            <i class="fa fa-linkedin hover-opacity"></i>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/lions.jpg" alt="" />
+                            <h4>Masaai Mara National Park</h4>
+                            <p class="text-muted">Masai Mara</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-linkedin"></i></a>
                         </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/leopard.jpg" alt="" />
+                            <h4>Tsavo National Park</h4>
+                            <p class="text-muted">Tsavo East And Tsavo West National Park</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Accreditted local knowledge.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/images/group.jpg" alt="group tours" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/images/masai.jpg" alt="local tours" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/images/self.jpg" alt="Self 4WD" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/images/group2.jpg" alt="Truck " /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Footer section  bootstrap snippet-->
+<blockquote class="blockquote text-center">
+  
+  <footer class="blockquote-footer">
+  <ul class="list-inline social-links">
+   <li class="list-inline-item">
+                      <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/Safari78047357">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">linkedin</span>
+                        </a>
+                    </li>
 
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
+        
+                </ul> <cite title="Source Title">
+                 <a href="mail@xascapade.com">info@xascapade.com</a>
+                    <p>Powered by 
+                    <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
+                     Xascapade</a>
+                    </p>
 
-                        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green">Xascapade</a></p>
-
-                    </footer>
-
-                    <script>
-                        // Tabs
-                        function openLink(evt, linkName) {
-                            var i, x, tablinks;
-                            x = document.getElementsByClassName("myLink");
-                            for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none";
-                            }
-                            tablinks = document.getElementsByClassName("tablink");
-                            for (i = 0; i < x.length; i++) {
-                                tablinks[i].className = tablinks[i].className.replace(" teal", "");
-                            }
-                            document.getElementById(linkName).style.display = "block";
-                            evt.currentTarget.className += " teal";
-                        }
-
-                        // Click on the first tablink on load
-
-
-                        document.getElementsByClassName("tablink")[0].click();
-                        var cars = ["Landcruiser", "Caravan", "saloon car", "4 Wheel Drive", "Van", "V.I.P Car"];
-                        var text = "";
-                        var i;
-                        for (i = 0; i < cars.length; i++) {
-                            text += cars[i] + "<br>";
-                        }
-                        document.getElementById("Car").innerHTML = text;
-                        var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-                        var text = "";
-                        var i;
-                        for (i = 0; i < cars.length; i++) {
-                            text += cars[i] + "<br>";
-                        }
-                        car
-                        document.getElementById("Search Hotels").innerHTML = text;
-
-                        document.getElementsByClassName("tablink")[0].click();
-                        var cars = ["Hotel", "Apartment", "Camping", "Airbnb", "Flat", "Motel"];
-                        var text = "";
-                        var i;
-                        for (i = 0; i < cars.length; i++) {
-                            text += cars[i] + "<br>";
-                        }
-                        document.getElementById("Search Hotels").innerHTML = text;
-                    </script>
-
-        </body>
+                <a href="#" class="cd-top text-replace js-cd-top">Top</a>
+</cite></footer>
+</blockquote>
+              
+               
+        </section>
+<script index.js></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  </script>
+<script src="assets/js/sendEmail.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/html.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/safariString.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/text.js"></script>
+<script src="assets/js/todolist.js"></script>
+    </body>
 
 </html>
-
-</main>
+<!--Validated in w3.org
+Erro found Error: Parse Error. Style sheets should not include HTML syntax..
+Revit to validate the error-->
