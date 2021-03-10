@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
-
+<div id="data"></div>
 <body class="">
        <!--body-->                       
         <!-- Navigation-->
@@ -37,7 +37,15 @@
                 </div>
             </div>
         </nav>    
-<div class="col-md-12" id="map"></div> 
+<body class="container-fluid no-gutter  lemon padding-16 myLink">
+    
+    
+    <div id="data"></div>
+
+<body class="container-fluid">
+  
+                <div class="col-sm-4" id="map"></div>
+              
 <section class=" container-fluid no-gutter  lemon padding-30 myLink ">
 <div class=" container-fluid col" >
 
@@ -144,30 +152,44 @@
 </footer>
 </blockquote>
 </section>
-            <script src="assets/js/marker.js"></script>
-              <script src="assets/js/maps.js"></script>
+ </cite></footer>
+</blockquote>
+            </script>
             <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
             </script>
-            
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap">
             </script>
             <script src="assets/js/maps.js"></script>
 
-  <!-- bootstrap scripr snippet -->
+
+
+            <!-- bootstrap scripr snippet -->
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
             </script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
             </script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
             </script>
-       <script>
+            <script>
+$('#myList a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+$('#myList a[href="#profile"]').tab('show') // Select tab by name
+$('#myList a:first-child').tab('show') // Select first tab
+$('#myList a:last-child').tab('show') // Select last tab
+$('#myList a:nth-child(3)').tab('show') // Select third tab
+</script>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+            </footer>
+        </body>
 
+</html>
 <!-- validated cade using freeformatter.com  -->
-</body>
-<html>
-</footer>
-</blockquote>
-</section>
-<!--Validated in w3.org
-Erro found Error: Parse Error. Style sheets should not include HTML syntax..
-Revit to validate the error-->
