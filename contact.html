@@ -23,6 +23,33 @@
 </script>
 <body class="container-fluid" id="">
        <!--body-->                       
+    
+<body class="container-fluid" id="">
+       <!--body-->    <body class="container-fluid" id="page-top">
+       <!--body-->                       
+    
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/images/lion.jpg" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Home
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="places.html">Places</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a></li>
+                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="map.html">Map</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="index.html"><i class="fa fa-home"></i>Home</a>
+  
+                </div>
+            </div>
+        </nav>                   
      <header class="masthead">
      
             <div class="container">
@@ -35,95 +62,59 @@
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
+         <label for="first_name">First Name</label>
           <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
           <label for="last_name">Last Name</label>
+        
+          <input id="last_name" type="text" class="validate">
+         
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
+         <label for="tour">Safari</label>
+          <input  placeholder="Type of  tour guide" id="tour" type="text" class="validate">
+        
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
           <label for="password">Password</label>
+          <input id="password" type="password" class="validate">
+        
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
+        <label for="email">Email</label>
           <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
+          
         </div>
       </div>
       <div class="row">
         <div class="col s12">
           This is an inline input field:
           <div class="input-field inline">
+          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
             <input id="email_inline" type="email" class="validate">
-            <label for="email_inline">Email</label>
-            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-        <div class="input-field col s12">
-    <select>
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <label>Materialize Select</label>
-  </div>
-
-  <div class="input-field col s12">
-    <select multiple>
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <label>Materialize Multiple Select</label>
-  </div>
-
-  <div class="input-field col s12">
-    <select>
-      <optgroup label="team 1">
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-      </optgroup>
-      <optgroup label="team 2">
-        <option value="3">Option 3</option>
-        <option value="4">Option 4</option>
-      </optgroup>
-    </select>
-    <label>Optgroups</label>
-  </div>
-
-  <div class="input-field col s12 m6">
+            
+            <div class="input-field col s12 m6">
+  <label>Images in select</label>
     <select class="icons">
       <option value="" disabled selected>Choose your option</option>
-      <option value="" data-icon="images/sample-1.jpg">example 1</option>
-      <option value="" data-icon="images/office.jpg">example 2</option>
-      <option value="" data-icon="images/yuna.jpg">example 3</option>
+      <option value="" data-icon="assets/images/self.jpg">example 1</option>
+      <option value="" data-icon="assets/images/group.jpg">example 2</option>
+      <option value="" data-icon="assets/images/masai.jpg">example 3</option>
     </select>
-    <label>Images in select</label>
   </div>
   <div class="input-field col s12 m6">
+  <label>Images in select</label>
     <select class="icons">
       <option value="" disabled selected>Choose your option</option>
       <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
       <option value="" data-icon="images/office.jpg" class="left">example 2</option>
       <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
     </select>
-    <label>Images in select</label>
   </div>
 
   <label>Browser Select</label>
@@ -133,6 +124,16 @@
     <option value="2">Option 2</option>
     <option value="3">Option 3</option>
   </select>
+            
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+        <div class="input-field col s12">
+
+
+  
                     <!-- Footer -->
                     <footer class="container-fluid  opacity margin-bottom">
                         <h5>Find Us On</h5>
