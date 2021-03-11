@@ -24,7 +24,6 @@
 <body class="container-fluid" id="">
        <!--body-->                       
     
-<blockqoute class="formcontrol container-fluid" id="">
        <!--body-->    <body class="container-fluid" id="page-top">
        <!--body-->                       
     
@@ -51,162 +50,108 @@
             </div>
         </nav>                   
      <header class="masthead">
-     
-            <div class="container">
+     <div class="container">
                 <div class="masthead-subheading">Hello!</div>
                 <div class="masthead-heading text-uppercase">Looking forward to hearing from you!</div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="about.html">More Information </a>
             </div>
         </header>
-<div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-         <label for="first_name">First Name</label>
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        
-          <input id="last_name" type="text" class="validate">
-         
-        </div>
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<blockqoute class="formcontrol " id="contact">
+<div class="card text-left">
+  <div class="card-body">
+    <h4 class="card-title">Title</h4>
+  <formcontrol class="container contact">
+	<div class="row">
+		<div class="col-md-9">
+			<div class="contact-info">
+				<h2>Contact Us</h2>
+				<h4>We would love to hear from you !</h4>
+			</div>
+		</div>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-         <label for="tour">Safari</label>
-          <input  placeholder="Type of  tour guide" id="tour" type="text" class="validate">
-        
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <label for="password">Password</label>
-          <input id="password" type="password" class="validate">
-        
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-        <label for="email">Email</label>
-          <input id="email" type="email" class="validate">
-          
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-          This is an inline input field:
-          <div class="input-field inline">
-          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-            <input id="email_inline" type="email" class="validate">
-            
-            <div class="input-field col s12 m6">
-  <label>Images in select</label>
-    <select class="icons">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="" data-icon="assets/images/self.jpg">Masai</option>
-      <option value="" data-icon="assets/images/group.jpg">4WD</option>
-      <option value="" data-icon="assets/images/masai.jpg">Group</option>
-    </select>
+  <div class="col-md-12">
+                <div class="contact-form">
+				<div class="form-group">
+				  <label class="control-label col-sm" for="fname">First Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+				  </div>
+				</div>
+                
+
+                <div class="form-group">
+				  <label class="control-label col-sm" for="lname">Last Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+				  </div>
+				</div>
+				
+                
+                <div class="form-group">
+				  <label class="control-label col-sm" for="email">Email:</label>
+				  <div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				  </div>
+				</div>
+               
+               
+               
+                 <div class="form-group">
+				  <label class="control-label col-sm" for="tours">Tours:</label>
+				  <div class="col-sm-10">
+                 <select class="form-control" id="tour" placeholder="types of tours" name="safaris">
+                <option value="" disabled selected>4WD self guided tour</option>
+                 <option value="private">Masai guided tour</option>
+                  <option value="group">Tailored tours</option>
+                 <option value="local">Experienced tour guides</option>
+               </select>
+               </div>
+                 </div>
+	        
+			<div class="contact-form">
+				<div class="form-group">
+				  <label class="control-label col-sm" for="location">Location:</label>
+				  <div class="col-sm-10">          
+					<select class="form-control" id="location" placeholder="location" name="location">
+                    <option value="" disabled selected>Location</option>  
+                <option value="nairobi" >Nairobi</option>
+                 <option value="mombasa">Mombasa</option>
+                  <option value="nakuru">Nakuru</option>
+                 <option value="lamu">Lamu</option>
+               </select>
+              </div> 
+            </div>
+    </div>
+               <div class="form-group">
+				  <label class="control-label col-sm" for="comment">Comment:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				  </div>
+				</div>
+				
+                
+                <div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Submit</button>
+				  </div>
+				</div>
+                </div>
+			</formcontrol>
+	                               
   </div>
-  <div class="input-field col s12 m6">
-  <label>Images in select</label>
-    <select class="icons">
-    <option value="" disabled selected>4WD self guided tour</option>
-    <option value="private">Masai guided tour</option>
-    <option value="group">Tailored tours</option>
-    <option value="local">Experienced tour guides</option>
-    </select>
-  </div>
-
-  <label>Browser Select</label>
-      <select class="browser-default">
-    <option value="" disabled selected>Tour guides</option>
-    <option value="private">private tour</option>
-    <option value="group">Group tours</option>
-    <option value="local">Local tour guides</option>
-   </select>
-  
-  <script src=""></script>
-  <script type="">
-
-   function ready(callbackFunc) {
-  if (document.readyState !== 'loading') {
-    // Document is already ready, call the callback directly
-    callbackFunc();
-  } else if (document.addEventListener) {
-    // All modern browsers to register DOMContentLoaded
-    document.addEventListener('DOMContentLoaded', callbackFunc);
-  } else {
-    // Old IE browsers
-    document.attachEvent('onreadystatechange', function() {
-        if( document.readyState !== 'loading' ) {
-    console.log( 'document is already ready, just execute code here' );
-    myInitCode();
-} else {
-    document.addEventListener('DOMContentLoaded', function () {
-        console.log( 'document was not ready, place code here' );
-        myInitCode();
-    });
-}
-
-function myInitCode() {}
-      if (document.readyState === 'complete') {
-        callbackFunc();
-      }
-    });
-  }
-}
-
-ready(function() {
- 
-});
-  </script>
- <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-  
-                    <!-- Footer -->
- <footer class="container-fluid  opacity margin-bottom">
-                        <h5>Find Us On</h5>
-
-                        <form action="/action_page.php">
-                            <div class="row">
-                                <h6 style="text-align:center">Login with Social Media or Manually</h2>
-                                    <div class="vl">
-                                        <span class="vl-innertext">or</span>
-                                    </div>
-
-                                    <div class="col">
-                                        <a href="https://www.facebook.com/simbapawtrail/" class="fb btn">
-                                            <i target="_blank" class="fa fa-facebook"></i> Login with Facebook
-                                        </a>
-                                        <a href="https://twitter.com/Safari78047357" class="twitter btn">
-                                            <i target="_blank" class="fa fa-twitter"></i> Login with Twitter
-                                        </a>
-                                        <a target="_blank" href="https://myaccount.google.com/intro/signing-in-to-google" class="google btn">
-                                            <i class="fa fa-google"></i> Login with Google+
-                                        </a>
-                                    </div>
-
-
-                            </div>
-                            <div class="col">
-                                <div class="hide-md-lg">
-                                    <p>Or sign in manually:</p>
-                                </div>
-
-                                <input type="text" name="username" placeholder="Username" required>
-                                <input type="password" name="password" placeholder="Password" required>
-                                <input type="submit" value="Login">
-                            </div>
-
-                        </form>
-                        <div class="xlarge padding-16">
-<section class="footer">
-<blockquote class="blockquote">
+</div>
+</blockqoute >
+<!--Footer section  bootstrap snippet-->
+ <blockquote class="blockquote text-center">
   
   <footer class="blockquote-footer">
   <ul class="list-inline social-links">
-                  <li class="list-inline-item">
-                      <a target="_blank" href="https://www.facebook.com/simbapawtrail/">
+   <li class="list-inline-item">
+                      <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
@@ -237,8 +182,7 @@ ready(function() {
                         </a>
                     </li>
         
-     </ul> 
-                <cite title="Source Title">
+                </ul> <cite title="Source Title">
                  <a href="mail@xascapade.com">info@xascapade.com</a>
                     <p>Powered by 
                     <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
@@ -246,19 +190,49 @@ ready(function() {
                     </p>
 
                 <a href="#" class="cd-top text-replace js-cd-top">Top</a>
-                </cite>
-
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-                        <script index.js></script>
+</cite></footer>
+</blockquote>
+              
+               
+ </section>
+<script index.js></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-  </script>
-<script>
+ 
+
+
+   function ready(callbackFunc) {
+  if (document.readyState !== 'loading') {
+    // Document is already ready, call the callback directly
+    callbackFunc();
+  } else if (document.addEventListener) {
+    // All modern browsers to register DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', callbackFunc);
+  } else {
+    // Old IE browsers
+    document.attachEvent('onreadystatechange', function() {
+        if( document.readyState !== 'loading' ) {
+    console.log( 'document is already ready, just execute code here' );
+    myInitCode();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log( 'document was not ready, place code here' );
+        myInitCode();
+    });
+}
+
+function myInitCode() {}
+      if (document.readyState === 'complete') {
+        callbackFunc();
+      }
+    });
+  }
+
+
+ready(function() {
+ 
+});
+
 
   $(document).ready(function(){
     $('input.autocomplete').autocomplete({
@@ -269,7 +243,7 @@ ready(function() {
       },
     });
   });
-        
+var document.getElementsByClassName();
                     function openLink(evt, linkName) {
                     var i, x, tablinks;
                     x = document.getElementsByClassName("myLink");
@@ -291,7 +265,16 @@ ready(function() {
  function myFunction() {
   var x = document.documentElement.nodeName;
   document.getElementById("id").innerHTML = x;
-}
-
+};
+                );
+</script>
                        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+ 
 </html>
