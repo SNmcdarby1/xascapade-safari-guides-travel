@@ -1,19 +1,17 @@
-function safariString() {
-    var product = '';
-    for (var i = 0; i < arguments.length; i++) {
-        if (arguments[i].length > safari.length) {
-            safari = arguments[i];
-        }
-    }
-    return safari;
+function sendEmail( tempParams ) {
+    var tempParams = {
+        from_name: document.getElementById( "fromName" ).value,
+        to_name: document.getElementById( "toName" ).value,
+        message: document.getElementById( "message" ).value,
+    };
+    emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams )
+        .then( function ( res ) {
+                console.log( "success", res.status );
+            },
+            function ( error ) {
+                console.log( "failed", error );
+            }
+        );
+    return false;
 }
-
-function tourString() {
-    var product = '';
-    for (var i = 0; i < arguments.length; i++) {
-        if (arguments[i].length > tour.length) {
-            tour = arguments[i];
-        }
-    }
-    return tour;
-}
+// 
