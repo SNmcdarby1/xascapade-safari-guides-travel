@@ -24,7 +24,7 @@
 <body class="container-fluid" id="">
        <!--body-->                       
     
-<body class="container-fluid" id="">
+<blockqoute class="formcontrol container-fluid" id="">
        <!--body-->    <body class="container-fluid" id="page-top">
        <!--body-->                       
     
@@ -102,40 +102,69 @@
   <label>Images in select</label>
     <select class="icons">
       <option value="" disabled selected>Choose your option</option>
-      <option value="" data-icon="assets/images/self.jpg">example 1</option>
-      <option value="" data-icon="assets/images/group.jpg">example 2</option>
-      <option value="" data-icon="assets/images/masai.jpg">example 3</option>
+      <option value="" data-icon="assets/images/self.jpg">Masai</option>
+      <option value="" data-icon="assets/images/group.jpg">4WD</option>
+      <option value="" data-icon="assets/images/masai.jpg">Group</option>
     </select>
   </div>
   <div class="input-field col s12 m6">
   <label>Images in select</label>
     <select class="icons">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
-      <option value="" data-icon="images/office.jpg" class="left">example 2</option>
-      <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
+    <option value="" disabled selected>4WD self guided tour</option>
+    <option value="private">Masai guided tour</option>
+    <option value="group">Tailored tours</option>
+    <option value="local">Experienced tour guides</option>
     </select>
   </div>
 
   <label>Browser Select</label>
-  <select class="browser-default">
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-  </select>
-            
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-        <div class="input-field col s12">
+      <select class="browser-default">
+    <option value="" disabled selected>Tour guides</option>
+    <option value="private">private tour</option>
+    <option value="group">Group tours</option>
+    <option value="local">Local tour guides</option>
+   </select>
+  
+  <script src=""></script>
+  <script type="">
 
+   function ready(callbackFunc) {
+  if (document.readyState !== 'loading') {
+    // Document is already ready, call the callback directly
+    callbackFunc();
+  } else if (document.addEventListener) {
+    // All modern browsers to register DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', callbackFunc);
+  } else {
+    // Old IE browsers
+    document.attachEvent('onreadystatechange', function() {
+        if( document.readyState !== 'loading' ) {
+    console.log( 'document is already ready, just execute code here' );
+    myInitCode();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log( 'document was not ready, place code here' );
+        myInitCode();
+    });
+}
 
+function myInitCode() {}
+      if (document.readyState === 'complete') {
+        callbackFunc();
+      }
+    });
+  }
+}
+
+ready(function() {
+ 
+});
+  </script>
+ <button type="submit" class="btn btn-primary">Submit</button>
+</form>
   
                     <!-- Footer -->
-                    <footer class="container-fluid  opacity margin-bottom">
+ <footer class="container-fluid  opacity margin-bottom">
                         <h5>Find Us On</h5>
 
                         <form action="/action_page.php">
@@ -229,36 +258,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
   </script>
-                    <SCRIPT>
- document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.autocomplete');
-    var instances = M.Autocomplete.init(elems, options);
-  });
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('select').formSelect();
-  });
-        var instance = M.FormSelect.getInstance(elem);
-
-  /* jQuery Method Calls
-    You can still use the old jQuery plugin method calls.
-    But you won't be able to access instance properties.
-
-    $('select').formSelect('methodName');
-    $('select').formSelect('methodName', paramName);
-  */
-  
-instance.getSelectedValues();
-
-
-instance.destroy();
-  // Or with jQuery
+<script>
 
   $(document).ready(function(){
     $('input.autocomplete').autocomplete({
@@ -285,11 +285,13 @@ instance.destroy();
                 }
 
                 // Click on the first tablink on load
-                document.getElementsByClassName("tablink")[0].click();
-            </script>
+                document.addEventListener("DOMContentLoaded", function(event) {
+  // - Code to execute when all DOM content is loaded.
+   
+ function myFunction() {
+  var x = document.documentElement.nodeName;
+  document.getElementById("id").innerHTML = x;
+}
 
-                    <script>
                        
 </html>
-
-</main>
