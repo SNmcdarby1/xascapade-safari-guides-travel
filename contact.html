@@ -30,7 +30,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/images/lion.jpg" alt="" /></a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/images/xascap.jpg" alt="" /></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Home
                     <i class="fas fa-bars ml-1"></i>
@@ -76,25 +76,25 @@
   <div class="col-md-12" class="card" id="get_post" class="form" onsubmit="return sendMail(this);" method="POST">
                 <div class="contact-form">
 				<div class="form-group">
-				  <label class="control-label col-sm" for="fname">First Name:</label>
+				  <label class="control-label col-sm" for="fromName">First Name:</label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+					<input type="text" class="form-control" id="fromName" placeholder="Enter First Name" name="fromName">
 				  </div>
 				</div>
                 
 
                 <div class="form-group">
-				  <label class="control-label col-sm" for="lname">Last Name:</label>
+				  <label class="control-label col-sm" for="toName">Last Name:</label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+					<input type="text" class="form-control" id="toName" placeholder="Enter Last Name" name="toName">
 				  </div>
 				</div>
 				
                 
                 <div class="form-group">
-				  <label class="control-label col-sm" for="email">Email:</label>
+				  <label class="control-label col-sm" for="message">Email:</label>
 				  <div class="col-sm-10">
-					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+					<input type="email" class="form-control" id="message" placeholder="Enter email" name="email">
 				  </div>
 				</div>
                
@@ -105,9 +105,9 @@
 				  <div class="col-sm-10">
                  <select class="form-control" id="tour" placeholder="types of tours" name="safaris" class="custom-control-input" id="customControlValidation1" required class="custom-select" required="recompile" id="get_post">
                 <option value="" disabled selected>4WD self guided tour</option>
-                 <option value="private">Masai guided tour</option>
-                  <option value="group">Tailored tours</option>
-                 <option value="local">Experienced tour guides</option>
+                 <option value="private" id="tour">Masai guided tour</option>
+                  <option value="group" id="tour">Tailored tours</option>
+                 <option value="local" id="tour">Experienced tour guides</option>
                </select>
                </div>
                  </div>
@@ -118,10 +118,10 @@
 				  <div class="col-sm-10">          
 					<select class="form-control" id="location" placeholder="location" name="location" class="custom-select" required="recompile" id="get_post">
                     <option value="" disabled selected>Location</option>  
-                <option value="nairobi" >Nairobi</option>
-                 <option value="mombasa">Mombasa</option>
-                  <option value="nakuru">Nakuru</option>
-                 <option value="lamu">Lamu</option>
+                <option value="nairobi" id="location" >Nairobi</option>
+                 <option value="mombasa" id="location">Mombasa</option>
+                  <option value="nakuru" id="location">Nakuru</option>
+                 <option value="lamu" id="location">Lamu</option>
                </select>
               </div> 
             </div>
@@ -129,7 +129,7 @@
                <div class="form-group">
 				  <label class="control-label col-sm" for="comment">Comment:</label>
 				  <div class="col-sm-10">
-					<textarea class="form-control" rows="5" id="comment"></textarea>
+					<textarea class="form-control" rows="5" id="message"></textarea>
 				  </div>
 				</div>
 				
