@@ -1,15 +1,16 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# CODE INSTITUTE MS2 PROJECT
 
-SNmcdarby1/gitpod-setup
-# Xascapade Safari Tours- MS2 project
+# Xascapade Safari Tours
+-------------------------
 
 
-Descripition
+Description
+-------------
 
-## Is a Safari Tour Guide platform for safari bookings in Kenya.
-
+A Leisure travel website platform that offers safari tour guides services for safari holidays in Kenya.
 
 ### Table of Content
+
  1.Who we are
 
  2.Approach
@@ -54,7 +55,7 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 
  ### 2. Objectives
 
- *  An experienced mapping.  
+ * An experienced mapping.  
  * Collabotration packed with data
  * Time intense
  * Reliable data
@@ -74,7 +75,34 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 
 ### 3. UX
 - Developers and Business Goals-
-  Easy access of the website. The art and design /visual designers and data collection that used to create the website.
+ 
+  1.	Functionality: Does the product work the way it’s supposed to?
+  2.	Reliability: The product readily available for use?
+  3.	Usability: Can the user navigate the product without difficulty?
+  4.	Convenience: Is the product intuitive?
+  5.	Pleasurable: Is the user experience enjoyable enough to recommend to others?
+  6.	Meaningful: Does the product hold personal significance for users?
+ 
+  To view the product in differnt angle such as:
+ 
+   * Wireframing
+   * Prototyping.
+   * Visual Communication.
+    at will enable us to understand what their audiences want and how they view the world.
+    how it looks. By Wireframing the elements that need to be present from page to page. Including all the interface needed for all            possible   interactions using the     design.
+
+Users Goals:
+
+The design needs to be competent in visual language. 
+Proficiency in visual communication includes an understanding of concepts like:
+•	Easy and simple Layout 
+•	Color : The mail color that i choose is yellow that represents  happiness, optimistic, and cheerful. 
+•	Typography:  Content that is visually pleasing and easily read
+•	Safari tours Images that conveys that safari message
+•	Design theory that guides a consumer to the result you expect.
+
+
+
 
 ### 4. Features for the website design.
 
@@ -123,7 +151,7 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
    See attached below a copy of the wireframe. 
    [xascapade.pdf](https://github.com/SNmcdarby1/Xascapade-Travel/files/6061243/xascapade.pdf).
    after receiving my feedback from my accessors i realised that the layout does not work with my design and i ended up changing the wireframe to suit the user.
-   Below is the new wireframe. What i tried to do is to simlify the styke and design that will suite the user and easy accessible. XASCAPADE .pdf](https://github.com/SNmcdarby1/Xascapade-Travel/files/6087100/XASCAPADE.pdf)
+   Below is the new wireframe. What i tried to do is to simlify the styke and design that will suite the user and easy accessible. XASCAPADE .pdf]       (https://github.com/SNmcdarby1/Xascapade-Travel/files/6087100/XASCAPADE.pdf)
 
    Below is a Multiple devices Mockup generator image that shows you how the landing page looks in different devices.
    The Mockup generator page of Xascapade Travel.
@@ -178,11 +206,23 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 
 ### 9. Deployment.
 
-I deployed the page in Github page under settings. Scroll down to the Github pages. Select the main-branch under the source. Once selected clickthe save button. A link will be enabled,once you receive the link you select it copy the link on your search engine. This will lead you to your public page. Ad that is how you deploy your repository to a public site. 
+I deployed the page in Github page under settings. 
+In order to deploy the project, you need to push it to a remote branch and start a fresh workspace from that branch.
+Every gitpod configuration is versioned in the root of your git repository. Once you have committed the changes made in your files. 
+Next the  git push command is used to transfer or push the commit, which is made on a local branch in your computer to a remote repository like GitHub. The command used for pushing to GitHub as given below.
+git push 'remote_name' 'branch_name.
+Once you have succeeded you access the settings page in github. Select the desired repository. Click on the settings link on the top right side of your github navigation bar. In the settings page scroll down to the Github pages. Select the main-branch under the source. Once selected clickthe save button. A link will be enabled,once you receive the link you select it copy the link on your search engine. This will lead you to your public page. Ad that is how you deploy your repository to a public site. 
 
 ### 10. Testing
+Differrent types of Testing 
+
+1.validation testing by 3wschool validator. To verify that the code is clean. By scanning pages using W3C HTML/JS  validator and W3C CSS Validator.
+2.Git pod Unit testing and Usability System testing 
+3.Browser compatibility testing cross-browser testing is an integral part of system testing.
+4.Responsive mobe testing. Check the mobile responsiveness of your website. By focusing on mobile-first indexing 70% of users prefer to browse the internet over mobile these days. By making sure the website should be as functional and pleasing on mobile as it is on desktops.
+5.User acceptance testing –users test the application to make sure This activity is carried out either by the organization or by the client.
 The site was deployed in github and i shared the link to family and other users through whats app platform that made it easier to access the links on their phones. I also shared the using emailing process for desktop users and other devices as ipads,tablets, etc.
-* The lighthouse test results of the pge was as follows, Performances is at 72, Accessibility at 82, Best performance at 86 and the SEO at 92. as it shows in the attached pdf.
+6. The lighthouse test results of the pge was as follows, Performances is at 72, Accessibility at 82, Best performance at 86 and the SEO at   92. as it shows in the attached pdf.
 
 * In the developers tool i accessed the the inspect the DOM by right clicking the mouse right button and select the inspect property. and i could edit different properties such as Appearance, Sources,Elements, Network,performance, Console and the lighthouse settings. 
 as shown in the image below.
@@ -250,4 +290,3 @@ I would like to thank
 - The Code Institute lectures, developers and the team behind the code institute platform .
 - [gitpod]() ide platform.
 - [stackoverflow](https://stackoverflow.com/) platform. I used to access coding problem solving when i got stack. 
-
