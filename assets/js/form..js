@@ -1,7 +1,5 @@
 //globals variable
 
-//this fnction will process and submit 
-//data to php
 
 function contactForm() {
     var fullname, username, password, email, number, address, message, age
