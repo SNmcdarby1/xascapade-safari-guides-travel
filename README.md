@@ -8,7 +8,9 @@ Description
 -------------
 
 A Leisure travel website platform that offers safari tour guides services for safari holidays in Kenya.
-The design is inspired by the (bootstrap4 starter template)[Start Bootstrap - Heroic Features (https://startbootstrap.com/template/heroic-features)]
+The design is inspired by the (bootstrap4 starter template)[https://startbootstrap.com](https://github.com/StartBootstrap/startbootstrap-agency)
+
+
 
 ### Table of Content
 
@@ -282,7 +284,7 @@ I. Photographers
 - Stack Overflow website that i used to access information when i got stack.
 - W3school, Bootstrap, Materialised, platform. 
 - I was inspared by this developers . I did most of my reserach but was not easy to understad how to do travel bookings and i came across this developer  https://res.perfectibe.com/scripts/pibe.js // to guide me through my project.
-- A big thank you to the bootstrap4 starter template. For the free templates. The design that suited my needs and desihn is the heroic feature design. [Start Bootstrap - Heroic Features (https://startbootstrap.com/template/heroic-features)]
+- A big thank you to the bootstrap4 starter template. For the free templates. (davidtmiller)The design that suited my needs and desihn is the heroic feature design.[https://startbootstrap.com](https://github.com/StartBootstrap/startbootstrap-agency)
 
 ### 14. Acknowledgements
 
