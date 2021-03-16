@@ -1,5 +1,5 @@
 var tempParams
-emailjs.send("service_aw4lcie", "template_p9qe11h", {
+emailjs.send( "service_aw4lcie", "template_p9qe11h", {
     to_name: "xascapae@gmail.com",
     from_name: "user",
     message: "message",
@@ -7,15 +7,17 @@ emailjs.send("service_aw4lcie", "template_p9qe11h", {
     tour: "tour",
     location: "location",
     contact_form: "contact_form",
-});
+} );
 
 ;
 
-emailjs.send("service_aw4lcie", "template_p9qe11h", tempParams)
-    .then(function(res) {
-            console.log("success", res.status);
+emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams )
+    .then( function ( res ) {
+            console.log( "success", res.status );
         },
-        function(error) {
-            console.log("failed", error);
+
+        function ( error ) {
+            ( "failed", error );
         }
     );
+console.log
