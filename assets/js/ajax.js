@@ -1,11 +1,11 @@
-$( "button" ).click( function () {
-    ( "demo_test.asp", function ( data, status ) {
-        alert( "Data: " + data + "\nStatus: " + status );
-    } );
+$("button").click(function() {
+    ("demo_test.asp", function(data, status) {
+        alert("Data: " + data + "\nStatus: " + status);
+    });
 
 
-    $( "button" ).click( function () {
-        $.post( "demo_test_post.asp", {
+    $("button").click(function() {
+        $.post("demo_test_post.asp", {
                 tempParams: "",
                 fromname: "",
                 toname: "",
@@ -14,8 +14,8 @@ $( "button" ).click( function () {
                 location: "",
                 message: ""
             },
-            function ( data, status ) {
-                alert( `Data: ${ data }\\nStatus: ${ status }` );
-            } );
-    } );
-} );
+            function(data, status) {
+                alert(`Data: ${ data }\\nStatus: ${ status }`);
+            });
+    });
+});

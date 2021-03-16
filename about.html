@@ -96,11 +96,19 @@
                                 <br />
                                 Story!
                             </h4>
+                            
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
+        <div> 
+                              <div> 
+                              <div>
+                               <button class="btn1" id="hide">Hide Text</button>
+                             <button class="btn1" id="show">Show Text</button>
+                             </div>
+                            </div>
         <div class="col-sm-4" style="background-color:lavender;">
                             <img src="assets/images/antelope.jpg" alt="xas2" style="width:100%">
                             <h5>Amboseli National Park</h5>    
@@ -220,16 +228,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
   </script>
-<script src="assets/js/sendEmail.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/contact.js"></script>
-<script src="assets/js/html.js"></script>
-<script src="assets/js/index.js"></script>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/safariString.js"></script>
-<script src="assets/js/script.js"></script>
-<script src="assets/js/text.js"></script>
-<script src="assets/js/todolist.js"></script>
+
+
+<script src="assets/js/ajax.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
     </body>
 
 </html>
