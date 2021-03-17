@@ -4,7 +4,7 @@ emailjs.send( "service_aw4lcie", "template_p9qe11h", {
     from_name: "user",
     message: "message",
     reply_to: "user_email",
-    tour: "tour";
+    tour: "tour",
     location: "location",
     contact_form: "contact_form",
 } );
