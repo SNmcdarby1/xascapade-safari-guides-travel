@@ -20,4 +20,25 @@ emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams )
             ( "failed", error );
         }
     );
-console.log
+const contact_form = [ "fullname", "tourlocation", "email", "message", "tours" ];
+tourlocation = [ "mombasa", "nairobi", "nakuru", "lamu" ];
+tour = [ "Self_guided_tour", "group_tours", "experienced_tours", "private_tours" ];
+fullname = [ "firstname", "lastname" ];
+
+
+function uploadComplete() {
+    document.getElementById( "popup" ).innerHtml = "";
+
+    $( document ).ready( function () {
+        parent.uploadComplete();
+        document.getElementById( "" ).
+        _( 'popFirstname' ).innerHTML = firstname;
+        _( 'popLastname' ).innerHTML = lastname
+        _( 'popUsername' ).innerHTML = username
+        _( 'popEmail' ).innerHTML = email
+        _( 'popNumber' ).innerHTML = number
+        _( 'popLocation' ).innerHTML = Location
+        _( 'popMessage' ).innerHTML = message
+        return false;
+    } )
+};

@@ -1,137 +1,96 @@
-function sendEmail( tempParams ) {
-    var tempParams, fromname, toname, email, tour, location, message = {
-        from_name: document.getElementById( "fromName" ).value,
-        to_name: document.getElementById( "toName" ).value,
-        email: document.getElementById( "email" ).value,
-        message: document.getElementById( "message" ).value,
-        tours: document.getElementById( x ).value,
-        location: document.getElementById( x ).value,
-    };
+//globals variable
+function tempParam() {
+    var firstname, lastname, username, password, email, number, location, message
+    //super function that holds our DOM 
+    function _(x) {
+        return document.getElementById(x);
 
-    emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams )
-        .then( function ( res ) {
-                console.log( "success", res.status );
-            },
-            function ( error ) {
-                console.log( "failed", error );
+    }
 
+    // function to process stage one
+    function tempParam(argument) {
+        firstname = _('fromName').value;
+        lastname = _('toName').value;
+        username = _('user').value;
+        password = _('password').value;
+        message = _('message').value;
+        location = _('location').value;
+        email = _('email').value;
+        number = _('number').value;
 
-                //super function that holds our DOM 
-                function _( x ) {
-                    return document.getElementById( x );
+        //validate fullname
+        if ((firstname == "" || (isNaN(firstname)) || firstname.length <= 5)) {
+            _('firstnameError').innerHTML = "First name is incorrect. Make sure it is greater that 5 characters and does not contain numbers"
+            return false;
+        }
 
-                }
+        if ((lastname == "" || (isNaN(lastname)) || lastname.length <= 5)) {
+            _('lastnameError').innerHTML = "Last name is incorrect. Make sure it is greater that 5 characters and does not contain numbers"
+            return false;
+        }
+        //username validation
+        if ((username == "") || (username.length <= 3)) {
+            _('usernameError').innerHTML = "Username has an error"
+            return false;
+        }
 
-                function fromname() {
-                    //validate fullname
-                    if ( ( firstname == "" || ( isNaN( firstname ) ) || firstname.length <= 5 ) ) {
-                        _( 'firstnameError' ).innerHTML = "Full name is incorrect. Make sure it is greater that 5 characters and does not contain numbers"
-                        return false;
-                    }
+        //passwrd validation
+        if (password == "") {
+            _('passwordError').innerHTMl = "password is empty.Please enter your password";
+            return false;
+        }
 
-                    function toname() {
-                        if ( ( toname == "" || ( isNaN( toname ) ) || toname.length <= 5 ) ) {
-                            _( 'lastnameError' ).innerHTML = "Full name is incorrect. Make sure it is greater that 5 characters and does not contain numbers"
-                            return false;
-                        }
+        //email validation
 
-                    }
-                    //email validation
-                    function email() {
-                        if ( ( email.indexOf( '@' ) <= 0 ) || email == "" ) {
-                            _( 'emailError' ).innerHTML = "Email is not valid";
-                            return false
-                        }
-                    }
-                    //number validation
-                    function number() {
-                        if ( ( number == "" ) || ( isNaN( number ) ) ) {
-                            _( 'numberError' ).innerHTML = "Number field is required and must contain numbers only."
-                            return false;
-                        }
-                    }
+        if ((email.indexOf('@') <= 0) || email == "") {
+            _('emailError').innerHTML = "Email is not valid";
+            return false
+        }
 
-                    // function to process stage three
-                    function message() {
-                        message = _( 'message' ).value;
-                        //validate message (!empty) && (length !<10)
-                        if ( ( message == "" ) || ( message.length <= 20 ) ) {
-                            _( 'messageError' ).innerHTML = "Message must be longer than 10 characters"
-                            return false;
-                        }
-
-                        emailjs.send( "service_aw4lcie", "template_p9qe11h", fromname, toname, email, tours, location, message )
-                            .then( function ( res ) {
-                                    console.log( "success", res.status );
-                                },
-                                function ( error ) {
-                                    console.log( "failed", error );
-                                }
-                            );
-                        return false;
-                    }
-
-                    window.onload = function () {
-                        document.getElementById( 'contact-form' ).addEventListener( 'submit', function ( event ) {
-                            event.preventDefault();
-                            // generate a five digit number for the contact_number variable
-                            this.contact_number.value = Math.random() * 100000 | 0;
-                            // these IDs from the previous steps
-                            emailjs.sendForm( 'contact_service', 'contact_form', this )
-                                .then( function () {
-                                    console.log( 'SUCCESS!' );
-                                }, function ( error ) {
-                                    console.log( 'FAILED...', error );
-                                } );
-                        } );
-                    }
+        //number validation
+        if ((number == "") || (isNaN(number))) {
+            _('numberError').innerHTML = "Number field is required and must contain numbers only";
+        }
 
 
-                    return false;
 
-                    // load message
-                    // load all users entered information
-                    _( 'popTempParam' ).innerHTML = tempParams;
-                    _( 'popFromName' ).innerHTML = firstname;
-                    _( 'popToName' ).innerHTML = lastname;
-                    _( 'popTours' ).innerHTML = tours;
-                    _( 'popEmail' ).innerHTML = email;
-                    _( 'popNumber' ).innerHTML = number;
-                    _( 'popMessage' ).innerHTML = message;
+        // function to process stage two
 
-                };
-                // 
-                var data = {
-                    service_id: 'service_aw4lcie',
-                    template_id: 'template_p9qe11h',
-                    user_id: 'user_cbk0RT9vpd78BlYyPC67x',
-                    template_params: {
-                        'username': '',
-                        'g-recaptcha-response': 'user_cbk0RT9vpd78BlYyPC67x'
-                    }
-                };
-
-                emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams )
-                    .then( function ( res ) {
-                            console.log( "success", res.status );
-                        },
-                        function ( error ) {
-                            console.log( "failed", error );
+        //address validation
+        if ((location == "")) {
+            _('addressError').innerHTML = "Please enter valid Address";
+            return false;
+        }
 
 
-                            $.ajax( 'https://api.emailjs.com/api/v1.0/email/send', {
-                                type: 'POST',
-                                data: JSON.stringify( data ),
-                                contentType: 'application/json'
-                            } ).done( function () {
-                                alert( 'Your mail is sent!' );
-                            } ).fail( function ( error ) {
-                                alert( 'Oops... ' + JSON.stringify( error ) );
-                            } );
-                        }
-                    )
-
+        // end of stage two
+        // function to process stage three
+        function message() {
+            message = _('message').value;
+            //validate message (!empty) && (length !<10)
+            if ((message == "") || (message.length <= 20)) {
+                _('messageError').innerHTML = "Message must be longer than 10 characters";
+                return false;
             }
-        )
+            // load all users entered information
+            _('popFirstname').innerHTML = firstname;
+            _('popLastname').innerHTML = lastname;
+            _('popUsername').innerHTML = username;
+            _('popEmail').innerHTML = email;
+            _('popNumber').innerHTML = number;
+            _('popLocation').innerHTML = Location;
+            _('popMessage').innerHTML = message;
 
-};
+
+            postMessage(tempParam(argument))
+            emailjs.send("service_aw4lcie", "template_p9qe11h", firstname, lastname, username, password, email, number, location, message)
+                .then(function(res) {
+                        console.log("success", res.status);
+                    },
+                    function(error) {
+                        console.log("failed", error);
+                    }
+                )
+        }
+    }
+}
