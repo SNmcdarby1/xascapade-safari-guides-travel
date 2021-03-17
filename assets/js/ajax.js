@@ -29,14 +29,19 @@ var data = {
         'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
     }
 };
-
-$.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+({
     type: 'POST',
-    data: JSON.stringify(data),
-    contentType: 'application/json'
-}).done(function() {
-    alert('Your mail is sent!');
-}).fail(function(error) {
-    alert('Oops... ' + JSON.stringify(error));
+    url: 'https://api.emailjs.com/api/v1.0/email/send',
+    data: {
+        'key': '8895ccc85872be3ea8732d921334e905',
+        'message': {
+            'from_email': 'Susan',
+            'to': [{
+                'email': $('.email').val(), // get email from form
+                'name': $('.name').val(), // get name from form
+                'type': 'to'
+            }]
+        }
+    }
+
 });
-// code fragment
