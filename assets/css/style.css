@@ -17,7 +17,7 @@
     box-sizing: 0;
     border-radius: 0;
     outline: none;
-    font-size: medium;
+
 
 
 }
@@ -9024,7 +9024,7 @@ button.bg-dark:focus {
 }
 
 .fixed-top {
-    position: fixed;
+
     top: 0;
     right: 0;
     left: 0;
@@ -11753,8 +11753,8 @@ img::-moz-selection {
 }
 
 #mainNav {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: #c4c5bb;
 }
 
@@ -11777,7 +11777,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand img {
-    height: 2.5rem;
+    height: 6rem;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
