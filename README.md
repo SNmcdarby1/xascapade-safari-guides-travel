@@ -153,6 +153,7 @@ Proficiency in visual communication includes an understanding of concepts like:
    The xascapade wireframe is  create using balsamic and downloaded it in the ide platform under documents as a pdf. 
    See attached below a copy of the wireframe. 
    1.drafted 
+   ![wireframe](https://user-images.githubusercontent.com/69846208/111395596-2ac9c180-86b5-11eb-92df-37777fc20981.PNG)
    
    2.[xascapade.pdf](https://github.com/SNmcdarby1/Xascapade-Travel/files/6061243/xascapade.pdf).
    after receiving my feedback from my accessors i realised that the layout does not work with my design and i ended up changing the wireframe to suit the user.
