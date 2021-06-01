@@ -127,7 +127,7 @@ Proficiency in visual communication includes an understanding of concepts like:
   - Materialised link - I was inspired by the look and feel of the Link that made the site look better feel about it.
   - Bootstrap snippets that enabled meto have different designs
   - CDNJS site enabled me to get the tags and JS scripts that are used to create the website.
-  - Jquery CDN uncompressed min script
+  - Jquery CDN uncompressed min script* 
   - Leaflet link and tags for js google mapping
   - Emailjs used for the interactive email
   - One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
@@ -145,6 +145,8 @@ Proficiency in visual communication includes an understanding of concepts like:
   I did a lot of reserch in youtube and i was inspired by three main developres
   - Sayar flight booking example
   * One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
+  *  tried to do a different approach that will be more user friendly by stripping down the contents in all the pages. Resulting to a change of design.
+
 
 ### 6. Wireframes
 
