@@ -1,11 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
-
-/*-------------------------------------------------------------Colours*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: #fcfbf9;
+  background-color: #acc9c3;
   color: #4e4e4e;
 }
 
@@ -17,14 +14,7 @@ h5,
 h6 {
   color: #1e1e1e;
 }
-h1 {
-  text-align: center;
-  text-decoration: solid;
-  text-anchor: initial;
-  margin-left: 0.2px;
-  text-size-adjust:bold;
-  text-emphasis-color: ###;
-}
+
 a {
   color: #1e1e1e;
   text-decoration: none;
@@ -32,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: #bec031;
+  color: #0078ff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -43,7 +33,7 @@ a:hover {
 
 .color-a {
   text-decoration: none;
-  color: #deec0e;
+  color: #0078ff;
 }
 
 .color-d {
@@ -645,7 +635,7 @@ a:hover {
   transition: 0.5s;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -705,7 +695,7 @@ a:hover {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #0ccc9c;
+  color: #0078ff;
 }
 
 .navbar-mobile .getstarted {
@@ -739,7 +729,7 @@ a:hover {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #12a574;
+  color: #0078ff;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -777,7 +767,7 @@ a:hover {
   font-size: 3rem;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
   .hero .hero-title {
     font-size: 4.5rem;
   }
@@ -788,7 +778,7 @@ a:hover {
   font-weight: 600;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
   .hero .hero-subtitle {
     font-size: 2.5rem;
   }
@@ -811,97 +801,113 @@ a:hover {
   font-size: 3rem;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
   .hero-single .hero-title {
     font-size: 3.5rem;
   }
-/*-------------------------------------------------------------Headings*/
-header {
-    margin: 0;
 }
 
-.heading{
-    margin: 50px;
+.hero-single .breadcrumb {
+  background-color: transparent;
+  color: #0078ff;
 }
 
-.logo {
-    background: url("../images/lions.jpg");
-    background-position:  center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 300px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-} 
-.logo-1 {
-    background: url("../images/image-4.jpg");
-    background-position:  center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-} 
-background-image {
-    background: url("../images/masai.jpg");
-    background-position:  center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-} 
-.logo-2 {
-    background: url("../images/image-2.jpg");
-    background-position:  center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-} 
-.name{
-    font-family: "Exo",sans-serif;
-    font-weight: 100;
-    font-size: 46px;
-    margin-top: 50px    ;
-    color: rgba(11, 12, 9, 0.938);
+.hero-single .breadcrumb .breadcrumb-item:before {
+  color: #cde1f8;
 }
 
-.title{
-    font-family: "Roboto",sans-serif;
-    font-weight: 200;
-    font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 90px;
-    color: rgba(228, 38, 13, 0.966);
-}
-#fabric:hover{
-     background-color: #d1c5cc;
+.hero-single .breadcrumb .breadcrumb-item.active {
+  color: #cde1f8;
 }
 
-.list-inline-item:not(:last-child){
-    margin: 0;
-}
-.menucontainer{
-    font-size: 0;
-}
-.image-1{
-    max-block-size: 30%
-}
-#nav{
-    margin: 0;
+.hero-single .breadcrumb a {
+  color: #fff;
 }
 
-#nav lI{
-    font-size: 14px;
-    padding: 0;
+/*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+@media (min-width: 767px) {
+  .about-mf .box-pl2 {
+    margin-top: 3rem;
+    padding-left: 0rem;
+  }
+}
+
+.skill-mf span {
+  color: #4e4e4e;
+}
+
+.skill-mf .progress {
+  background-color: #cde1f8;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: 0.7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: 0.7rem;
+  background-color: #0078ff;
+}
+
+/*--------------------------------------------------------------
+  # Services
+  --------------------------------------------------------------*/
+.service-box {
+  background-color: rgb(250, 249, 249);
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.service-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.service-box .ico-circle {
+  transition: all 500ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-box .ico-circle i {
+  line-height: 0;
+  font-size: 40px;
+}
+
+.service-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem 0;
+}
+
+.service-box .s-description {
+  color: #4e4e4e;
+}
 
 /*--------------------------------------------------------------
   # Counter
@@ -911,7 +917,7 @@ background-image {
   text-align: center;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 577px) {
   .counter-box {
     margin-bottom: 1.8rem;
   }
@@ -1095,13 +1101,13 @@ background-image {
   line-height: 1.6;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
   .testimonial-box .description {
     padding: 0 5rem;
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 992px) {
   .testimonial-box .description {
     padding: 0 8rem;
   }
@@ -1140,7 +1146,7 @@ background-image {
   margin-top: 4rem;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 767px) {
   .contact-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
@@ -1241,7 +1247,7 @@ background-image {
 /*--------------------------------------------------------------
   # Blog
   --------------------------------------------------------------*/
-@media (min-width: 360px) {
+@media (min-width: 767px) {
   .card-blog {
     margin-bottom: 3rem;
   }
@@ -1310,7 +1316,7 @@ background-image {
   margin-bottom: 3rem;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
   .post-box,
   .form-comments,
   .box-comments,
@@ -1323,7 +1329,7 @@ background-image {
   font-size: 1.5rem;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
   .blog-wrapper .article-title {
     font-size: 1.9rem;
   }
@@ -1376,7 +1382,7 @@ background-image {
   font-size: 1.3rem;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
   .box-comments .list-comments .comment-author {
     font-size: 1.5rem;
   }
@@ -1487,38 +1493,4 @@ footer .credits a {
   height: 50%;
   width: 100%;
   position: absolute;
-}
-/*-------------------------------------------------------------Footer*/
-footer {
-    background-color: #215627
-    color: #0ee7cab0;
-    min-height: 120px;
-    margin: 0;
-/* ---social links */
-.social-links {
-    padding-bottom: 15px;
-}
-.social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-    color: #774545;
-    background: #b4aeae;
-    transition: all 0.35s ease-in-out; 
-    -moz-transition: all 0.35s ease-in-out; 
-    -webkit-transition: all 0.35s ease-in-out; 
-    -o-transition: all 0.35s ease-in-out; 
-}
-.social-links li a i:hover{
-    background: #e84610;
-}
-#footer-details {
-    padding: 20px;
-}
-.footer-details{
-    padding: 20px;
 }
