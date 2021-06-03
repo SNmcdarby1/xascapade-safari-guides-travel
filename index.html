@@ -11,11 +11,23 @@
     <link href="assets/img/lion-bg.jpg" rel="logo">
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" type="text/css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<!--Emailjs-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("user_cbk0RT9vpd78BlYyPC67x");
+    }
+    )();
+</script>
+
+
 
 </head>
 <body id="page-top">
@@ -31,7 +43,7 @@
            <ul>
 			<li><a href="#">Be a Volunteer</a></li>
              <li><a href="#"> guides /tours</a></li>
-		 <i class="bi bi-chevron-right"></i>
+		         <i class="bi bi-chevron-right"></i>
              </li>           
            </ul>
          </li>
@@ -435,7 +447,7 @@ guide.</p>
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form" class="card" id="get_post" class="form" onsubmit="return sendMail(this);" method="POST">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -447,6 +459,79 @@ guide.</p>
                               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                             </div>
                           </div>
+                   <div class="col-md-12" class="card" id="get_post" class="form" onsubmit="return sendMail(this);" method="POST">
+     <div class="contact-form">
+				<div class="form-group">
+				  <label class="control-label col-sm" for="fname">First Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+				  </div>
+				</div>
+               
+               <div class="form-group">
+				  <label class="control-label col-sm" for="lname">Last Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+				  </div>
+				</div>
+				
+               
+               <div class="form-group">
+				  <label class="control-label col-sm" for="email">Email:</label>
+				  <div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				  </div>
+				</div>
+              
+
+
+                                            <div class="form-group">
+                                      <label class="control-label col-sm" for="tours">Tours:</label>
+                                      <div class="col-sm-10">
+                                            <select class="form-control" id="tour" placeholder="types of tours" name="safaris" class="custom-control-input" 
+                            id="customControlValidation1" required class="custom-select" required="recompile" id="get_post">
+                                          <option value="" disabled selected>4WD self guided tour</option>
+                                            <option value="private">Masai guided tour</option>
+                                            <option value="group">Tailored tours</option>
+                                            <option value="local">Experienced tour guides</option>
+                                          </select>
+                                          </div>
+                                            </div>
+
+                                  <div class="contact-form">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm" for="location">Location:</label>
+                                      <div class="col-sm-10">          
+                                      <select class="form-control" id="location" placeholder="location" name="location" class="custom-select" 
+                            required="recompile" id="get_post">
+                                              <option value="" disabled selected>Location</option>  
+                                          <option value="nairobi" >Nairobi</option>
+                                            <option value="mombasa">Mombasa</option>
+                                            <option value="nakuru">Nakuru</option>
+                                            <option value="lamu">Lamu</option>
+                                          </select>
+                                        </div> 
+                                      </div>
+                              </div>
+                                          <div class="form-group">
+                                      <label class="control-label col-sm" for="comment">Comment:</label>
+                                      <div class="col-sm-10">
+                                      <textarea class="form-control" rows="5" id="comment"></textarea>
+                                      </div>
+                                    </div>
+
+
+                                          <div class="form-group">        
+                                      <div class="col-sm-offset-2 col-sm-10">
+                                      <button type="submit" class="btn btn-default"  onsubmit="return sendMail(this);" method="POST" onclick='sendEmail()
+                            '>Submit</button>
+                                      </div>
+                                    </div>
+                                          </div>
+                                  </formcontrol>                          
+
+
+
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
@@ -537,6 +622,19 @@ guide.</p>
       <div class="col-md-4">
         <div class="service-box">
         <div id="map"></div>
+
+    <!-- map section-->
+                  <div id="map"></div>
+            <script src="assets/js/marker.js"></script>
+                      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+                      </script>
+              <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+              <script
+                src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap&libraries=&
+          v=weekly"
+                async
+              ></script>
+ 
            </div>
         </div>
       </div>  
