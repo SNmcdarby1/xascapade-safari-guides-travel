@@ -1,6 +1,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+* {
+    margin: 0;
+    box-sizing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 body {
     background-color: #b8b9b9;
     color: #4e4e4e;
@@ -16,10 +23,13 @@ h6 {
 }
 
 a {
-    color: #d6c208;
+    color: #03352e;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
+    display: inline-flexbox;
+    font-weight: 600;
 }
+
 
 a:hover {
     color: #0078ff;
@@ -662,15 +672,12 @@ li {
   * Mobile Navigation 
   */
 .mobile-nav-toggle {
-    color: rgb(21, 27, 4);
+    color: rgb(5, 5, 4);
     font-size: 28px;
     cursor: pointer;
-    display: none;
+    display: inline-flexbox;
     line-height: 015 transition: 0.5s;
     padding: 9px;
-    Margin-top: 10px;
-    margin-bottom: 25px;
-    display: inline-block;
 }
 
 @media (max-width: 320px) {
@@ -690,9 +697,11 @@ li {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(78, 78, 78, 0.9);
+    display: inline-flexbox;
+    background: rgba(20, 20, 20, 0.9);
     transition: 0.3s;
     z-index: 999;
+    scroll-padding-block-end: 0;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -839,7 +848,7 @@ li {
     font-size: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) {
     .hero-single .hero-title {
         font-size: 3.5rem;
     }
@@ -1133,7 +1142,7 @@ li {
     line-height: 1.6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) {
     .testimonial-box .description {
         padding: 0 5rem;
     }
@@ -1178,7 +1187,7 @@ li {
     margin-top: 4rem;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 320px) {
     .contact-mf .box-pl2 {
         margin-top: 3rem;
         padding-left: 0rem;
@@ -1279,7 +1288,7 @@ li {
 /*--------------------------------------------------------------
   # Blog
   --------------------------------------------------------------*/
-@media (min-width: 767px) {
+@media (min-width: 320px) {
     .card-blog {
         margin-bottom: 3rem;
     }
@@ -1348,7 +1357,7 @@ li {
     margin-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) {
 
     .post-box,
     .form-comments,
@@ -1362,7 +1371,7 @@ li {
     font-size: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) {
     .blog-wrapper .article-title {
         font-size: 1.9rem;
     }
