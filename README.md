@@ -11,6 +11,7 @@ The design is inspired by the (bootstrap4 starter template)[https://startbootstr
 (https://github.com/StartBootstrap/startbootstrap-agency)
 https://bootstrapmade.com/demo/DevFolio/
 
+
 ### Table of Content
 
 1.Who we are
@@ -280,6 +281,7 @@ I. Photographers
 
 * [Sayar](https://github.com/sayar/flight-booking)
 
+
 ### 13. Credits
 
 - Code Insitute student care for the support and responding to my calls and chat messages.
@@ -288,6 +290,7 @@ I. Photographers
 - W3school, Bootstrap, Materialised, platform.
 - I was inspared by this developers . I did most of my reserach but was not easy to understad how to do travel bookings and i came across this developer https://res.perfectibe.com/scripts/pibe.js // to guide me through my project.
 - A big thank you to the bootstrap4 starter template. For the free templates. (davidtmiller)The design that suited my needs and desihn is the heroic feature design.[https://startbootstrap.com](https://github.com/StartBootstrap/startbootstrap-agency)
+- Credit the Sheldrick wildlife trust for the widkife awerenes. https://www.sheldrickwildlifetrust.org/
 
 ### 14. Acknowledgements
 
