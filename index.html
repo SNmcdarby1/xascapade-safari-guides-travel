@@ -34,7 +34,7 @@
         <!-- Header-->
  <header id="header" class="fixed-top">
    <div class="container d-flex align-items-center justify-content-between">
-     <nav id="navbar" class="navbar">
+     <nav id="navbar" class="navbar topnav container" onclick="myFunction(this)">
        <ul>
          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
@@ -48,6 +48,8 @@
          <li><a class="nav-link scrollto" href="#contact">Contact </a></li>
        </ul>
        <i class="bi bi-list mobile-nav-toggle"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
      </nav><!-- .navbar -->
    </div>
  </header>
@@ -79,7 +81,7 @@
                <div class="row">
                  <div class="col-sm-6 col-md-5">
                    <div class="about-img">
-                     <img src="assets/img/testimonial-2.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                     <img src="assets/images/guided.jpeg" alt="">
                    </div>
                  </div>
                </div>
@@ -439,7 +441,7 @@ guide.</p>
        </div>  		
      </div>
  <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" ">
      <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -453,7 +455,7 @@ guide.</p>
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form" class="card" id="get_post" class="form" onsubmit="return sendMail(this);" method="POST">
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="get_post" class="form" onsubmit="return sendMail(this);" method="POST">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -465,7 +467,7 @@ guide.</p>
                               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                             </div>
                           </div>
-                   <div class="col-md-12" class="card" id="get_post" class="form" onsubmit="return sendMail(this);" method="POST">
+                   <div class="col-md-12"  id="get_post" class="form" onsubmit="return sendMail(this);" method="POST">
 
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -508,12 +510,12 @@ guide.</p>
                     </div>
                   </div>
                   </form> 
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="title-box-2 pt-4 pt-md-0">
                       <h5 class="title-left">
                         Get in Touch
                       </h5>
-                    </div>
+                    <div>
                     <div class="more-info">
                       <p class="lead">
                       Looking for a holiday with rich diversity landscape and extraordinary be it the
@@ -521,10 +523,10 @@ guide.</p>
                       </p>
                       <ul class="list-ico">
                         <li><span class="bi bi-geo-alt"></span> 329 GREYSTONES, Wicklow 02108</li>
-                        <li><span class="bi bi-phone"></span> (01) 557-0089</li>
+                      <li><span class="bi bi-phone"></span> (01) 557-0089</li>
                         <li><span class="bi bi-envelope"></span> contact@xascapade.com</li>
                       </ul>
-                    </div>
+                    </div> 
 		                   <div class="socials">
                       <ul>
                         <li><a href=""><span class="ico-circle"><i class="fa fa-facebook"></i></span></a></li>
@@ -534,7 +536,13 @@ guide.</p>
                       </ul>
                     </div>
                   </div>
-                </div>		
+                </div>
+             </div>	
+            </div>
+        </div>		
+    </div>
+    </section>
+    <section 		
               <div class="card">
                 <div class="card-body">
                   <!--Google map-->
@@ -545,21 +553,20 @@ guide.</p>
                           </div>
                         </div>
                       </div>  		
-                </section>
+          </section>
                 <!-- End Contact Section -->
-         </main>
+  </main>
   <!-- End #main -->
 
  <!--map  section  bootstrap snippet-->
 <section id="map" class="services-mf pt-5 route">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-12">
         <div class="service-box">
-        <div id="map"></div>
 
     <!-- map section-->
-                  <div id="map"></div>
+           <div id="map"></div>
             <script src="assets/js/marker.js"></script>
                       <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
                       </script>
@@ -652,11 +659,13 @@ guide.</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type="text/javascript"></script>    
-<script src="assets/js/validate.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/ajax.js"></script>
+<script  src="assets/js/contact.js"></script>    
+<script   src="contact.php/assets/js/validate.js"></script>
+<script   src="assets/js/main.js"></script>
+<script  src="assets/js/jquery.js"></script>
+<script   src="assets/js/ajax.js"></script>
+<script src="assets/js/index.js"></script>
+ <script src="assets/js/sendEmail.js"></script>
 
 <!--Validated in w3.org
 Erro found Error: Parse Error. Style sheets should not include HTML syntax..

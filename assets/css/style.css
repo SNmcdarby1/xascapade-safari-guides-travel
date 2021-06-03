@@ -6,6 +6,8 @@
     box-sizing: 0;
     margin-top: 0;
     margin-bottom: 0;
+    border-radius: 0;
+    outline: none;
 }
 
 body {
@@ -94,6 +96,16 @@ a:hover {
     background-size: cover;
     background-position: center center;
 }
+
+
+#mapid {
+    height: 180px;
+}
+
+#map {
+    height: 100%;
+}
+
 
 @media (max-width: 320px) {
     .bg-image {
@@ -206,6 +218,7 @@ p {
 }
 
 ul {
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -222,6 +235,37 @@ li {
     text-align: center;
     padding: 0;
     margin: 0;
+}
+
+/* 3wschool */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
 }
 
 .box-shadow-full {
@@ -542,7 +586,7 @@ li {
 .navbar ul {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: inline_block;
     list-style: none;
     align-items: center;
 }
@@ -553,10 +597,10 @@ li {
 
 .navbar>ul>li {
     white-space: nowrap;
-    padding: 10px 0 10px 30px;
+    display: -webkit-inline-box;
 }
 
-.navbar a {
+] .navbar a {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -594,7 +638,7 @@ li {
 .navbar li:hover>a:before,
 .navbar .active:before {
     visibility: visible;
-    width: 80%;
+    width: 20%;
 }
 
 .navbar a:hover,
