@@ -47,10 +47,8 @@ emailjs.com/sdk/2.2.4/email.min.js"></script>
 <body id="page-top">
         <!-- Header-->
  <header id="header" class="fixed-top">
-   <div class="  align-items-left 
-justify-content-between">
-     <nav id="navbar" class="navbar topnav " 
- onclick="myFunction(this)">
+   <div class="  align-items-left justify-content-between">
+    <nav id="navbar" class="navbar topnav " onclick="myFunction(this)">
  <ul>
  <li><a href="index.html">Home</a></li>
  <li><a  href="about.html">About Us</a></li>
@@ -60,8 +58,7 @@ justify-content-between">
   <li><a  href="contact.html">Contact</a></li>  
   </ul>
        <i class="bi bi-list mobile-nav-toggle"></i>
-        <a href="javascript:void(0);" class="icon" 
-onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
      </nav><!-- .navbar -->
    </div>
@@ -71,7 +68,7 @@ onclick="myFunction()">
 
 
 <!-- ======= Contact Section ======= -->
-   <section id="contact" class="paralax-mf footer-paralabg-image sect-mt4 route">
+   <section id="contact" class="paralax-mf footer-paralabg-image sect-mt12 route">
     <div class="container-fluid">
    <div class="row">
      <div class="col-sm-12">
@@ -81,7 +78,7 @@ onclick="myFunction()">
              <div class="row">
                <div class="col-sm-6 col-md-5">
                  <div class="about-img">
-                   <img src="assets/images/guided.jpeg" alt="">
+                  <img src="assets/images/" alt="">  
                  </div>
                </div>
              </div>
@@ -105,8 +102,7 @@ onclick="myFunction()">
                         </div>
                     </section>
 
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="get_post" class="form" onsubmit="return sendMail(this);" 
-method="POST">
+                      <form action="form/contact.php" method="post" role="form" class="php-email-form" id="get_post" class="form" onsubmit="return sendMail(this);" method="POST">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -124,15 +120,15 @@ method="POST">
                             <div class="form-group">
                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                                   <label class="control-label col-sm" for="location">Location:</label>       
-					                       <select class="form-control" id="location" placeholder="location" name="location" class="custom-select" required="recompile">
+                                    <select class="form-control" id="location" placeholder="location" name="location" class="custom-select" required="recompile">
                                    <option value="location" name="location" select>Location</option>  
                                     <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option>
                                     <option value="mombasa" id="location"name="mombasa">Mombasa</option>
                                     <option value="nakuru" id="location" name="nakuru">Nakuru</option>
-                                     <option value="lamu" id="location"name="lamu">Lamu</option>
+                                     <option value="lamu" id="location"name="lamu">Lamu</option>     
+                              
+                                    <input type="text" class="form-control" name="special request" id="special request" placeholder="Special request" required>
                                       <div class="form-group">
-                                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                                   
                                     <label class="control-label col-sm" for="Tours">Tours:</label>        
                                     <select class="form-control" id="location" placeholder="location" name="tourslocation" class="custom-select" required="recompile">
                                     <option value="self-tours" id="selfTour" name="selftour">4WD self guided tour</option>
@@ -154,8 +150,7 @@ method="POST">
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                           </div>
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded onsubmit="return sendMail(this);" method="POST" onclick='sendEmail()'">Send 
-Message</button>
+                            <button type="submit" class="button button-a button-big button-rouded onsubmit="return sendMail(this);" method="POST" onclick='sendEmail()'">Send Message</button>
                           </div>
                         </div>
                       </form>
@@ -175,41 +170,55 @@ Message</button>
                       </p>
                       <ul class="list-ico">
                         <li><span class="bi bi-geo-alt"></span> 329 GREYSTONES, Wicklow 02108</li>
-                      <li><span class="bi bi-phone"></span> (01) 557-0089</li>
+                        <li><span class="bi bi-phone"></span> (01) 557-0089</li>
                         <li><span class="bi bi-envelope"></span> contact@xascapade.com</li>
                       </ul>
                     </div> 
-		                   <div class="socials">
+		                 <div class="socials">
                       <ul>
-                        <li><a href=""><span class="ico-circle"><i class="fa fa-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="fa fa-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="fa fa-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="fa fa-linkedin"></i></span></a></li>
+                        <li><a href="https://www.facebook.com/simbapawtrail"><span class="ico-circle"><i class="fa fa-facebook"></i></span></a></li>
+                        <li><a href="https://www.instagram.com/trysafari.ke/?hl=en>"><span class="ico-circle"><i class="fa fa-instagram"></i></span></a></li>
+                        <li><a href="https://twitter.com/Safari78047357"><span class="ico-circle"><i class="fa fa-twitter"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/company/37523851/admin/"><span class="ico-circle"><i class="fa fa-linkedin"></i></span></a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
              </div>	
             </div>
-        </div>		
-    </div>
-    </section>
-    <section 		
+           </div>		
+         </div>
+         </section>
+     <section>		
               <div class="card">
                 <div class="card-body">
-                  <!--Google map-->
-                  <div id="map-container-google-12" class="z-depth-1-half map-container-7" style="height: 200px">
-                    <iframe src="https://maps.google.com/maps?q=masaimaramombasanakurukerichonairobitsavo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                      style="border:0" allowfullscreen></iframe>
-                        </div>
+                <!-- ===Google map -->
+             <div id="map" id="map-container-google-12" class="z-depth-1-half map-container-7" style="height: 200px">
+     
+                <iframe src="https://maps.google.com/maps?q=masaimaramombasanakurukerichonairobitsavo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                      style="border:0" allowfullscreen></iframe> 
+                         </div>
                           </div>
                         </div>
                       </div>  		
-          </section>
+                </section> 
                 <!-- End Contact Section -->
-  </main>
-  <!-- End #main -->
+            </main>
 
+  <!-- End #main -->
+ <div id="map"></div>
+            <script src="assets/js/maps.js"></script>
+               <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+                      </script>
+              <!-- Async script executes immediately an
+must be after any DOM elements used in 
+callback. -->
+    <script src="https://maps.googleapis.com/maps/ajs?key= AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap&libraries=&v=weekly"async></script>
+ 
+           </div>
+        </div>
+      </div>  
+     </div>			
 
 
 
@@ -219,79 +228,47 @@ Message</button>
   <footer class="blockquote-footer">
   <ul class="list-inline social-links">
    <li class="list-inline-item">
-          <a target="_blank" href="ttps://www.facebook.com/
-simbapawtrail/">
-              <i class="fa fa-facebook" 
-aria-hidden="true"></i>
+          <a target="_blank" href="https://www.facebook.com/simbapawtrail/">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
                   <span class="sr-only">Facebook</span>
                    </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" href="https://
-twitter.com/Safari78047357">
-                            <i class="fa fa-twitter" 
-aria-hidden="true"></i>
-                            <span class="sr-only">twitter</
-span>
+                        <a target="_blank" href="https://twitter.com/Safari78047357">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">twitter</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" href="https://
-www.linkedin.com/company/
-37523851/admin/">
-                            <i class="fa fa-linkedin" 
-aria-hidden="true"></i>
-                            <span 
-class="sr-only">linkedin</
-span>
+                        <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">linkedin</span>
                         </a>
                     </li>
 
                     <li class="list-inline-item">
-                        <a target="_blank" href="https://
-www.instagram.com/trysafari.ke/
-?hl=en>">
-                            <i class="fa fa-instagram" 
-aria-hidden="true"></i>
-                            <span 
-class="sr-only">Instagram</
-span>
+                        <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" href="https://
-www.youtube.com/embed/
-wSCGJD_H-n8">
-                            <i class="fa fa-youtube" 
-aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</
-span>
+                        <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
                         </a>
                     </li>
         
                 </ul> <cite title="Source Title">
-                 <a href="mail@xascapade.
-com">info@xascapade.com</a>
+                 <a href="mail@xascapade.com">info@xascapade.com</a>
                     <p>Powered by 
-                    <a href="#" target="_blank" 
-class="hover-text-green" 
-class="container" 
-style="background-color:#e0ddd3">
+                    <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
                      Xascapade</a>
                     </p>
-                        <a class="btn btn-dark btn-social 
-mx-2" href="#!"><i class="fa 
-fa-twitter"></i></a>
-                            <a class="btn btn-dark 
-btn-social mx-2" 
-href="#!"><i class="fa 
-fa-facebook"></i></a>
-                            <a class="btn btn-dark 
-btn-social mx-2" 
-href="#!"><i class="fa 
-fa-linkedin"></i></a>
-                     <a href="#" class="cd-top 
-text-replace js-cd-top">Top</a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/Safari78047357"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/simbapawtrail/"><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/37523851/admin/"><i class="fa fa-linkedin"></i></a>
+                     <a href="index.html" class="cd-top text-replace js-cd-top">Top</a>
             </cite>
         </blockquote>
   <!-- ======= Footer ======= -->
@@ -301,17 +278,14 @@ text-replace js-cd-top">Top</a>
         <div class="col-sm-12">
           <div class="copyright-box">
             <p class="copyright">&copy; Copyright 
-<strong>Xascapade Safari guides travel </
-strong>. All Rights Reserved</p>
-            
+              <strong>Xascapade Safari guides travel </strong>. All Rights Reserved</p>
+             <li><a  href="map.html">Map</a></li>  
+
           </div>
         </div>
       </div>
     </div>
-  <a href="#" class="back-to-top d-flex align-items-center 
-justify-content-center"><i class="bi 
-bi-arrow-up-short"></i></a>
-
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <!-- Template Main JS File -->
    </section>
    <!-- End Services Section -->
@@ -319,42 +293,75 @@ bi-arrow-up-short"></i></a>
               
             
 <script index.js></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/
-jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/
-materialize/1.0.0/js/materialize.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
   </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/
-jquery/3.5.1/jquery.min.js"></script>
- <script src="https://code.jquery.com/jquery-3.2.1.slim.
-min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/
-rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/
-popper.js/1.12.9/umd/popper.min.js" 
-integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/
-ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
-crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/
-4.0.0/js/bootstrap.min.js" 
-integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/
-JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script  src="assets/js/contact.js"></script>    
-<script   src="contact.php/assets/js/validate.js"></script>
+ <script src="assets/validate.js"></script>
 <script   src="assets/js/main.js"></script>
 <script  src="assets/js/jquery.js"></script>
 <script   src="assets/js/ajax.js"></script>
 <script src="assets/js/index.js"></script>
  <script src="assets/js/sendEmail.js"></script>
+ <script src="assets/js/form.js"></script>
 
 <!--Validated in w3.org
 Erro found Error: Parse Error. Style sheets should not 
 include HTML syntax..
 Revit to validate the error-->
+ <script>
+      // If you're adding a number of markers, you may want to drop them on the map
+      // consecutively rather than all at once. This example shows how to use
+      // window.setTimeout() to space your markers' animation.
+      const neighborhoods = [
+        {lat: -1.373333, lng: 36.858889},
+        {lat: -1.490000,  lng: 35.143890},
+        {lat: -4.050000,  lng: 39.666667 },
+        { lat: -2.269444, lng: 40.902222},];
+      let markers = [];
+      let map;
+      let dropMarker;
 
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 7,
+          center: { lat: -1.37, lng: 36.85 },
+        });
+      }
+
+      function drop() {
+        clearMarkers();
+
+        for (let i = 0; i < neighborhoods.length; i++) {
+          addMarkerWithTimeout(neighborhoods[i], i * 200);
+        }
+      }
+
+      function addMarkerWithTimeout(position, timeout) {
+        window.setTimeout(() => {
+          markers.push(
+            new google.maps.Marker({
+              position: position,
+              map,
+              animation: google.maps.Animation.DROP,
+            })
+          );
+        }, timeout);
+      }
+
+      function clearMarkers() {
+        for (let i = 0; i < markers.length; i++) {
+          markers[i].setMap(null);
+        }
+        markers = [];
+      }
+    </script>
 </body>
 
 </html>

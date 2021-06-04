@@ -486,6 +486,12 @@ li {
     }
 }
 
+/*--------------------map*/
+
+div#map {
+    min-height: 360px;
+}
+
 /*------/ Button /------*/
 .button {
     display: inline-block;
