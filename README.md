@@ -7,9 +7,9 @@
 ## Description
 
 A Leisure travel website platform that offers safari tour guides services for safari holidays in Kenya.
-The design is inspired by the (bootstrap4 starter template)[https://startbootstrap.com]
+The design is inspired by the [bootstrap4 starter template](https://startbootstrap.com)
 (https://github.com/StartBootstrap/startbootstrap-agency)
-https://bootstrapmade.com/demo/DevFolio/
+(https://bootstrapmade.com/demo/DevFolio/)
 
 
 ### Table of Content
@@ -161,7 +161,7 @@ after receiving my feedback from my accessors i realised that the layout does no
 Below is the new wireframe. What i tried to do is to simlify the styke and design that will suite the user and easy accessible. XASCAPADE .pdf] (https://github.com/SNmcdarby1/Xascapade-Travel/files/6087100/XASCAPADE.pdf)
 
 3.Below is a Multiple devices Mockup generator image that shows you how the landing page looks in different devices.
-The Mockup generator page of Xascapade Travel.
+The Mockup generator page of Xascapade Safari guides travel.
 ![Xascapade Travel Device mockup page](https://user-images.githubusercontent.com/69846208/104040441-8ec09d00-51cf-11eb-8f15-660fdd3ba10a.PNG)
 
 After a few trials i changed the images and design. Below is the new design
@@ -290,8 +290,8 @@ I. Photographers
 - W3school, Bootstrap, Materialised, platform.
 - I was inspared by this developers . I did most of my reserach but was not easy to understad how to do travel bookings and i came across this developer https://res.perfectibe.com/scripts/pibe.js // to guide me through my project.
 - A big thank you to the bootstrap4 starter template. For the free templates. (davidtmiller)The design that suited my needs and desihn is the heroic feature design.[https://startbootstrap.com](https://github.com/StartBootstrap/startbootstrap-agency)
-- Credit the Sheldrick wildlife trust for the widkife awerenes. https://www.sheldrickwildlifetrust.org/
-
+- Credit the Sheldrick wildlife trust for the widkife awerenes. https://www.sheldrickwildlifetrust.org/,[ Wildlife conservation park in Nairobi, Kenya](https://www.giraffecentre.org/)
+- 
 ### 14. Acknowledgements
 
 I would like to thank
