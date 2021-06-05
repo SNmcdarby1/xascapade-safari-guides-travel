@@ -20,35 +20,203 @@
 <body id="page-top">
         <!-- Header-->
  <header id="header" class="fixed-top">
-   <div class="container d-flex align-items-center 
+   <div class="  align-items-left 
 justify-content-between">
-     <nav id="navbar" class="navbar topnav container" 
-onclick="myFunction(this)">
-       <ul>
-         <li><a class="nav-link scrollto active" 
-href="#hero">Home</a></li>
-         <li><a class="nav-link scrollto" 
-href="about.html">About Us</a></li>
-		  <li><a class="nav-link scrollto" href="services.html">Services<i 
-class="bi bi-chevron-down"></i></a>
-           <ul>
-			  <li><a class="nav-link scrollto"  href="takeaction.html"> Take Action</li> <i 
-class="bi bi-chevron-down"></i></a>
-             </li>           
-           </ul>
-         </li>
-		   <li><a class="nav-link scrollto " 
-href="gallery.html">Gallery</a></li>
-         <li><a class="nav-link scrollto" 
-href="contact.html">Contact </a></li>
-       </ul>
-       <i class="bi bi-list mobile-nav-toggle"></i>
-        <a href="javascript:void(0);" class="icon" 
+     <nav id="navbar" class="navbar topnav " 
+ onclick="myFunction(this)">
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a  href="about.html">About Us</a></li>
+	<li><a  href="services.html">Services</a></li>
+ <li><a  href="sanctuary.html">Animal Sanctaury</a></li>  
+	<li><a  href="gallery.html">Gallery</a></li>    
+  <li><a  href="contact.html">Contact</a></li> 
+  </ul>
+<i class="bi bi-list mobile-nav-toggle"></i>
+<a href="javascript:void(0);" class="icon" 
 onclick="myFunction()">
     <i class="fa fa-bars"></i>
      </nav><!-- .navbar -->
    </div>
  </header>
+
+ <section>
+ 
+ <body>
+  
+       <!--body-->                       
+        <!-- Navigation-->
+
+      
+    <script>
+      // If you're adding a number of markers, you may want to drop them on the map
+      // consecutively rather than all at once. This example shows how to use
+      // window.setTimeout() to space your markers' animation.
+      const neighborhoods = [
+        {lat: -1.373333, lng: 36.858889},
+        {lat: -1.490000,  lng: 35.143890},
+        {lat: -4.050000,  lng: 39.666667 },
+        { lat: -2.269444, lng: 40.902222},];
+      let markers = [];
+      let map;
+      let dropMarker;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 7,
+          center: { lat: -1.37, lng: 36.85 },
+        });
+      }
+
+      function drop() {
+        clearMarkers();
+
+        for (let i = 0; i < neighborhoods.length; i++) {
+          addMarkerWithTimeout(neighborhoods[i], i * 200);
+        }
+      }
+
+      function addMarkerWithTimeout(position, timeout) {
+        window.setTimeout(() => {
+          markers.push(
+            new google.maps.Marker({
+              position: position,
+              map,
+              animation: google.maps.Animation.DROP,
+            })
+          );
+        }, timeout);
+      }
+
+      function clearMarkers() {
+        for (let i = 0; i < markers.length; i++) {
+          markers[i].setMap(null);
+        }
+        markers = [];
+      }
+    </script>
+ 
+    <div id="floating-panel">
+      <button id="drop" onclick="drop()">Drop Markers</button>
+      <button id="text" onclick=("index.html")><a href="index.html">Home</a></button>
+       <button id="text" onclick=("about.html")><a href="about.html">About</a></button>
+        <button id="text" onclick=("gallery.html")><a href="gallery.html">Gallery</a></button>
+         <button id="text" onclick=("places.html")><a href="places.html">Places</a></button>
+          <button id="text" onclick=("map.html")><a href="map.html">Map</a></button>
+          <button id="text" onclick=("contact.html")><a href="contact.html">Contact</a></button>
+
+    </div>
+    {% comment %} <div id="map"></div> {% endcomment %}
+   {% comment %} <script src="assets/js/marker.js"></script> {% endcomment %}
+            {% comment %} <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"> {% endcomment %}
+            {% comment %} </script> {% endcomment %}
+    {% comment %} <!-- Async script executes immediately and must be after any DOM elements used in callback. --> {% endcomment %}
+    {% comment %} <script {% endcomment %}
+      {% comment %} src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap&libraries=&v=weekly" {% endcomment %}
+      {% comment %} async {% endcomment %}
+    {% comment %} ></script> {% endcomment %}
+ 
+<section class="footer">
+<blockquote class="blockquote">
+  
+  <footer class="blockquote-footer">
+  <ul class="list-inline social-links">
+                  <li class="list-inline-item">
+                      <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/Safari78047357">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">linkedin</span>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
+        
+     </ul> 
+                <cite title="Source Title">
+                 <a href="mail@xascapade.com">info@xascapade.com</a>
+                    <p>Powered by 
+                    <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
+                     Xascapade</a>
+                    </p>
+
+                <a href="#" class="cd-top text-replace js-cd-top">Top</a>
+                </cite>
+</footer>
+</blockquote>
+</section>
+  <!-- bootstrap scripr snippet -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+            </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+            </script>
+       <script>
+         </script>
+<script src="assets/js/sendEmail.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/html.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/safariString.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/text.js"></script>
+<script src="assets/js/todolist.js"></script>
+       </script>
+<!-- validated cade using freeformatter.com  -->
+</body>
+<html>
+
+            <script>
+                // Tabs
+                function openLink(evt, linkName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("myLink");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" teal", "");
+                    }
+                    document.getElementById(linkName).style.display = "block";
+                    evt.currentTarget.className += " teal";
+                }
+
+                // Click on the first tablink on load
+                document.getElementsByClassName("tablink")[0].click();
+            </script>
+
+</body>
+
+</html>
+
+ </section>
+
+
 <section class="footer">
 <blockquote class="blockquote">
   
@@ -115,20 +283,6 @@ onclick="myFunction()">
         <div class="service-box">
 
     <!-- map section-->
-           <div id="map"></div>
-            <script src="assets/js/marker.js"></script>
-               <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-                      </script>
-              <!-- Async script executes immediately an
-must be after any DOM elements used in 
-callback. -->
-    <script src="https://maps.googleapis.com/maps/ajs?key= AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap&libraries=&v=weekly"async></script>
- 
-           </div>
-        </div>
-      </div>  
-     </div>			
-  </section>                                          
       <div id="map"></div>
    <script src="assets/js/marker.js"></script>
             <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
@@ -136,7 +290,7 @@ callback. -->
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap&libraries=&v=weekly"as></script>
- 
+
             <script>
                 // Tabs
                 function openLink(evt, linkName) {

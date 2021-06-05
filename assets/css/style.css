@@ -98,13 +98,13 @@ a:hover {
 }
 
 
-#mapid {
+#map {
     height: 180px;
+    height: 100%;
+    min-height: 360px;
+    color: #0078ff;
 }
 
-#map {
-    height: 100%;
-}
 
 
 @media (max-width: 320px) {
@@ -486,11 +486,7 @@ li {
     }
 }
 
-/*--------------------map*/
-
-div#map {
-    min-height: 360px;
-}
+/*--------------------map*
 
 /*------/ Button /------*/
 .button {
@@ -1362,10 +1358,10 @@ div#map {
 
 .card-blog .card-category {
     display: inline-block;
-    color: #fff;
+    color: rgb(250, 248, 248);
     padding: 0 15px 5px;
     overflow: hidden;
-    background-color: #0078ff;
+    background-color: #999a9c;
     border-radius: 4px;
 }
 
@@ -1384,7 +1380,7 @@ div#map {
 }
 
 .card-blog .card-description {
-    color: #5f5f5d;
+    color: #0f0f0f;
 }
 
 .card-blog .post-author {
@@ -1574,21 +1570,22 @@ footer .credits a {
     color: #fff;
 }
 
-.map-container-7 {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-}
-
-.map-container-7 iframe {
-    left: 0;
-    top: 0;
-    height: 50%;
-    width: 100%;
-    position: absolute;
-}
-
+/*  */
+/* .map-container-7 { */
+/* overflow: hidden; */
+/* padding-bottom: 56.25%; */
+/* position: relative; */
+/* height: 0; */
+/* } */
+/*  */
+/* .map-container-7 iframe { */
+/* left: 0; */
+/* top: 0; */
+/* height: 50%; */
+/* width: 100%; */
+/* position: absolute; */
+/* } */
+/*  */
 /*-----*/
 /*------/ Sidebar /------*/
 .widget-sidebar .sidebar-title {

@@ -12,37 +12,21 @@ initial-scale=1.0">
     <link href="assets/img/lion-bg.jpg" rel="logo">
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/
-jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.
-bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.
-css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.
-bootstrapcdn.com/font-awesome/4.7.0/css/
-font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.
-com/ajax/libs/hover.css/2.3.1/css/hover-min.css" 
-integrity="sha512-csw0Ma4oXCAgd/
-d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/
-HehwdunqqW18RwCJKpD7rL67Xg==" 
-crossorigin="anonymous" type="text/css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?
-features=default"></script>
-    <link rel="stylesheet" href="assets/css/style.css" 
-type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgdd4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" type="text/css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 <!--Emailjs-->
-    <script type="text/javascript" src="https://cdn.
-emailjs.com/sdk/2.2.4/email.min.js"></script>
-<script type="text/javascript">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
     (function() {
-        emailjs.init("user_cbk0RT9vpd78BlYyPC67x");
+    emailjs.init("user_cbk0RT9vpd78BlYyPC67x");
     }
     )();
 </script>
-
-
-
 </head>
 <body id="page-top">
         <!-- Header-->
@@ -192,34 +176,26 @@ emailjs.com/sdk/2.2.4/email.min.js"></script>
      <section>		
               <div class="card">
                 <div class="card-body">
-                <!-- ===Google map -->
-             <div id="map" id="map-container-google-12" class="z-depth-1-half map-container-7" style="height: 200px">
+                 <div id="map"></div>
+          b   <script src="assets/js/marker.js"></script>
+             <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+            </script>
+   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+           <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap&libraries=&v=weekly"async></script>
+              <!-- ===Google map -->
+          <!--  <div id="map" id="map-container-google-12" class="z-depth-1-half map-container-7" style="height: 200px">
      
                 <iframe src="https://maps.google.com/maps?q=masaimaramombasanakurukerichonairobitsavo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
                       style="border:0" allowfullscreen></iframe> 
                          </div>
-                          </div>
-                        </div>
-                      </div>  		
-                </section> 
-                <!-- End Contact Section -->
-            </main>
-
-  <!-- End #main -->
- <div id="map"></div>
-            <script src="assets/js/maps.js"></script>
-               <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-                      </script>
-              <!-- Async script executes immediately an
-must be after any DOM elements used in 
-callback. -->
-    <script src="https://maps.googleapis.com/maps/ajs?key= AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap&libraries=&v=weekly"async></script>
- 
+                          </div> -->	
            </div>
         </div>
       </div>  
-     </div>			
-
+     </div>	
+</main>		
+</section>
+    <!-- End Contact Section -->
 
 
 
@@ -285,7 +261,7 @@ callback. -->
         </div>
       </div>
     </div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top  align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <!-- Template Main JS File -->
    </section>
    <!-- End Services Section -->
@@ -315,53 +291,27 @@ callback. -->
 Erro found Error: Parse Error. Style sheets should not 
 include HTML syntax..
 Revit to validate the error-->
- <script>
-      // If you're adding a number of markers, you may want to drop them on the map
-      // consecutively rather than all at once. This example shows how to use
-      // window.setTimeout() to space your markers' animation.
-      const neighborhoods = [
-        {lat: -1.373333, lng: 36.858889},
-        {lat: -1.490000,  lng: 35.143890},
-        {lat: -4.050000,  lng: 39.666667 },
-        { lat: -2.269444, lng: 40.902222},];
-      let markers = [];
-      let map;
-      let dropMarker;
-
-      function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 7,
-          center: { lat: -1.37, lng: 36.85 },
-        });
-      }
-
-      function drop() {
-        clearMarkers();
-
-        for (let i = 0; i < neighborhoods.length; i++) {
-          addMarkerWithTimeout(neighborhoods[i], i * 200);
-        }
-      }
-
-      function addMarkerWithTimeout(position, timeout) {
-        window.setTimeout(() => {
-          markers.push(
-            new google.maps.Marker({
-              position: position,
-              map,
-              animation: google.maps.Animation.DROP,
-            })
-          );
-        }, timeout);
-      }
-
-      function clearMarkers() {
-        for (let i = 0; i < markers.length; i++) {
-          markers[i].setMap(null);
-        }
-        markers = [];
-      }
     </script>
+
+      <script>
+          // Tabs
+          function openLink(evt, linkName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("myLink");
+              for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < x.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" teal", "");
+              }
+              document.getElementById(linkName).style.display = "block";
+              evt.currentTarget.className += " teal";
+          }
+          // Click on the first tablink on load
+          document.getElementsByClassName("tablink")[0].click();
+      </script>
+
 </body>
 
 </html>
