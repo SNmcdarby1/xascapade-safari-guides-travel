@@ -4,13 +4,14 @@
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'contact@example.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
+  if( file_exists($sendEmail_mail_form = '<div class="">
+  <assets-sendEmail_mail_form>sendEmail_mail_form/sendEmail_mail_form' )) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');
   }
 
-  $contact = new PHP_Email_Form;
+  $contact = new sendEmail_Mail_Form;
   $contact->ajax = true;
   
   $contact->to = $receiving_email_address;
