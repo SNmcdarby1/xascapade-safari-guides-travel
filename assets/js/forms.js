@@ -1,5 +1,5 @@
 $( document ).ready( function () {
-    $( '#your-form-id' ).on( 'submit', function () {
+    $( '#contact_form' ).on( 'submit', function () {
         var formData = $( this ).serialize
         $.ajax( {
             type: 'post',

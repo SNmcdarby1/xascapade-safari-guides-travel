@@ -50,7 +50,7 @@ initial-scale=1.0">
 
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralabg-image sect-mt12 route" id="sendEmail_mail_form">
+    <section id="contact_form" class="paralax-mf footer-paralabg-image sect-mt12 route" id="sendEmail_mail_form">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12">
@@ -85,71 +85,110 @@ initial-scale=1.0">
                           </section>
 
                           <form action="contact_form" method="post" role="form" class="sendEmail_mail_form" id="get_post"
-                            class="conyact_form" name="contact_form"onsubmit="return sendMail(this);" >
-                            <div class="row">
-                              <div class="col-md-12 mb-3">
-                                <div class="form-group">
-                                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                    required>
-                                </div>
-                              </div>
-                              <div class="col-md-12 mb-3">
-                                <div class="form-group">
-                                  <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Your Email" required>
-                                </div>
-                              </div>
-                              <div class="col-md-12" id="get_post" class="contact_form" onsubmit="return sendMail(this);"
-                                method="POST">
+                            class="contact_form" name="contact_form"onsubmit="return sendMail(this);" >
+                          
+                  <div class="container">
+                    <form action="/action_page.php">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
 
-                                <div class="col-md-12 mb-3">
-                                  <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" id="subject"
-                                      placeholder="Subject" required>
-                                    <label class="control-label col-sm" for="location">Location:</label>
-                                    <select class="form-control" id="location" placeholder="location" name="location"
-                                      class="custom-select" required="recompile">
-                                      <option value="location" name="location" select>Location</option>
-                                      <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option>
-                                      <option value="mombasa" id="location" name="mombasa">Mombasa</option>
-                                      <option value="nakuru" id="location" name="nakuru">Nakuru</option>
-                                      <option value="lamu" id="location" name="lamu">Lamu</option>
 
-                                      <input type="text" class="form-control" name="special request"
-                                        id="special request" placeholder="Special request" required>
-                                      <div class="form-group">
-                                        <label class="control-label col-sm" for="Tours">Tours:</label>
-                                        <select class="form-control" id="location" placeholder="location"
-                                          name="tourslocation" class="custom-select" required="recompile">
-                                          <option value="self-tours" id="selfTour" name="selftour">4WD self guided tour
-                                          </option>
-                                          <option value="private" id="privateTour" name="privatetour">Masai guided tour
-                                          </option>
-                                          <option value="group" id="groupTour" name="grouptour">Tailored tours</option>
-                                          <option value="local" id="experiencedTour" name="experiecedtour">Experienced
-                                            tour guides</option>
-                                        </select>
-                                      </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-12">
-                                  <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                      required></textarea>
-                                  </div>
-                                </div>
-                                <div class="col-md-12 text-center my-3">
-                                  <div class="loading">Loading</div>
-                                  <div class="error-message"></div>
-                                  <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                                  <div class="col-md-12 text-center">
-                                    <button type="submit" class="button button-a button-big button-rouded" onsubmit="
-                                      return sendMail(this);" method="POST" onclick='sendEmail()'>Send Message</button>
-                                  </div> 
-                                  </div>
-                                  </div>
-                                  </div>
+
+
+
+
+                            <!-- <div class="row"> -->
+                              <!-- <div class="col-md-12 mb-3"> -->
+                                <!-- <div class="form-group"> -->
+                                  <!-- <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" -->
+                                    <!-- required> -->
+                                <!-- </div> -->
+                              <!-- </div> -->
+                              <!-- <div class="col-md-12 mb-3"> -->
+                                <!-- <div class="form-group"> -->
+                                  <!-- <input type="email" class="form-control" name="email" id="email" -->
+                                    <!-- placeholder="Your Email" required> -->
+                                <!-- </div> -->
+                              <!-- </div> -->
+                              <!-- <div class="col-md-12" id="get_post" class="contact_form" onsubmit="return sendMail(this);" -->
+                                <!-- method="POST"> -->
+
+                                <!-- <div class="col-md-12 mb-3"> -->
+                                  <!-- <div class="form-group"> -->
+                                    <!-- <input type="text" class="form-control" name="subject" id="subject" -->
+                                      <!-- placeholder="Subject" required> -->
+                                    <!-- <label class="control-label col-sm" for="location">Location:</label> -->
+                                    <!-- <select class="form-control" id="location" placeholder="location" name="location" -->
+                                      <!-- class="custom-select" required="recompile"> -->
+                                      <!-- <option value="location" name="location" select>Location</option> -->
+                                      <!-- <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option> -->
+                                      <!-- <option value="mombasa" id="location" name="mombasa">Mombasa</option> -->
+                                      <!-- <option value="nakuru" id="location" name="nakuru">Nakuru</option> -->
+                                      <!-- <option value="lamu" id="location" name="lamu">Lamu</option> -->
+
+                                      <!-- <input type="text" class="form-control" name="special request" -->
+                                        <!-- id="special request" placeholder="Special request" required> -->
+                                      <!-- <div class="form-group"> -->
+                                        <!-- <label class="control-label col-sm" for="Tours">Tours:</label> -->
+                                        <!-- <select class="form-control" id="location" placeholder="location" -->
+                                          <!-- name="tourslocation" class="custom-select" required="recompile"> -->
+                                          <!-- <option value="self-tours" id="selfTour" name="selftour">4WD self guided tour -->
+                                          <!-- </option> -->
+                                          <!-- <option value="private" id="privateTour" name="privatetour">Masai guided tour -->
+                                          <!-- </option> -->
+                                          <!-- <option value="group" id="groupTour" name="grouptour">Tailored tours</option> -->
+                                          <!-- <option value="local" id="experiencedTour" name="experiecedtour">Experienced -->
+                                            <!-- tour guides</option> -->
+                                        <!-- </select> -->
+                                      <!-- </div> -->
+                                  <!-- </div> -->
+                                <!-- </div> -->
+                                <!-- <div class="col-md-12"> -->
+                                  <!-- <div class="form-group"> -->
+                                    <!-- <textarea class="form-control" name="message" rows="5" placeholder="Message" -->
+                                      <!-- required></textarea> -->
+                                  <!-- </div> -->
+                                <!-- </div> -->
+                                <!-- <div class="col-md-12 text-center my-3"> -->
+                                  <!-- <div class="loading">Loading</div> -->
+                                  <!-- <div class="error-message"></div> -->
+                                  <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
+
+                                  <!-- <div class="col-md-12 text-center"> -->
+                                    <!-- <button type="submit" class="button button-a button-big button-rouded" onsubmit=" -->
+                                      // return sendMail(this);" method="POST" onclick='sendEmail()'>Send Message</button>
+                                  <!-- </div>  -->
+                                  <!-- </div> -->
+                                  <!-- </div> -->
+                                  <!-- </div> -->
                               </form>
                                 <div class=" col-md-12">
                                       <div class="title-box-2 pt-4 pt-md-0">
