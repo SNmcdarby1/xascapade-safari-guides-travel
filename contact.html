@@ -20,9 +20,9 @@ initial-scale=1.0">
   Emailjs
   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
   <script type="text/javascript">
-  (function() { -->
-  emailjs.init("user_cbk0RT9vpd78BlYyPC67x"); 
-   })();
+  (function() emailjs.init("user_cbk0RT9vpd78BlYyPC67x"); 
+   })
+   ();
   </script>
   </head>
 
@@ -84,8 +84,8 @@ initial-scale=1.0">
                             </div>
                           </section>
 
-                          <form action="contact" method="post" role="form" class="sendEmail_mail_form" id="get_post"
-                            class="form" onsubmit="return sendMail(this);" method="POST">
+                          <form action="contact_form" method="post" role="form" class="sendEmail_mail_form" id="get_post"
+                            class="conyact_form" name="contact_form"onsubmit="return sendMail(this);" >
                             <div class="row">
                               <div class="col-md-12 mb-3">
                                 <div class="form-group">
@@ -99,7 +99,7 @@ initial-scale=1.0">
                                     placeholder="Your Email" required>
                                 </div>
                               </div>
-                              <div class="col-md-12" id="get_post" class="form" onsubmit="return sendMail(this);"
+                              <div class="col-md-12" id="get_post" class="contact_form" onsubmit="return sendMail(this);"
                                 method="POST">
 
                                 <div class="col-md-12 mb-3">
@@ -144,8 +144,8 @@ initial-scale=1.0">
                                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
                                   <div class="col-md-12 text-center">
-                                    <button type="submit" class="button button-a button-big button-rouded onsubmit="
-                                      return sendMail(this);" method="POST" onclick='sendEmail()'">Send Message</button>
+                                    <button type="submit" class="button button-a button-big button-rouded" onsubmit="
+                                      return sendMail(this);" method="POST" onclick='sendEmail()'>Send Message</button>
                                   </div> 
                                   </div>
                                   </div>
@@ -319,6 +319,7 @@ initial-scale=1.0">
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
     <script src="assets/js/contact.js"></script>
+    <script src="assets/js/contactform.js"></script>
     <script src="assets/validate.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery.js"></script>
