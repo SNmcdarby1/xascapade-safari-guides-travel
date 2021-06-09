@@ -1,3 +1,4 @@
+// sample at google developre page
 function initMap () {
     new google.maps.Map( document.getElementById( "map" ), {
         mapId: "8e0a97af9386fef",
