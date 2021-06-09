@@ -15,15 +15,18 @@ initial-scale=1.0">
 
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<!--Emailjs-->
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+  ( function () {
+    emailjs.init( "user_cbk0RT9vpd78BlYyPC67x" );
+  }
+  )();
+</script>
 
 <body>
-  Emailjs
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-  <script type="text/javascript">
-  (function() emailjs.init("user_cbk0RT9vpd78BlYyPC67x"); 
-   })
-   ();
-  </script>
   </head>
 
   <body id="page-top">
@@ -46,9 +49,6 @@ initial-scale=1.0">
       </div>
     </header>
     <!-- End Header -->
-
-
-
     <!-- ======= Contact Section ======= -->
     <section id="contact_form" class="paralax-mf footer-paralabg-image sect-mt12 route" id="sendEmail_mail_form">
       <div class="container-fluid">
@@ -83,157 +83,101 @@ initial-scale=1.0">
                               </div>
                             </div>
                           </section>
+                          <section id="contact">
 
-                          <form action="contact_form" method="post" role="form" class="sendEmail_mail_form" id="get_post"
-                            class="contact_form" name="contact_form"onsubmit="return sendMail(this);" >
-                          
-                  <div class="container">
-                    <form action="/action_page.php">
-                      <label for="fname">First Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    
-                      <label for="lname">Last Name</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    
-                      <label for="country">Country</label>
-                      <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                      </select>
-                    
-                      <label for="subject">Subject</label>
-                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    
-                      <input type="submit" value="Submit">
-                    </form>
-                  </div>
+                            <h1 class="section-header">CONTACT</h1>
+
+                            <div class="contact-wrapper">
+
+                              <!---------------- 
                   
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
+                        CONTACT PAGE LEFT 
+                      
+                        ----------------->
 
+                              <form id="contact-form" method="POST" class="form-horizontal" role="form"
+                                onsubmit="return sendMail(this);">
 
-
-
-
-
-
-                            <!-- <div class="row"> -->
-                              <!-- <div class="col-md-12 mb-3"> -->
-                                <!-- <div class="form-group"> -->
-                                  <!-- <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" -->
-                                    <!-- required> -->
-                                <!-- </div> -->
-                              <!-- </div> -->
-                              <!-- <div class="col-md-12 mb-3"> -->
-                                <!-- <div class="form-group"> -->
-                                  <!-- <input type="email" class="form-control" name="email" id="email" -->
-                                    <!-- placeholder="Your Email" required> -->
-                                <!-- </div> -->
-                              <!-- </div> -->
-                              <!-- <div class="col-md-12" id="get_post" class="contact_form" onsubmit="return sendMail(this);" -->
-                                <!-- method="POST"> -->
-
-                                <!-- <div class="col-md-12 mb-3"> -->
-                                  <!-- <div class="form-group"> -->
-                                    <!-- <input type="text" class="form-control" name="subject" id="subject" -->
-                                      <!-- placeholder="Subject" required> -->
-                                    <!-- <label class="control-label col-sm" for="location">Location:</label> -->
-                                    <!-- <select class="form-control" id="location" placeholder="location" name="location" -->
-                                      <!-- class="custom-select" required="recompile"> -->
-                                      <!-- <option value="location" name="location" select>Location</option> -->
-                                      <!-- <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option> -->
-                                      <!-- <option value="mombasa" id="location" name="mombasa">Mombasa</option> -->
-                                      <!-- <option value="nakuru" id="location" name="nakuru">Nakuru</option> -->
-                                      <!-- <option value="lamu" id="location" name="lamu">Lamu</option> -->
-
-                                      <!-- <input type="text" class="form-control" name="special request" -->
-                                        <!-- id="special request" placeholder="Special request" required> -->
-                                      <!-- <div class="form-group"> -->
-                                        <!-- <label class="control-label col-sm" for="Tours">Tours:</label> -->
-                                        <!-- <select class="form-control" id="location" placeholder="location" -->
-                                          <!-- name="tourslocation" class="custom-select" required="recompile"> -->
-                                          <!-- <option value="self-tours" id="selfTour" name="selftour">4WD self guided tour -->
-                                          <!-- </option> -->
-                                          <!-- <option value="private" id="privateTour" name="privatetour">Masai guided tour -->
-                                          <!-- </option> -->
-                                          <!-- <option value="group" id="groupTour" name="grouptour">Tailored tours</option> -->
-                                          <!-- <option value="local" id="experiencedTour" name="experiecedtour">Experienced -->
-                                            <!-- tour guides</option> -->
-                                        <!-- </select> -->
-                                      <!-- </div> -->
-                                  <!-- </div> -->
-                                <!-- </div> -->
-                                <!-- <div class="col-md-12"> -->
-                                  <!-- <div class="form-group"> -->
-                                    <!-- <textarea class="form-control" name="message" rows="5" placeholder="Message" -->
-                                      <!-- required></textarea> -->
-                                  <!-- </div> -->
-                                <!-- </div> -->
-                                <!-- <div class="col-md-12 text-center my-3"> -->
-                                  <!-- <div class="loading">Loading</div> -->
-                                  <!-- <div class="error-message"></div> -->
-                                  <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
-
-                                  <!-- <div class="col-md-12 text-center"> -->
-                                    <!-- <button type="submit" class="button button-a button-big button-rouded" onsubmit=" -->
-                                      // return sendMail(this);" method="POST" onclick='sendEmail()'>Send Message</button>
-                                  <!-- </div>  -->
-                                  <!-- </div> -->
-                                  <!-- </div> -->
-                                  <!-- </div> -->
-                              </form>
-                                <div class=" col-md-12">
-                                      <div class="title-box-2 pt-4 pt-md-0">
-                                        <h5 class="title mt-0 mb-1 ">
-                                          Get in Touch
-                                        </h5>
-                                        <div>
-                                          <div class="more-info">
-                                            <p class="mt-0 mb-1 ">
-                                              If you are looking for a holiday with rich diversity landscape and
-                                              extraordinary.
-                                              Be it the rich wildlife and the beautiful Beaches of Mombasa.
-                                              Drop us an email and we will be happy to tailor your holiday dream
-                                              according
-                                              to your own desire.
-                                            </p>
-                                            <ul class="list-ico">
-                                              <li><span class="bi bi-geo-alt"></span> 329 GREYSTONES, Wicklow
-                                                02108</li>
-                                              <li><span class="bi bi-phone"></span> (01) 557-0089</li>
-                                              <li><span class="bi bi-envelope"></span> contact@xascapade.com</li>
-                                            </ul>
-                                          </div>
-                                          <div class="socials">
-                                            <ul>
-                                              <li><a href="https://www.facebook.com/simbapawtrail"><span
-                                                    class="ico-circle"><i class="fa fa-facebook"></i></span></a>
-                                              </li>
-                                              <li><a href="https://www.instagram.com/trysafari.ke/?hl=en>"><span
-                                                    class="ico-circle"><i class="fa fa-instagram"></i></span></a>
-                                              </li>
-                                              <li><a href="https://twitter.com/Safari78047357"><span
-                                                    class="ico-circle"><i class="fa fa-twitter"></i></span></a>
-                                              </li>
-                                              <li><a href="https://www.linkedin.com/company/37523851/admin/"><span
-                                                    class="ico-circle"><i class="fa fa-linkedin"></i></span></a>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </div>
+                                <div class="form-group">
+                                  <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name"
+                                      value="" required>
                                   </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"
+                                      value="" required>
+                                  </div>
+                                </div>
+
+                                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"
+                                  required></textarea>
+
+                                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                  <div class="button">
+                                    <i class="fa fa-paper-plane" onsubmit="return sendMail(this);" method="POST"
+                                      onclick='sendEmail()'></i><span class="send-text">SEND</span>
+                                  </div>
+
+                                </button>
+
+                              </form>
+
+                              <!---------------- 
+                  
+                        footer 
+                      
+                        ----------------->
+                          </section>
+
+                          <div class=" col-md-12">
+                            <div class="title-box-2 pt-4 pt-md-0">
+                              <h3 class="title mt-0 mb-1 ">
+                                Get in Touch
+                              </h3>
+                              <div>
+                                <div class="more-info">
+                                  <p class="mt-0 mb-1 ">
+                                    If you are looking for a holiday with rich diversity landscape and
+                                    extraordinary.
+                                    Be it the rich wildlife and the beautiful Beaches of Mombasa.
+                                    Drop us an email and we will be happy to tailor your holiday dream
+                                    according
+                                    to your own desire.
+                                  </p>
+                                  <ul class="list-ico">
+                                    <ul>
+                                      <ul><span class="bi bi-geo-alt"><i class="fa fa-map-marker fa-1x"></i></span> 329
+                                        GREYSTONES, </ul>
+                                      <ul>Wicklow 02108</ul>
+                                      <ul><span class="bi bi-phone"></span> <i class="fa fa-phone fa-1x"></i>(01)
+                                        557-0089
+                                      </ul>
+                                      <ul><span class="bi bi-envelope"></span><i class="fa fa-envelope fa-1x"></i>
+                                        contact@xascapade.com</ul>
+                                    </ul>
+                                </div>
+                                <div class="socials">
+                                  <ul>
+                                    <li><a href="https://www.facebook.com/simbapawtrail"><span class="ico-circle"><i
+                                            class="fa fa-facebook"></i></span></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/trysafari.ke/?hl=en>"><span
+                                          class="ico-circle"><i class="fa fa-instagram"></i></span></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/Safari78047357"><span class="ico-circle"><i
+                                            class="fa fa-twitter"></i></span></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/company/37523851/admin/"><span
+                                          class="ico-circle"><i class="fa fa-linkedin"></i></span></a>
+                                    </li>
+                                  </ul>
                                 </div>
                               </div>
                             </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -241,6 +185,9 @@ initial-scale=1.0">
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact" class="paralax-mf footer-paralabg-image sect-mt12 route">
       <div class=" container-fluid map-container-google-12 map-container-7">
@@ -339,6 +286,30 @@ initial-scale=1.0">
             class="bi bi-arrow-up-short"></i></a>
         <!-- Template Main JS File -->
       </section>
+      <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
       <!-- End Services Section -->
       <!-- Vendor JS Files -->
 
@@ -355,41 +326,19 @@ initial-scale=1.0">
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
       </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+      </script>
     <script src="assets/js/contact.js"></script>
-    <script src="assets/js/contactform.js"></script>
     <script src="assets/validate.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/ajax.js"></script>
-
     <script src="assets/js/sendEmail.js"></script>
-    <script src="assets/js/form.js"></script>
 
     <!--Validated in w3.org
 Erro found Error: Parse Error. Style sheets should not 
 include HTML syntax..
 Revit to validate the error-->
-    </script>
-
-    <script>
-      // Tabs
-      function openLink( evt, linkName ) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName( "myLink" );
-        for ( i = 0; i < x.length; i++ ) {
-          x[ i ].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName( "tablink" );
-        for ( i = 0; i < x.length; i++ ) {
-          tablinks[ i ].className = tablinks[ i ].className.replace( " teal", "" );
-        }
-        document.getElementById( linkName ).style.display = "block";
-        evt.currentTarget.className += " teal";
-      };
-
-    </script>
   </body>
 
 </html>
