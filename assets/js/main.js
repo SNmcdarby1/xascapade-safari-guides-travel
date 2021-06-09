@@ -1,4 +1,4 @@
-function myFunction () {
+function myFunction ( _sendEmail ) {
     var tempParams
     emailjs.send( "service_aw4lcie", "template_p9qe11h", {
         to_name: "xascapae@gmail.com",
@@ -255,7 +255,7 @@ function myFunction () {
                         /**
                          * Mobile nav toggle
                          */
-                        on( 'click', '.mobile-nav-toggle', function ( e ) {
+                        on( 'click', '.mobile-nav-toggle', function ( _e ) {
                             select( '#navbar' ).classList.toggle( 'navbar-mobile' )
                             this.classList.toggle( 'bi-list' )
                             this.classList.toggle( 'bi-x' )
@@ -368,6 +368,7 @@ function myFunction () {
                             } );
                         }
                     } );
-                } 
+                }
             )
-    )}
+    )
+}

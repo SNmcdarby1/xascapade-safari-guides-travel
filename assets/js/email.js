@@ -1,4 +1,4 @@
-function getFormData () {
+function getFormData ( _contact.js ) {
     var form = document.getElementById( "contact_form" );
     //globals variable
     function tempParam () {
