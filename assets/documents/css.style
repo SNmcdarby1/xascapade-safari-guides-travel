@@ -1,6 +1,8 @@
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
 # General
---------------------------------------------------------------*/
+--------------------------------------------------
+------*/
 * {
     margin: 0;
     border-radius: 0;
@@ -58,7 +60,7 @@ a:hover {
 .service-box,
 .work-box,
 .card-blog {
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1
 }
 
 .box-shadow-a,
@@ -268,7 +270,8 @@ li {
     background-color: #fff;
     margin-bottom: 0.4rem;
     z-index: 2;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0
+5px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media(min-width: 320px) {
@@ -399,9 +402,11 @@ li {
     border-radius: 50%;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Back to top button
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -454,8 +459,9 @@ li {
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
+    -webkit-animation: animate-preloader 1s linear
+infinite;
+    animation: animate-preloader 1s linear infinit
 }
 
 @-webkit-keyframes animate-preloader {
@@ -529,9 +535,11 @@ li {
     border-radius: 0.3rem;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Header
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 #header {
     transition: all 0.5s;
     z-index: 997;
@@ -569,9 +577,11 @@ li {
     padding: 12px 0;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Navigation Menu
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 /**
   * Desktop Navigation 
   */
@@ -591,7 +601,7 @@ li {
     position: relative;
 }
 
-.navbar>ul>li {
+.navbar > ul > li {
     white-space: nowrap;
     display: -webkit-inline-box;
 }
@@ -639,7 +649,7 @@ li {
 
 .navbar a:hover,
 .navbar .active,
-.navbar li:hover>a {
+.navbar li:hover > a {
     color: rgb(7, 95, 92);
 }
 
@@ -654,7 +664,7 @@ li {
     opacity: 0;
     visibility: hidden;
     background: #fff;
-    box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+    box-shadow: 0 0 30px rgba(127, 137, 161, 0.25)
     transition: 0.3s;
 }
 
@@ -675,11 +685,11 @@ li {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
     color: #0078ff;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -691,7 +701,7 @@ li {
     visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -703,7 +713,7 @@ li {
         left: -90%;
     }
 
-    .navbar .dropdown .dropdown:hover>ul {
+    .navbar .dropdown .dropdown:hover > ul {
         left: -100%;
     }
 }
@@ -763,7 +773,7 @@ li {
     transition: 0.3s;
 }
 
-.navbar-mobile>ul>li {
+.navbar-mobile > ul > li {
     padding: 0;
 }
 
@@ -781,7 +791,7 @@ li {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
     color: #0078ff;
 }
 
@@ -798,7 +808,7 @@ li {
     opacity: 1;
     visibility: visible;
     background: #fff;
-    box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+    box-shadow: 0 0 30px rgba(127, 137, 161, 0.25)
 }
 
 .navbar-mobile .dropdown ul li {
@@ -815,17 +825,19 @@ li {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
     color: #52d6d0;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
     display: block;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Hero Section
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .hero {
     height: 100vh;
     position: relative;
@@ -911,9 +923,11 @@ li {
     color: #fff;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # About
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .about-mf .box-shadow-full {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -950,9 +964,11 @@ li {
     background-color: #52d6d0;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Services
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .service-box {
     background-color: rgb(250, 249, 249);
     padding: 7.5rem 1.3rem;
@@ -996,9 +1012,11 @@ li {
     color: #4e4e4e;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Counter
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .counter-box {
     color: #fff;
     text-align: center;
@@ -1026,9 +1044,11 @@ li {
     margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Portfolio
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .work-box {
     margin-bottom: 3rem;
     -webkit-backface-visibility: hidden;
@@ -1080,9 +1100,11 @@ li {
     font-size: 1.2rem;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Portfolio Details
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .portfolio-details {
     padding-top: 40px;
 }
@@ -1091,12 +1113,14 @@ li {
     width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.portfolio-details .portfolio-details-slider .
+swiper-pagination {
     margin-top: 20px;
     position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .
+swiper-pagination .swiper-pagination-bulle
     width: 12px;
     height: 12px;
     background-color: #fff;
@@ -1104,7 +1128,9 @@ li {
     border: 1px solid #52d6d0;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .
+swiper-pagination .
+swiper-pagination-bullet-active {
     background-color: #52d6d0;
 }
 
@@ -1145,9 +1171,11 @@ li {
     padding: 0;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Testimonials
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .testimonial-box {
     color: #fff;
     text-align: center;
@@ -1212,13 +1240,15 @@ li {
     opacity: 1;
 }
 
-.swiper-pagination .swiper-pagination-bullet-active {
+.swiper-pagination .swiper-pagination-bullet-activ
     background-color: #fff;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Contact
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .footer-paralax {
     padding: 4rem 0 0;
 }
@@ -1268,7 +1298,8 @@ li {
     margin: 0 10px -6px 0;
     border: 3px solid #18d26e;
     border-top-color: #eee;
-    -webkit-animation: animate-loading 1s linear infinite;
+    -webkit-animation: animate-loading 1s linear 
+infinite;
     animation: animate-loading 1s linear infinite;
 }
 
@@ -1325,9 +1356,11 @@ li {
     }
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Blog
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 @media(min-width: 320px) {
     .card-blog {
         margin-bottom: 3rem;
@@ -1385,9 +1418,11 @@ li {
     float: none;
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Blog Single
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 .post-box,
 .form-comments,
 .box-comments,
@@ -1540,9 +1575,11 @@ li {
     color: rgb(155, 11, 11);
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Footer
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 footer {
     text-align: center;
     color: #fff;
@@ -1561,7 +1598,6 @@ footer .credits {
 footer .credits a {
     color: #fff;
 }
-
 /*  */
 
 .map-container-7 {
@@ -1579,7 +1615,8 @@ footer .credits a {
     position: absolute;
 }
 
------ ------/ Sidebar /------ .widget-sidebar .sidebar-title {
+----- ------/ Sidebar /------ .widget-sidebar .
+sidebar-title {
     font-size: 1.6rem;
     font-weight: 600;
     border-left: 5px solid #0078ff;
@@ -1629,9 +1666,11 @@ footer .credits a {
     color: rgb(155, 11, 11);
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------
+--------
   # Footer
-  --------------------------------------------------------------*/
+  ------------------------------------------------
+--------*/
 footer {
     text-align: center;
     color: #fff;
@@ -1705,7 +1744,9 @@ input[type=submit] {
     clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less tha
+600px wide, make the two columns stack on 
+of each other instead of next to each othe
 @media screen and(max-width: 320px) {
 
     .col-25,
@@ -1716,24 +1757,27 @@ input[type=submit] {
     }
 }
 
-/*-------------------------------------------------------------media*/
-/*-------------------------------------------------------------media*/
+/*------------------------------------------------
+-------media*/
+/*------------------------------------------------
+-------media*/
 
 @media only screen and(min-width: 320px) {
 
     /* For mobile phones: */
-    [class*="container boxes card container-fluid"] {
+    [class*="container boxes card container-fluid"
         width: 100% !important;
 
         (max-width: 800px) {
-                {
+            {
                 margin: 10px 0 !important;
             }
 
         }
     }
 
-    /*--------------------------------------------------------------------------------------media*/
+    /*--------------------------------------------
+------------------------------------me
     @media(min-width: 768px) {
         .bd-placeholder-img-lg {
             font-size: 3.5rem;
@@ -1751,4 +1795,5 @@ input[type=submit] {
         }
     }
 
-    /*--------------------------------------------------------------------------------------media/
+    /*--------------------------------------------
+------------------------------------me
