@@ -11,7 +11,6 @@ The design is inspired by the [bootstrap4 starter template](https://startbootstr
 (https://github.com/StartBootstrap/startbootstrap-agency)
 (https://bootstrapmade.com/demo/DevFolio/)
 
-
 ### Table of Content
 
 1.Who we are
@@ -128,7 +127,7 @@ Proficiency in visual communication includes an understanding of concepts like:
   - Materialised link - I was inspired by the look and feel of the Link that made the site look better feel about it.
   - Bootstrap snippets that enabled meto have different designs
   - CDNJS site enabled me to get the tags and JS scripts that are used to create the website.
-  - Jquery CDN uncompressed min script* 
+  - Jquery CDN uncompressed min script\*
   - Leaflet link and tags for js google mapping
   - Emailjs used for the interactive email
   - One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
@@ -146,8 +145,7 @@ Proficiency in visual communication includes an understanding of concepts like:
   I did a lot of reserch in youtube and i was inspired by three main developres
   - Sayar flight booking example
   * One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
-  *  tried to do a different approach that will be more user friendly by stripping down the contents in all the pages. Resulting to a change of design.
-
+  * tried to do a different approach that will be more user friendly by stripping down the contents in all the pages. Resulting to a change of design.
 
 ### 6. Wireframes
 
@@ -210,6 +208,11 @@ After a few trials i changed the images and design. Below is the new design
 - Encountered a bug in the css style page. Received an error in regards to page formatting and i soved it by deleting the content and reload the file again.
 - Did more research in google mapping i added more functionality using this link :(google map) [ https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-directions]
 - Encountering a 501 error response in Emailjs.
+- 304 in jquery.js
+- 404 favicon
+- 304 sendEmail.js
+- css : Error: Library prettydiff.beautify.markdown does not exist. I was able to fix the bug by reverting the file, selected my page, right clicked, selected format document with, in the top of the file you are given options of selecting the type of format you would like to use, i selected default format, In accordance to the settings my default formatter is Beautify. I selected it and managed to secure the code. and finally saved the css/style.css file.
+
 ### 9. Deployment.
 
 I deployed the page in Github page under settings.
@@ -283,7 +286,6 @@ I. Photographers
 
 * [Sayar](https://github.com/sayar/flight-booking)
 
-
 ### 13. Credits
 
 - Code Insitute student care for the support and responding to my calls and chat messages.
@@ -293,7 +295,8 @@ I. Photographers
 - I was inspared by this developers . I did most of my reserach but was not easy to understad how to do travel bookings and i came across this developer https://res.perfectibe.com/scripts/pibe.js // to guide me through my project.
 - A big thank you to the bootstrap4 starter template. For the free templates. (davidtmiller)The design that suited my needs and desihn is the heroic feature design.[https://startbootstrap.com](https://github.com/StartBootstrap/startbootstrap-agency)
 - Credit the Sheldrick wildlife trust for the widkife awerenes. https://www.sheldrickwildlifetrust.org/,[ Wildlife conservation park in Nairobi, Kenya](https://www.giraffecentre.org/)
-- 
+-
+
 ### 14. Acknowledgements
 
 I would like to thank

@@ -1,108 +1,103 @@
 // sample at google developre page
-function initMap () {
-    new google.maps.Map( document.getElementById( "map" ), {
-        mapId: "8e0a97af9386fef",
-        center: { lat: -1.37, lng: 36.74 },
-        zoom: 12,
-    } );
-    new AutocompleteDirectionsHandler( map );
-}
-
-class AutocompleteDirectionsHandler {
-    map;
-    originPlaceId;
-    destinationPlaceId;
-    travelMode;
-    directionsService;
-    directionsRenderer;
-    constructor ( map ) {
-        this.map = map;
-        this.originPlaceId = "";
-        this.destinationPlaceId = "";
-        this.travelMode = google.maps.TravelMode.WALKING;
-        this.directionsService = new google.maps.DirectionsService();
-        this.directionsRenderer = new google.maps.DirectionsRenderer();
-        this.directionsRenderer.setMap( map );
-        const originInput = document.getElementById( "origin-input" );
-        const destinationInput = document.getElementById( "destination-input" );
-        const modeSelector = document.getElementById( "mode-selector" );
-        const originAutocomplete = new google.maps.places.Autocomplete( originInput );
-        // Specify just the place data fields that you need.
-        originAutocomplete.setFields( [ "place_id" ] );
-        const destinationAutocomplete = new google.maps.places.Autocomplete(
-            destinationInput
-        );
-        // Specify just the place data fields that you need.
-        destinationAutocomplete.setFields( [ "place_id" ] );
-        this.setupClickListener(
-            "changemode-walking",
-            google.maps.TravelMode.WALKING
-        );
-        this.setupClickListener(
-            "changemode-transit",
-            google.maps.TravelMode.TRANSIT
-        );
-        this.setupClickListener(
-            "changemode-driving",
-            google.maps.TravelMode.DRIVING
-        );
-        this.setupPlaceChangedListener( originAutocomplete, "ORIG" );
-        this.setupPlaceChangedListener( destinationAutocomplete, "DEST" );
-        this.map.controls[ google.maps.ControlPosition.TOP_LEFT ].push( originInput );
-        this.map.controls[ google.maps.ControlPosition.TOP_LEFT ].push(
-            destinationInput
-        );
-        this.map.controls[ google.maps.ControlPosition.TOP_LEFT ].push( modeSelector );
-    }
-    // Sets a listener on a radio button to change the filter type on Places
-    // Autocomplete.
-    setupClickListener ( id, mode ) {
-        const radioButton = document.getElementById( id );
-        radioButton.addEventListener( "click", () => {
-            this.travelMode = mode;
-            this.route();
-        } );
-    }
-    setupPlaceChangedListener ( autocomplete, mode ) {
-        autocomplete.bindTo( "bounds", this.map );
-        autocomplete.addListener( "place_changed", () => {
-            const place = autocomplete.getPlace();
-
-            if ( !place.place_id ) {
-                window.alert( "Please select an option from the dropdown list." );
-                return;
-            }
-
-            if ( mode === "ORIG" ) {
-                this.originPlaceId = place.place_id;
-            } else {
-                this.destinationPlaceId = place.place_id;
-            }
-            this.route();
-        } );
-    }
-    route () {
-        if ( !this.originPlaceId || !this.destinationPlaceId ) {
-            return;
+function initMap() {
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 8,
+        mapTypeId: "terrain",
+        center: {
+            lat: -1.3764,
+            lng: 36.7443
         }
-        const me = this;
-        this.directionsService.route(
-            {
-                origin: { placeId: this.originPlaceId },
-                destination: { placeId: this.destinationPlaceId },
-                travelMode: this.travelMode,
-            },
-            ( response, status ) => {
-                if ( status === "OK" ) {
-                    me.directionsRenderer.setDirections( response );
-                } else {
-                    window.alert( "Directions request failed due to " + status );
-                }
-            }
+    });
 
-        );
+    // var labels = "ABC"
 
-    }
+    // var locations = [{
+    //     lat: -1.286389,
+    //     lng: 36.817223
+    // }, {
+    //     lat: 4.0435,
+    //     lng: 39.6682
+    // }, {
+    //     lat: 1.3719,
+    //     lng: 34.9381
+    // }, ];
+    // var markers = locations.map(function(location, i) {
+    //     return new google.maps.Marker({
+    //         position: location,
+    //         label: labels[i % labels.length]
+    //     });
+    // });
+
+    // var nairobi = new google.maps.Marker({
+    //     position: {
+    //         lat: -1.286389,
+    //         lng: 36.817223
+    //     }
+    // });
+    // var mombasa = new google.maps.Marker({
+    //     position: {
+    //         lat: 4.0435,
+    //         lng: 39.6682
+    //     }
+    // });
+    // var mombasa = new google.maps.Marker({
+    //     position: {
+    //         lat: 1.3719,
+    //         lng: 34.9381
+    //     }
+    // });
+
+    // function initMap() {
+    //     const MasaiMara = {
+    //         lat: -1.376,
+    //         lng: 36.744
+    //     };
+    //     const map = new google.maps.Map(document.getElementById("map"), {
+    //         zoom: 4,
+    //         center: uluru,
+    //     });
+
+    const contentString =
+        '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h1 id="firstHeading" class="firstHeading">Masai Mara</h1>' +
+        '<div id="bodyContent">' +
+        "<p><b>Masai Mara</b>, also referred to as <b>The Mara</b>, is a large " +
+        " national game reserve in Narok, Kenya" +
+        "It is named in honor of the Maasai people " +
+        " the ancestral inhabitants of the area, " +
+        "'Mara' means 'spotted' in the local Maasai language" +
+        "who migrated to the area from the Nile Basin;" +
+        " 'Mara' means 'spotted' in the local Maasai language" +
+        " due to the many short bushy trees which dot the landscape, " +
+        "rock caves and ancient paintings. Uluru is listed as a World " +
+        "Heritage Site.</p>" +
+        '<p>Attribution: Masai Mara, <a href=" https://en.wikipedia.org/wiki/Maasai_Mara ">' +
+        "https://en.wikipedia.org/w/index.php?title=Masai Mara</a> " +
+        "(last visited August 6, 2015).</p>" +
+        "</div>" +
+        "</div>";
+
+    const infowindow = new google.maps.InfoWindow({
+        content: contentString,
+    });
+
+    const marker = new google.maps.Marker({
+        position: MasaiMara,
+        map,
+        title: "Masai Mara (The Mara)",
+    });
+    marker.addListener("click", () => {
+        infowindow.open(map, marker);
+    });
 }
 
-// researched about directions in the google map developer page https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-directions
+//     // Continue creating markers like above...
+//     var markers = [nairobi, mombasa]; // add additional markers to the array if you have them
+
+//     var markerCluster = new MarkerClusterer(map, markers, {
+//         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+//     });
+// }
+// // researched about directions in the google map developer page https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-directions
