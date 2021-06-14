@@ -53,6 +53,5 @@ const useForm = ( callback, validate ) => {
 
     return { handleChange, values, handleSubmit, errors };
 };
-};
 
-export default useForm;
+

@@ -98,7 +98,7 @@ a:hover {
 #map {
     height: 180px;
     height: 100%;
-    min-height: 360px;
+    min-height: 1200px;
     color: #0078ff;
 }
 
