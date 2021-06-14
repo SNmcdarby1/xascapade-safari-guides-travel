@@ -1,4 +1,5 @@
 function loadDoc ( contact_form ) {
+
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if ( this.readyState == 4 && this.status == 200 ) {
@@ -10,26 +11,28 @@ function loadDoc ( contact_form ) {
     xhttp.send();
 }
 
+
 $( "button" ).click( function () {
+    ( method ) JQuery < HTMLElement >.click( handler ?: false | JQuery < TElement = HTMLElement >.TypeEventHandler < HTMLElement, null, HTMLElement, HTMLElement, "click" >): JQuery <...>
     ( "demo_test.asp", function ( data, status ) {
         alert( "Data: " + data + "\nStatus: " + status );
     } );
 
 
-    $( "button" ).click( function () {
-        $post( "demo_test_post.asp", {
-            tempParams: "",
-            fromname: "",
-            toname: "",
-            email: "",
-            tour: "",
-            location: "",
-            message: ""
-        },
-            function ( data, status ) {
-                alert( `Data: ${ data }\\nStatus: ${ status }` );
-            } );
-    } );
+$( "button" ).click( function () {
+    $post( "demo_test_post.asp", {
+        tempParams: "",
+        fromname: "",
+        toname: "",
+        email: "",
+        tour: "",
+        location: "",
+        message: ""
+    },
+        function ( data, status ) {
+            alert( `Data: ${ data }\\nStatus: ${ status }` );
+        } );
+} );
 } );
 
 var data = {
@@ -42,7 +45,7 @@ var data = {
     }
 };
 ( {
-    type: 'POST',
+    type: 'get-post',
     url: 'https://api.emailjs.com/api/v1.0/email/send',
     data: {
         'key': '8895ccc85872be3ea8732d921334e905',
