@@ -8,7 +8,7 @@ $contact_form{
     formData.append( 'user_cbk0RT9vpd78BlYyPC67x', 'user_cbk0RT9vpd78BlYyPC67x' )
 
     $.ajax( 'https://cdn.emailjs.com/sdk/2.2.4/email.min.js', {
-      type: 'POST',
+      type: 'get-post',
       data: formData,
       contentType: false, // auto-detection
       processData: false // no need to parse formData to string

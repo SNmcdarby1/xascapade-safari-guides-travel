@@ -7,72 +7,72 @@ function add_message ( _contact_form ) {
 
         $( document ).ready( function () {
             $( "#contact_form" ).validate( {
-                // rules: {
-                // name: {
-                // required: true,
-                // minlength: 3
-                // },
-                // age: {
-                // required: true,
-                // number: true,
-                // min: 18
-                // },
-                // email: {
-                // required: true,
-                // email: true
-                // },
-                // weight: {
-                // required: {
-                // depends: function ( elem ) {
-                // return $( "#message" ).val() >
-                // }
-                // },
-                // document.getElementById( customer ).addEventListener( change, function () {
-                // var id = this.value;
-                // alert( id );
-                // var csrfToken = $( '[name=_csrfToken]' ).val();
-                // $.ajax( {
-                // type: "POST",
-                // url: '<contact_form echo Router::url(array("controller" => "Customers", "action" => "fill")); ?>',
-                // data: { 'id': id },
-                // beforeSend: function ( xhr ) {
-                // xhr.setRequestHeader( 'X-CSRF-Token', csrfToken );
-                // },
-                // success: function ( data ) {
-                // alert( data );
-                // data = JSON.parse( data );
-                // alert( "id: " + data.id );
-                // }
-                // } );
-                // document.getElementById( 'name' ).value = "test"
-                // document.getElementById( 'invoice_to_address' ).value = "test"
-                // document.getElementById( 'currencies' ).value = 3;
-                // } );
-                // 
-                // function to process stage one
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 3
+                    },
+                    age: {
+                        required: true,
+                        number: true,
+                        min: 18
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    weight: {
+                        required: {
+                            depends: function ( elem ) {
+                                return $( "#message" ).val() >
+                }
+                        },
+                        document.getElementById( customer ).addEventListener( change, function () {
+                            var id = this.value;
+                            alert( id );
+                            var csrfToken = $( '[name=_csrfToken]' ).val();
+                            $.ajax( {
+                                type: "get-post",
+                                url: '<contact_form echo Router::url(array("controller" => "Customers", "action" => "fill")); ?>',
+                                data: { 'id': id },
+                                beforeSend: function ( xhr ) {
+                                    xhr.setRequestHeader( 'X-CSRF-Token', csrfToken );
+                                },
+                                success: function ( data ) {
+                                    alert( data );
+                                    data = JSON.parse( data );
+                                    alert( "id: " + data.id );
+                                }
+                            } );
+                            document.getElementById( 'name' ).value = "test"
+                            document.getElementById( 'invoice_to_address' ).value = "test"
+                            document.getElementById( 'currencies' ).value = 3;
+                        } );
+
+                        function to process stage one
                 function contact_form( argument )
                 firstname = _( 'fromName' ).value;
-                lastname = _( 'toName' ).value;
-                username = _( 'user' ).value;
-                password = _( 'password' ).value;
-                message = _( 'message' ).value;
-                location = _( 'location' ).value;
-                email = _( 'email' ).value;
-                number = _( 'number' ).value;
+                        lastname = _( 'toName' ).value;
+                        username = _( 'user' ).value;
+                        password = _( 'password' ).value;
+                        message = _( 'message' ).value;
+                        location = _( 'location' ).value;
+                        email = _( 'email' ).value;
+                        number = _( 'number' ).value;
 
 
-                function tempParam( argument )
+                        function tempParam( argument )
                 firstname = _( 'fromName' ).value;
-                lastname = _( 'toName' ).value,
-                username = _( 'user' ).value;
-                password = _( 'password' ).value;
-                message = _( 'message' ).value;
-                location = _( 'location' ).value;
-                email = _( 'email' ).value;
-                number = _( 'number' ).value;
+                        lastname = _( 'toName' ).value,
+                        username = _( 'user' ).value;
+                        password = _( 'password' ).value;
+                        message = _( 'message' ).value;
+                        location = _( 'location' ).value;
+                        email = _( 'email' ).value;
+                        number = _( 'number' ).value;
 
-                // validate fullname
-                if (( firstname == "" || ( isNaN( firstname ) ) || firstname.length <= 5 ) ) {
+                        // validate fullname
+                        if (( firstname == "" || ( isNaN( firstname ) ) || firstname.length <= 5 ) ) {
                 _( 'firstnameError' ).innerHTML = "First name is incorrect. Make sure it is greater that 5 characters and does not contain numbers"
                 return false;
             }

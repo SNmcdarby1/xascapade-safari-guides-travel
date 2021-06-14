@@ -1,26 +1,47 @@
+
 function loadDoc ( contact_form ) {
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if ( this.readyState == 4 && this.status == 200 ) {
-            document.getElementById( "get_post" ).innerHTML =
+            document.getElementById( "get-post" ).innerHTML =
                 this.responseText;
         }
     };
-    xhttp.open( "GET", "ajax_info.txt", true );
+    xhttp.open( "get-post", "ajax_info.txt", true );
     xhttp.send();
 }
+$.ajax( {
+    url: url,
+    dataType: "json",
+    type: "Post",
+    async: true,
+    data: {},
+    success: function ( data ) {
 
+    },
+    error: function ( xhr, exception ) {
+        var msg = "";
+        if ( xhr.status === 0 ) {
+            msg = "Not connect.\n Verify Network." + xhr.responseText;
+        } else if ( xhr.status == 404 ) {
+            msg = "Requested page not found. [404]" + xhr.responseText;
+        } else if ( xhr.status == 500 ) {
+            msg = "Internal Server Error [500]." + xhr.responseText;
+        } else if ( exception === "parsererror" ) {
+            msg = "Requested JSON parse failed.";
+        } else if ( exception === "timeout" ) {
+            msg = "Time out error." + xhr.responseText;
+        } else if ( exception === "abort" ) {
+            msg = "Ajax request aborted.";
+        } else {
+            msg = "Error:" + xhr.status + " " + xhr.responseText;
+        }
 
-$( "button" ).click( function () {
-    ( method ) JQuery < HTMLElement >.click( handler ?: false | JQuery < TElement = HTMLElement >.TypeEventHandler < HTMLElement, null, HTMLElement, HTMLElement, "click" >): JQuery <...>
-    ( "demo_test.asp", function ( data, status ) {
-        alert( "Data: " + data + "\nStatus: " + status );
-    } );
-
-
-$( "button" ).click( function () {
-    $post( "demo_test_post.asp", {
+    }
+} );
+$( "submit" ).click( function () {
+    $post( "get-post.asp", {
         tempParams: "",
         fromname: "",
         toname: "",
@@ -33,7 +54,7 @@ $( "button" ).click( function () {
             alert( `Data: ${ data }\\nStatus: ${ status }` );
         } );
 } );
-} );
+
 
 var data = {
     service_id: 'service_aw4lcie',
@@ -58,5 +79,6 @@ var data = {
             } ]
         }
     }
+}
+);
 
-} );

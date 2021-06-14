@@ -1,90 +1,40 @@
-function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 8,
-        mapTypeId: "terrain",
-        center: {
-            lat: -1.3764,
-            lng: 36.7443
-        }
-    });
+function initMap () {
+  const Nairobi_National_Park = { lat: -1.3764, lng: 36.7443 };
 
-    var labels = "ABC"
+  const map = new google.maps.Map( document.getElementById( "map" ), {
+    zoom: 5,
+    center: Nairobi_National_Park,
+  } );
+  const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">Nairobi_National_Park</h1>' +
+    '<div id="bodyContent">' +
+    "<p><b>Full National tours package </b>, also referred to as <b>Nairobi National Park</b>, is a national " +
+    "park in Kenya " +
+    "the park  was established in 1946.  about 7 km( 4.3 mi ) " +
+    "south of Nairobi.It is fenced on three sides, " +
+    "whereas the open southern boundary allows migrating wildlife " +
+    "to move between the park and the adjacent Kitengela plains. " +
+    "Herbivores gather in the park during the dry season. " +
+    " Despite its proximity to the city and its relative small size, " +
+    "it boasts a large and varied wildlife population, " +
+    "and is one of Kenya's most successful rhinoceros sanctuaries.</p>" +
+    '<p>Attribution: Nairobi National Park, <a href="http://www.kws.go.ke/parks/nairobi-national-park">' +
+    "http://www.kws.go.ke/parks/nairobi-national-park</a> " +
+    "</div>" +
+    "</div>";
 
-    // var locations = [{
-    //     lat: -1.286389,
-    //     lng: 36.817223
-    // }, {
-    //     lat: 4.0435,
-    //     lng: 39.6682
-    // }, {
-    //     lat: 1.3719,
-    //     lng: 34.9381
-    // }, ];
-    var markers = locations.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-        });
-    });
-
-    var nairobi = new google.maps.Marker({
-        position: {
-            lat: -1.286389,
-            lng: 36.817223
-        }
-    });
-    var mombasa = new google.maps.Marker({
-        position: {
-            lat: 4.0435,
-            lng: 39.6682
-        }
-    });
-    var mombasa = new google.maps.Marker({
-        position: {
-            lat: 1.3719,
-            lng: 34.9381
-        }
-    });
-    const contentString =
-        '<div id="content">' +
-        '<div id="siteNotice">' +
-        "</div>" +
-        '<h1 id="firstHeading" class="firstHeading">Masai Mara</h1>' +
-        '<div id="bodyContent">' +
-        "<p><b>Masai Mara</b>, also referred to as <b>The Mara</b>, is a large " +
-        " national game reserve in Narok, Kenya" +
-        " It is named in honor of the Maasai people " +
-        "  the ancestral inhabitants of the area, " +
-        "'Mara' means 'spotted' in the local Maasai language,. " +
-        " who migrated to the area from the Nile Basin;" +
-        " 'Mara' means 'spotted' in the local Maasai language" +
-        " due to the many short bushy trees which dot the landscape, " +
-        "rock caves and ancient paintings. Uluru is listed as a World " +
-        "Heritage Site.</p>" +
-        '<p>Attribution: Masai Mara, <a href=" https://en.wikipedia.org/wiki/Maasai_Mara ">' +
-        "https://en.wikipedia.org/w/index.php?title=Masai Mara</a> " +
-        "(last visited August 6, 2015).</p>" +
-        "</div>" +
-        "</div>";
-
-    const infowindow = new google.maps.InfoWindow({
-        content: contentString,
-    });
-
-    const marker = new google.maps.Marker({
-        position: MasaiMara,
-        map,
-        title: "Masai Mara (The Mara)",
-    });
-    marker.addListener("click", () => {
-        infowindow.open(map, marker);
-    });
+  const infowindow = new google.maps.InfoWindow( {
+    content: contentString,
+  } );
+  const marker = new google.maps.Marker( {
+    position: Nairobi_National_Park,
+    map,
+    title: "Nairobi National Park",
+  } );
+  marker.addListener( "click", () => {
+    infowindow.open( map, marker );
+  } );
 }
-
-// Continue creating markers like above...
-var markers = [nairobi, mombasa];
-// add additional markers to the array if you have them
-
-var markerCluster = new MarkerClusterer(map, markers, {
-    imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-});

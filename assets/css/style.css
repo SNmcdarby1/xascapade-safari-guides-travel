@@ -3,12 +3,14 @@
 --------------------------------------------------------------*/
 * {
     margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     border-radius: 0;
     outline: none;
 }
 
 body {
-    background-color: #b8b9b9;
+    background-color: #f9ffff;
     color: #4e4e4e;
 }
 
@@ -101,7 +103,7 @@ a:hover {
 }
 
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
     .bg-image {
         background-attachment: scroll;
     }
@@ -114,7 +116,7 @@ a:hover {
 .overlay-mf {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     padding: 0;
     height: 100%;
     width: 100%;
@@ -227,6 +229,8 @@ li {
     font-size: 20px;
     list-style-type: none;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 /* 3wschool */
@@ -234,7 +238,7 @@ li {
     background-color: #333;
     overflow: hidden;
     margin-top: 10px;
-    margin-left: 0;
+    margin-left: 0px;
 }
 
 /* Style the links inside the navigation bar */
@@ -257,10 +261,10 @@ li {
     display: none;
 }
 
-
 .container {
-    padding-top: 0;
+    padding-top: 0px;
 }
+
 
 .box-shadow-full {
     /* padding: 3rem 1.25rem; */
@@ -271,7 +275,7 @@ li {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .box-shadow-full {
         padding: 0.4rem;
     }
@@ -357,9 +361,9 @@ li {
 .owl-theme .owl-dots .owl-dot span {
     width: 18px;
     height: 7px;
-    margin: 5px;
+    margin: 5px 5px;
     background: #cde1f8;
-    border: 0 solid #cde1f8;
+    border: 0px solid #cde1f8;
     display: block;
     transition: all 0.6s ease-in-out;
     cursor: pointer;
@@ -654,7 +658,7 @@ li {
     opacity: 0;
     visibility: hidden;
     background: #fff;
-    box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
 }
 
@@ -698,7 +702,7 @@ li {
     visibility: visible;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .navbar .dropdown .dropdown ul {
         left: -90%;
     }
@@ -720,7 +724,7 @@ li {
     padding: 2px;
 }
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
     .mobile-nav-toggle {
         display: block;
     }
@@ -798,7 +802,7 @@ li {
     opacity: 1;
     visibility: visible;
     background: #fff;
-    box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -841,7 +845,7 @@ li {
     background-color: rgba(40, 44, 44, 0.6);
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     padding: 0;
     height: 100%;
     width: 100%;
@@ -854,7 +858,7 @@ li {
     font-size: 3rem;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .hero .hero-title {
         font-size: 4.5rem;
     }
@@ -865,7 +869,7 @@ li {
     font-weight: 600;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .hero .hero-subtitle {
         font-size: 2.5rem;
     }
@@ -888,7 +892,7 @@ li {
     font-size: 3rem;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .hero-single .hero-title {
         font-size: 3.5rem;
     }
@@ -927,10 +931,10 @@ li {
     margin-left: 10px;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .about-mf .box-pl2 {
         margin-top: 3rem;
-        padding-left: 0;
+        padding-left: 0rem;
     }
 }
 
@@ -940,7 +944,7 @@ li {
 
 .skill-mf .progress {
     background-color: #cde1f8;
-    margin: 0.5rem 0 1.2rem;
+    margin: 0.5rem 0 1.2rem 0;
     border-radius: 0;
     height: 0.7rem;
 }
@@ -1004,7 +1008,7 @@ li {
     text-align: center;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .counter-box {
         margin-bottom: 1.8rem;
     }
@@ -1110,7 +1114,7 @@ li {
 
 .portfolio-details .portfolio-info {
     padding: 30px;
-    box-shadow: 0 0 30px rgba(78, 78, 78, 0.08);
+    box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1182,19 +1186,19 @@ li {
     line-height: 1.6;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .testimonial-box .description {
         padding: 0 5rem;
     }
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .testimonial-box .description {
         padding: 0 8rem;
     }
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .testimonial-box .description {
         padding: 0 13rem;
     }
@@ -1220,17 +1224,17 @@ li {
   # Contact
   --------------------------------------------------------------*/
 .footer-paralax {
-    padding: 4rem 0 0;
+    padding: 4rem 0 0 0;
 }
 
 .contact-mf {
     margin-top: 4rem;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .contact-mf .box-pl2 {
         margin-top: 3rem;
-        padding-left: 0;
+        padding-left: 0rem;
     }
 }
 
@@ -1328,7 +1332,7 @@ li {
 /*--------------------------------------------------------------
   # Blog
   --------------------------------------------------------------*/
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .card-blog {
         margin-bottom: 3rem;
     }
@@ -1397,7 +1401,7 @@ li {
     margin-bottom: 3rem;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
 
     .post-box,
     .form-comments,
@@ -1411,7 +1415,7 @@ li {
     font-size: 1.5rem;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .blog-wrapper .article-title {
         font-size: 1.9rem;
     }
@@ -1464,7 +1468,7 @@ li {
     font-size: 1.3rem;
 }
 
-@media(min-width: 320px) {
+@media (min-width: 320px) {
     .box-comments .list-comments .comment-author {
         font-size: 1.5rem;
     }
@@ -1620,8 +1624,8 @@ footer .credits a {
 .widget-tags ul li {
     display: inline-block;
     background-color: #52d6d0;
-    padding: 0.2rem 0.6rem;
-    margin-bottom: 0.5rem;
+    padding: .2rem .6rem;
+    margin-bottom: .5rem;
     border-radius: 15px;
 }
 
@@ -1640,7 +1644,7 @@ footer {
 }
 
 footer .copyright {
-    margin-bottom: 0.3rem;
+    margin-bottom: .3rem;
 }
 
 footer .credits {
@@ -1706,7 +1710,7 @@ input[type=submit] {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and(max-width: 320px) {
+@media screen and (max-width: 320px) {
 
     .col-25,
     .col-75,
@@ -1719,7 +1723,7 @@ input[type=submit] {
 /*-------------------------------------------------------------media*/
 /*-------------------------------------------------------------media*/
 
-@media only screen and(min-width: 320px) {
+@media only screen and (min-width: 320px) {
 
     /* For mobile phones: */
     [class*="container boxes card container-fluid"] {
@@ -1734,13 +1738,13 @@ input[type=submit] {
     }
 
     /*--------------------------------------------------------------------------------------media*/
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
         .bd-placeholder-img-lg {
             font-size: 3.5rem;
         }
     }
 
-    @media(min-width: 1200px) {
+    @media (min-width: 1200px) {
 
         .container,
         .container-lg,
@@ -1750,5 +1754,3 @@ input[type=submit] {
             max-width: 100%;
         }
     }
-
-    /*--------------------------------------------------------------------------------------media/

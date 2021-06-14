@@ -103,27 +103,71 @@ initial-scale=1.0">
                                   <div class="col-sm-12">
                                     <input type="text" class="form-control" id="name" placeholder="NAME" name="name"
                                       value="" required>
+
+
+                                    <div class="form-group">
+                                      <div class="col-sm-12">
+                                        <input type="email" class="form-control" id="email" placeholder="EMAIL"
+                                          name="email" value="" required>
+                                        <abbr>
+                                          <input type="text" class="form-control" name="subject" id="subject"
+                                            placeholder="Subject" required>
+                                          <label class="control-label col-sm" for="location">Location:</label>
+                                          <select class="form-control" id="location" placeholder="location"
+                                            name="location" class="custom-select" required="recompile">
+                                            <option value="location" name="location" select>Location</option>
+                                            <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option>
+                                            <option value="mombasa" id="location" name="mombasa">Mombasa</option>
+                                            <option value="nakuru" id="location" name="nakuru">Nakuru</option>
+                                            <option value="lamu" id="location" name="lamu">Lamu</option>
+
+                                            <input type="text" class="form-control" name="special request"
+                                              id="special request" placeholder="Special request" required>
+
+                                            <label class="control-label col-sm" for="Tours">Tours:</label>
+                                            <select class="form-control" id="location" placeholder="location"
+                                              name="tourslocation" class="custom-select" required="recompile">
+                                              <option value="self-tours" id="selfTour" name="selftour">4WD self guided
+                                                tour
+                                              </option>
+                                              <option value="private" id="privateTour" name="privatetour">Masai guided
+                                                tour
+                                              </option>
+                                              <option value="group" id="groupTour" name="grouptour">Tailored tours
+                                              </option>
+                                              <option value="local" id="experiencedTour" name="experiecedtour">
+                                                Experienced
+                                                tour guides</option>
+                                            </select>
+
+                                            <input type="checkbox" name="check" value="check1" id="ch1">
+                                            <label for="ch1">Need accommodation</label>
+                                            <input type="checkbox" name="check" value="check2" checked="checked"
+                                              id="ch2">
+                                            <label for="ch2">No accommodation</label>
+                                            <input type="radio" name="radio" value="radio1" checked="checked" id="r1">
+                                            <label for="r1">Meal included</label>
+                                            <input type="radio" name="radio" value="radio2" id="r2">
+                                            <label for="r2">No Meals</label>
+                                        </abbr>
+                                      </div>
+                                    </div>
+
+                                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"
+                                      required></textarea>
+                                    <div class="col-md-12" id="get-post" class="form" onsubmit="return sendMail(this);"
+                                      method="get-post"></div>
+
+
+
+                                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                      <div class="button">
+                                        <i class="fa fa-paper-plane" onsubmit="return sendMail(this);" method="get-post"
+                                          onclick='sendEmail()'></i><span class="send-text">SEND</span>
+                                      </div>
+
+                                    </button>
                                   </div>
-                                </div>
-
-                                <div class="form-group">
-                                  <div class="col-sm-12">
-                                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"
-                                      value="" required>
-                                  </div>
-                                </div>
-
-                                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"
-                                  required></textarea>
-
-                                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                                  <div class="button">
-                                    <i class="fa fa-paper-plane" onsubmit="return sendMail(this);" method="get-post"
-                                      onclick='sendEmail()'></i><span class="send-text">SEND</span>
-                                  </div>
-
-                                </button>
-
                               </form>
 
                               <!---------------- 
@@ -308,12 +352,11 @@ initial-scale=1.0">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
       </script>
-    <script src="assets/js/contact.js"></script>
-    <script src="assets/js/validate.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/ajax.js"></script>
-    <script src="assets/js/sendEmail.js"></script>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
+    <script type="text/javascript" src="assets/js/validation.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/ajax.js"></script>
+    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
 
     <!--Validated in w3.org
 Erro found Error: Parse Error. Style sheets should not 
