@@ -5,6 +5,7 @@ function initMap () {
     zoom: 5,
     center: Nairobi_National_Park,
   } );
+
   const contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
@@ -26,6 +27,7 @@ function initMap () {
     "</div>" +
     "</div>";
 
+
   const infowindow = new google.maps.InfoWindow( {
     content: contentString,
   } );
@@ -37,4 +39,5 @@ function initMap () {
   marker.addListener( "click", () => {
     infowindow.open( map, marker );
   } );
+
 }
