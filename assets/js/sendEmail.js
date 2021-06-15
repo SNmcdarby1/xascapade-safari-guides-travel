@@ -20,7 +20,7 @@ function sendEmail ( tempParams ) {
         nakuru: document.getElementById( "nakuru" ).value,
 
     };
-    emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams, user_cbk0RT9vpd78BlYyPC67x )
+    emailjs.send( "service_uq4jx2r", "template_tlarndr", tempParams, "user_frKMPC59Co9oA1oL0LV7I" )
         .then( function ( res ) {
             console.log( "success", res.status );
         },
@@ -39,7 +39,7 @@ function sendEmail ( tempParams ) {
         tour: document.getElementById( "tour" ).value,
         location: document.getElementById( "location" ).value,
     };
-    emailjs.send( "service_aw4lcie", "template_p9qe11h", {
+    emailjs.send( "service_uq4jx2r", "template_tlarndr", tempParams, "user_frKMPC59Co9oA1oL0LV7I"  {
         to_name: "xascapae@gmail.com",
         from_name: "user",
         message: "message",
@@ -50,7 +50,7 @@ function sendEmail ( tempParams ) {
     } );
 
 
-    emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams, user_cbk0RT9vpd78BlYyPC67x )
+    emailjs.send( "service_uq4jx2r", "template_tlarndr", tempParams, "user_frKMPC59Co9oA1oL0LV7I" )
         .then( function ( res ) {
             console.log( "success", res.status );
         },

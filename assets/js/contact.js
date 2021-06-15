@@ -137,3 +137,4 @@ function loaded () {
         myDisplay( myText )
     }
 };
+
