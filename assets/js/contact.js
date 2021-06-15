@@ -47,7 +47,7 @@ function getFormData () {
 
                 $.ajax( {
                     type: "get-post",
-                    url: "../../contact-form",
+                    url: "../../contact_form",
                     data: $contact_form.serialize(),
                     success: function ( response ) {
 
@@ -127,7 +127,7 @@ function loaded () {
     var form = false;
     var length = document.forms.length;
     for ( var i = 0; i < length; i++ ) {
-        if ( form.id == "contact-form" ) {
+        if ( form.id == "contact_form" ) {
             form = document.forms[ i ];
         }
     }

@@ -1,4 +1,14 @@
 function sendEmail ( tempParams ) {
+    emailjs.send( "service_uq4jx2r", "template_tlarndr", "tempParams", {
+        to_name: "xascapae@gmail.com",
+        from_name: "user",
+        message: "message",
+        reply_to: "user_email",
+        tour: "tour",
+        location: "location",
+        contact_form: "contact_form",
+    } );
+
     var tempParams = {
         from_name: document.getElementById( "fromName" ).value,
         to_name: document.getElementById( "toName" ).value,
@@ -39,15 +49,6 @@ function sendEmail ( tempParams ) {
         tour: document.getElementById( "tour" ).value,
         location: document.getElementById( "location" ).value,
     };
-    emailjs.send( "service_uq4jx2r", "template_tlarndr", tempParams, "user_frKMPC59Co9oA1oL0LV7I"  {
-        to_name: "xascapae@gmail.com",
-        from_name: "user",
-        message: "message",
-        reply_to: "user_email",
-        tour: "tour",
-        location: "location",
-        contact_form: "contact_form",
-    } );
 
 
     emailjs.send( "service_uq4jx2r", "template_tlarndr", tempParams, "user_frKMPC59Co9oA1oL0LV7I" )
