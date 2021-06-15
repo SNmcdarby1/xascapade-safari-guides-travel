@@ -1,4 +1,4 @@
-
+//
 function loadDoc ( contact_form ) {
 
     var xhttp = new XMLHttpRequest();
@@ -86,3 +86,23 @@ $( "#contact-form" ).click( function () {
     } )
 }
 )
+
+// google search buttons Grepper search box
+
+function _GET_REQUEST ( url, response ) {
+    var xhttp;
+    if ( window.XMLHttpRequest ) {
+        xhttp = new XMLHttpRequest();
+    } else {
+        xhttp = new ActiveXObject( "Microsoft.XMLHTTP" );
+    }
+
+    xhttp.onreadystatechange = function () {
+        if ( this.readyState == 4 && this.status == 200 ) {
+            response( this.responseText );
+        }
+    };
+
+    xhttp.open( "get-post", url, true );
+    xhttp.send();
+}
