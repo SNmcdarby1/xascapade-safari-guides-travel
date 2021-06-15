@@ -47,7 +47,7 @@ function getFormData () {
 
                 $.ajax( {
                     type: "get-post",
-                    url: "../../ajax/contact-form",
+                    url: "../../contact-form",
                     data: $contact_form.serialize(),
                     success: function ( response ) {
 

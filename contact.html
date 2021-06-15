@@ -7,7 +7,6 @@
 initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Xascapade Safari guides travel - Index</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     type="text/css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -15,15 +14,7 @@ initial-scale=1.0">
 
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-<!--Emailjs-->
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-<script type="text/javascript">
-  ( function () {
-    emailjs.init( "user_cbk0RT9vpd78BlYyPC67x" );
-  }
-  )();
+<!-- body section -->
 </script>
 
 <body>
@@ -33,7 +24,7 @@ initial-scale=1.0">
     <!-- Header-->
     <header id="header" class="fixed-top">
       <div class="  align-items-left justify-content-between">
-        <nav id="navbar" class="navbar topnav " onclick="myFunction(this)">
+        <nav id="navbar" class="navbar topnav ">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -43,7 +34,7 @@ initial-scale=1.0">
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);">
             <i class="fa fa-bars"></i>
         </nav><!-- .navbar -->
       </div>
@@ -96,146 +87,147 @@ initial-scale=1.0">
                       
                         ----------------->
 
-                              <form id="contact-form" method="get-post" class="form-horizontal" role="form"
-                                onsubmit="return sendMail(this);">
+                              <form id="contact-form" method="get-post" class="form-horizontal" role="form">
 
                                 <div class="form-group">
                                   <div class="col-sm-12">
-                                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name"
-                                      value="" required>
-
-
-                                    <div class="form-group">
-                                      <div class="col-sm-12">
-                                        <input type="email" class="form-control" id="email" placeholder="EMAIL"
-                                          name="email" value="" required>
-                                        <abbr>
-                                          <input type="text" class="form-control" name="subject" id="subject"
-                                            placeholder="Subject" required>
-                                          <label class="control-label col-sm" for="location">Location:</label>
-                                          <select class="form-control" id="location" placeholder="location"
-                                            name="location" class="custom-select" required="recompile">
-                                            <option value="location" name="location" select>Location</option>
-                                            <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option>
-                                            <option value="mombasa" id="location" name="mombasa">Mombasa</option>
-                                            <option value="nakuru" id="location" name="nakuru">Nakuru</option>
-                                            <option value="lamu" id="location" name="lamu">Lamu</option>
-
-                                            <input type="text" class="form-control" name="special request"
-                                              id="special request" placeholder="Special request" required>
-
-                                            <label class="control-label col-sm" for="Tours">Tours:</label>
-                                            <select class="form-control" id="location" placeholder="location"
-                                              name="tourslocation" class="custom-select" required="recompile">
-                                              <option value="self-tours" id="selfTour" name="selftour">4WD self guided
-                                                tour
-                                              </option>
-                                              <option value="private" id="privateTour" name="privatetour">Masai guided
-                                                tour
-                                              </option>
-                                              <option value="group" id="groupTour" name="grouptour">Tailored tours
-                                              </option>
-                                              <option value="local" id="experiencedTour" name="experiecedtour">
-                                                Experienced
-                                                tour guides</option>
-                                            </select>
-
-                                            <input type="checkbox" name="check" value="check1" id="ch1">
-                                            <label for="ch1">Need accommodation</label>
-                                            <input type="checkbox" name="check" value="check2" checked="checked"
-                                              id="ch2">
-                                            <label for="ch2">No accommodation</label>
-                                            <input type="radio" name="radio" value="radio1" checked="checked" id="r1">
-                                            <label for="r1">Meal included</label>
-                                            <input type="radio" name="radio" value="radio2" id="r2">
-                                            <label for="r2">No Meals</label>
-                                        </abbr>
-                                      </div>
-                                    </div>
-
-                                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"
-                                      required></textarea>
-                                    <div class="col-md-12" id="get-post" class="form" onsubmit="return sendMail(this);"
-                                      method="get-post"></div>
-
-
-
-                                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                                      <div class="button">
-                                        <i class="fa fa-paper-plane" onsubmit="return sendMail(this);" method="get-post"
-                                          onclick='sendEmail()'></i><span class="send-text">SEND</span>
-                                      </div>
-
-                                    </button>
+                                    <input type="text" class="form-control" id="fromName" placeholder="From"
+                                      name="froNname" value="" required>
                                   </div>
-                              </form>
+                                  <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="toName" placeholder="To " name="toName"
+                                      value="" required>
+                                  </div>
 
-                              <!---------------- 
+                                  <div class="col-sm-12">
+                                    <input type=" email" class="form-control" id="email" placeholder="EMAIL"
+                                      name="email" value="" required>
+                                  </div>
+                                  <abbr class="col-sm-12">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                      placeholder="Subject" required>
+                                    <label class="control-label col-sm" for="location">Location:</label>
+                                    <select class="form-control" id="location" placeholder="location" name="location"
+                                      class="custom-select" required="recompile">
+                                      <option value="location" id="location" name="location" select>Location
+                                      </option>
+                                      <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option>
+                                      <option value="mombasa" id="mombasa" name="mombasa">Mombasa</option>
+                                      <option value="nakuru" id="nakuru" name="nakuru">Nakuru</option>
+                                      <option value="lamu" id="lamu" name="lamu">Lamu</option>
+
+                                      <input type="text" class="form-control" name="special request"
+                                        id="special request" placeholder="Special request" required>
+                                    </select>
+                                    <label class="control-label col-sm" for="Tours">Tours:</label>
+                                    <select class="form-control" id="tours" placeholder="tour" name="tours"
+                                      class="custom-select" required="recompile">
+                                      <option value="self_tours" id="selfTour" name="self_tour">4WD self guided
+                                        tour
+                                      </option>
+                                      <option value="private" id="privateTour" name="privatetour">Masai guided
+                                        tour
+                                      </option>
+                                      <option value="group" id="group" name="group">Tailored tours
+                                      </option>
+                                      <option value="local" id="experiencedTour" name="experiecedtour">
+                                        Experienced
+                                        tour guides</option>
+                                    </select>
+                                    <!-- bootstrap input examples -->
+                                    <input type="checkbox" name="check" value="check1" id="ch1" name="ch1">
+                                    <label for="ch1">Need accommodation</label>
+                                    <input type="checkbox" name="check" value="check2" checked="checked" id="ch2"
+                                      name="ch2">
+                                    <label for="ch2">No accommodation</label>
+                                    <input type="radio" name="radio" value="radio1" checked="checked" id="r1" name="r1">
+                                    <label for="r1">Meal included</label>
+                                    <input type="radio" name="radio" value="radio2" id="r2" name="r2">
+                                    <label for="r2">No Meals</label>
+                                  </abbr>
+                                </div>
+                                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"
+                                  id="message" required></textarea>
+                                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                  <div class="button">
+                                    <i class="fa fa-paper-plane" id="get-post" method="get-post"></i><span
+                                      class="send-text">SEND</span>
+                                  </div>
+
+                                </button>
+
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    </form>
+
+                    <!---------------- 
                   
                         footer 
                       
                         ----------------->
-                          </section>
+    </section>
 
-                          <div class=" col-md-12">
-                            <div class="title-box-2 pt-4 pt-md-0">
-                              <h3 class="title mt-0 mb-1 ">
-                                Get in Touch
-                              </h3>
-                              <div>
-                                <div class="more-info">
-                                  <p class="mt-0 mb-1 ">
-                                    If you are looking for a holiday with rich diversity landscape and
-                                    extraordinary.
-                                    Be it the rich wildlife and the beautiful Beaches of Mombasa.
-                                    Drop us an email and we will be happy to tailor your holiday dream
-                                    according
-                                    to your own desire.
-                                  </p>
-                                  <ul class="list-ico">
-                                    <h3 class="title mt-0 mb-1 ">
-                                      Xascapade Address
-                                    </h3>
-                                    <ul>
-                                      <ul><span class="bi bi-geo-alt"><i class="fa fa-map-marker fa-1x"></i></span> 329
-                                        Greystones, Co. Wicklow </ul>
-                                      <ul><span class="bi bi-phone"></span> <i class="fa fa-phone fa-1x"></i>
-                                        (01) 557-0089
-                                      </ul>
-                                      <ul><span class="bi bi-envelope"></span><i class="fa fa-envelope fa-1x"></i>
-                                        contact@xascapade.com</ul>
-                                    </ul>
-                                </div>
-                                <!-- ===social links== -->
-                                <div class="socials">
-                                  <ul>
-                                    <li><a href="https://www.facebook.com/simbapawtrail"><span class="ico-circle"><i
-                                            class="fa fa-facebook"></i></span></a>
-                                    </li>
-                                    <li><a href="https://www.instagram.com/trysafari.ke/?hl=en>"><span
-                                          class="ico-circle"><i class="fa fa-instagram"></i></span></a>
-                                    </li>
-                                    <li><a href="https://twitter.com/Safari78047357"><span class="ico-circle"><i
-                                            class="fa fa-twitter"></i></span></a>
-                                    </li>
-                                    <li><a href="https://www.linkedin.com/company/37523851/admin/"><span
-                                          class="ico-circle"><i class="fa fa-linkedin"></i></span></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class=" col-md-12">
+      <div class="title-box-2 pt-4 pt-md-0">
+        <h3 class="title mt-0 mb-1 ">
+          Get in Touch
+        </h3>
+        <div>
+          <div class="more-info">
+            <p class="mt-0 mb-1 ">
+              If you are looking for a holiday with rich diversity landscape and
+              extraordinary.
+              Be it the rich wildlife and the beautiful Beaches of Mombasa.
+              Drop us an email and we will be happy to tailor your holiday dream
+              according
+              to your own desire.
+            </p>
+            <ul class="list-ico">
+              <h3 class="title mt-0 mb-1 ">
+                Xascapade Address
+              </h3>
+              <ul>
+                <ul><span class="bi bi-geo-alt"><i class="fa fa-map-marker fa-1x"></i></span> 329
+                  Greystones, Co. Wicklow </ul>
+                <ul><span class="bi bi-phone"></span> <i class="fa fa-phone fa-1x"></i>
+                  (01) 557-0089
+                </ul>
+                <ul><span class="bi bi-envelope"></span><i class="fa fa-envelope fa-1x"></i>
+                  contact@xascapade.com</ul>
+              </ul>
+          </div>
+          <!-- ===social links== -->
+          <div class="socials">
+            <ul>
+              <li><a href="https://www.facebook.com/simbapawtrail"><span class="ico-circle"><i
+                      class="fa fa-facebook"></i></span></a>
+              </li>
+              <li><a href="https://www.instagram.com/trysafari.ke/?hl=en>"><span class="ico-circle"><i
+                      class="fa fa-instagram"></i></span></a>
+              </li>
+              <li><a href="https://twitter.com/Safari78047357"><span class="ico-circle"><i
+                      class="fa fa-twitter"></i></span></a>
+              </li>
+              <li><a href="https://www.linkedin.com/company/37523851/admin/"><span class="ico-circle"><i
+                      class="fa fa-linkedin"></i></span></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </section>
     <section id="contact" class="paralax-mf footer-paralabg-image sect-mt12 route">
       <div class=" container-fluid map-container-google-12 map-container-7">
@@ -326,39 +318,36 @@ initial-scale=1.0">
         </div>
         <a href="#" class="back-to-top  align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
-        <!-- Template Main JS File -->
       </section>
-      <script>
 
-
-
-
-      </script>
       <!-- End Services Section -->
       <!-- Vendor JS Files -->
 
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    <!-- Emailjs section -->
+    <!-- Email js contact form sample  -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script>
+      ( function () {
+        emailjs.init( "user_cbk0RT9vpd78BlYyPC67x" );
+      }
+      )();
+      window.onload = function () {
+        document.getElementById( 'contact-form' ).addEventListener( 'submit', function ( event ) {
+          event.preventDefault();
+          emailjs.sendForm( 'contact_service', 'contact_form', this )
+            .then( function () {
+              console.log( 'SUCCESS!' );
+            }, function ( error ) {
+              console.log( 'FAILED...', error );
+            } );
+        } );
+      }
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-      </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-      </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-      </script>
-    <script type="text/javascript" src="assets/js/contact.js"></script>
-    <script type="text/javascript" src="assets/js/validation.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/ajax.js"></script>
-    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
-    <script type="text/javascript" src="assets/js/emailjs.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!--Validated in w3.org
 Erro found Error: Parse Error. Style sheets should not 
 include HTML syntax..

@@ -2,11 +2,25 @@ function sendEmail ( tempParams ) {
     var tempParams = {
         from_name: document.getElementById( "fromName" ).value,
         to_name: document.getElementById( "toName" ).value,
-        message: document.getElementById( "message" ).value,
-        message: document.getElementById( "tour" ).value,
-        message: document.getElementById( "location" ).value,
+        email: document.getElementById( "email" ).value,
+        subject: document.getElementById( "subject" ).value,
+        tour: document.getElementById( "tour" ).value,
+        location: document.getElementById( "location" ).value,
+        nairobi: document.getElementById( "nairobi" ).value,
+        Mombasa: document.getElementById( "Mombasa" ).value,
+        lamu: document.getElementById( "lamu" ).value,
+        tours: document.getElementById( "tours" ).value,
+        self_tours: document.getElementById( "self_tours" ).value,
+        group: document.getElementById( "group" ).value,
+        experiecedtour: document.getElementById( "experiecedtour" ).value,
+        ch1: document.getElementById( "ch1" ).value,
+        ch2: document.getElementById( "ch2" ).value,
+        r1: document.getElementById( "r1" ).value,
+        r2: document.getElementById( "r2" ).value,
+        nakuru: document.getElementById( "nakuru" ).value,
+
     };
-    emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams )
+    emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams, user_cbk0RT9vpd78BlYyPC67x )
         .then( function ( res ) {
             console.log( "success", res.status );
         },
@@ -36,7 +50,7 @@ function sendEmail ( tempParams ) {
     } );
 
 
-    emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams )
+    emailjs.send( "service_aw4lcie", "template_p9qe11h", tempParams, user_cbk0RT9vpd78BlYyPC67x )
         .then( function ( res ) {
             console.log( "success", res.status );
         },
