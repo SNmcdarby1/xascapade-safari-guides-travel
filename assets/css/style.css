@@ -235,7 +235,7 @@ li {
 
 /* 3wschool */
 .topnav {
-    background-color: #333;
+    background-color: rgb(156, 209, 196);
     overflow: hidden;
     margin-top: 10px;
     margin-left: 0px;
@@ -716,7 +716,7 @@ li {
   * Mobile Navigation 
   */
 .mobile-nav-toggle {
-    color: rgb(5, 5, 4);
+    color: rgb(100, 100, 91);
     font-size: 28px;
     cursor: pointer;
     display: inline-flexbox;
