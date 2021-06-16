@@ -15,209 +15,176 @@ initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
 <!-- body section -->
-</script>
 
-<body>
-  </head>
-
-  <body id="page-top">
-    <!-- Header-->
-    <header id="header" class="fixed-top">
-      <div class="  align-items-left justify-content-between">
-        <nav id="navbar" class="navbar topnav ">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="sanctuary.html">Animal Sanctaury</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-      </div>
-    </header>
-    <!-- End Header -->
+<body id="page-top">
+  <!-- Header-->
+  <header id="header" class="fixed-top">
+    <div class="  align-items-left justify-content-between">
+      <nav id="navbar" class="navbar topnav ">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="sanctuary.html">Animal Sanctaury</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header>
+  <!-- End Header -->
+  <main>
     <!-- ======= Contact Section ======= -->
-    <section id="contact_form" class="paralax-mf footer-paralabg-image sect-mt12 route" id="sendEmail_mail_form">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
+    <section id="contact_form2" id="sendEmail_mail_form" class="paralax-mf footer-paralabg-image sect-mt12  route">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="contact-mf">
             <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/images/" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="contact-mf">
-                        <div id="contact" class="box-shadow-full">
-                          <section id="contact" class="contact-mf pt-5 route">
-                            <div class="container">
-                              <div class="col12">
-                                <div class="col-sm-12">
-                                  <div class="title-box text-center">
-                                    <h3 class="title-a">
-                                      Contacts us
-                                    </h3>
-                                  </div>
-                                </div>
+              <section class="pt-5 route">
+                <div class="container">
+
+                  <h3 class="title-a">
+                    Contacts us
+                  </h3>
+
+                  <section class="col-sm-12">
+
+                    <h4>Please enter your details </h4>
+
+                    <div class="contact-wrapper col-sm-12">
+
+                      <!---------------- information
+  google javascript interactive contact form and was inspired to use the codepen contact form. found that it is simple and clean. And inxorperated with some of my work. ----------------->
+
+                      <form id="contact_form" method="get_post" class="form-horizontal" role="form">
+                        <div>
+                          <div class="form-group ">
+                            <div class="col-sm-12">
+                              <div>
+                                <input type=" text" class="form-control" id="fromName" placeholder="name"
+                                  name="froNname" value="" required>
                               </div>
+                              <div>
+                                <input type="text" class="form-control" id="toName" placeholder="To " name="toName"
+                                  value="" required>
+                              </div>
+
+                              <div>
+                                <input type=" email" class="form-control" id="email" placeholder="EMAIL" name="email"
+                                  value="">
+                              </div>
+
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                required>
+                              <label class="control-label col-sm" for="location">Location:</label>
+                              <select class="form-control" id="location" name="location" class="custom-select"
+                                required="recompile">
+                                <option value="location" name="location" select>Location
+                                </option>
+                                <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option>
+                                <option value="mombasa" id="mombasa" name="mombasa">Mombasa</option>
+                                <option value="nakuru" id="nakuru" name="nakuru">Nakuru</option>
+                                <option value="lamu" id="lamu" name="lamu">Lamu</option>
+
+                                <input type="text" class="form-control" name="special request" id="special-request"
+                                  placeholder="Special-request" required>
+                              </select>
+                              <label class="control-label col-sm" for="Tours">Tours:</label>
+                              <select class="form-control" id="tours" placeholder="tour" name="tours"
+                                class="custom-select" required="recompile">
+                                <option value="self_tours" id="selfTour" name="self_tour">4WD self guided
+                                  tour
+                                </option>
+                                <option value="private" id="privateTour" name="privatetour">Masai guided
+                                  tour
+                                </option>
+                                <option value="group" id="group" name="group">Tailored tours
+                                </option>
+                                <option value="local" id="experiencedTour" name="experiecedtour">
+                                  Experienced
+                                  tour guides</option>
+                              </select>
+                              <!-- bootstrap input examples -->
+                              <input type="checkbox" value="check1" id="ch1" name="ch1">
+                              <label for="ch1">Need accommodation</label>
+                              <input type="checkbox" value="check2" checked="checked" id="ch2" name="ch2">
+                              <label for="ch2">No accommodation</label>
+                              <input type="radio" value="radio1" checked="checked" id="r1" name="r1">
+                              <label for="r1">Meal included</label>
+                              <input type="radio" value="radio2" id="r2" name="r2">
+                              <label for="r2">No Meals</label>
                             </div>
-                          </section>
-                          <section id="contact " class="col-sm-12">
-
-                            <h1 class="section-header">Please enter your details </h1>
-
-                            <div class="contact-wrapper col-sm-12">
-
-                              <!---------------- 
-                  
-                        CONTACT PAGE LEFT
-                        google javascript interactive contact form and was inspired to use the codepen contact form. found that it is simple and clean. And inxorperated with some of my work.
-                      
-                        ----------------->
-
-                              <form id="contact_form" method="get-post" class="form-horizontal" role="form">
-
-                                <div class="form-group ">
-                                  <abbr class="col-sm-12">
-                                    <div>
-                                      <input type=" text" class="form-control" id="fromName" placeholder="From"
-                                        name="froNname" value="" required>
-                                    </div>
-                                    <div>
-                                      <input type="text" class="form-control" id="toName" placeholder="To "
-                                        name="toName" value="" required>
-                                    </div>
-
-                                    <div>
-                                      <input type=" email" class="form-control" id="email" placeholder="EMAIL"
-                                        name="email" value="" required>
-                                    </div>
-
-                                    <input type="text" class="form-control" name="subject" id="subject"
-                                      placeholder="Subject" required>
-                                    <label class="control-label col-sm" for="location">Location:</label>
-                                    <select class="form-control" id="location" placeholder="location" name="location"
-                                      class="custom-select" required="recompile">
-                                      <option value="location" id="location" name="location" select>Location
-                                      </option>
-                                      <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option>
-                                      <option value="mombasa" id="mombasa" name="mombasa">Mombasa</option>
-                                      <option value="nakuru" id="nakuru" name="nakuru">Nakuru</option>
-                                      <option value="lamu" id="lamu" name="lamu">Lamu</option>
-
-                                      <input type="text" class="form-control" name="special request"
-                                        id="special request" placeholder="Special request" required>
-                                    </select>
-                                    <label class="control-label col-sm" for="Tours">Tours:</label>
-                                    <select class="form-control" id="tours" placeholder="tour" name="tours"
-                                      class="custom-select" required="recompile">
-                                      <option value="self_tours" id="selfTour" name="self_tour">4WD self guided
-                                        tour
-                                      </option>
-                                      <option value="private" id="privateTour" name="privatetour">Masai guided
-                                        tour
-                                      </option>
-                                      <option value="group" id="group" name="group">Tailored tours
-                                      </option>
-                                      <option value="local" id="experiencedTour" name="experiecedtour">
-                                        Experienced
-                                        tour guides</option>
-                                    </select>
-                                    <!-- bootstrap input examples -->
-                                    <input type="checkbox" name="check" value="check1" id="ch1" name="ch1">
-                                    <label for="ch1">Need accommodation</label>
-                                    <input type="checkbox" name="check" value="check2" checked="checked" id="ch2"
-                                      name="ch2">
-                                    <label for="ch2">No accommodation</label>
-                                    <input type="radio" name="radio" value="radio1" checked="checked" id="r1" name="r1">
-                                    <label for="r1">Meal included</label>
-                                    <input type="radio" name="radio" value="radio2" id="r2" name="r2">
-                                    <label for="r2">No Meals</label>
-                                  </abbr>
-                                </div>
-                                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"
-                                  id="message" required></textarea>
-                                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                                  <div class="button">
-                                    <i class="fa fa-paper-plane" id="get-post" method="get-post"></i><span
-                                      class="send-text">SEND</span>
-                                  </div>
-
-                                </button>
-                                </select>
-                            </div>
+                          </div>
                         </div>
-                      </div>
+                      </form>
+                      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id="message"
+                        required></textarea>
+                      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                        <dl class="button">
+                          <i class="fa fa-paper-plane" id="get_post" method="get_post"></i><span
+                            class="send-text">SEND</span>
+                        </dl>
+                      </button>
                     </div>
-                    </form>
-
-                    <!---------------- 
-                  
-                        footer 
-                      
-                        ----------------->
-    </section>
-
-    <div class=" col-md-12">
-      <div class="title-box-2 pt-4 pt-md-0">
-        <h3 class="title mt-0 mb-1 ">
-          Get in Touch
-        </h3>
-        <div>
-          <div class="more-info">
-            <p class="mt-0 mb-1 ">
-              If you are looking for a holiday with rich diversity landscape and
-              extraordinary.
-              Be it the rich wildlife and the beautiful Beaches of Mombasa.
-              Drop us an email and we will be happy to tailor your holiday dream
-              according
-              to your own desire.
-            </p>
-            <ul class="list-ico">
-              <h3 class="title mt-0 mb-1 ">
-                Xascapade Address
-              </h3>
-              <ul>
-                <ul><span class="bi bi-geo-alt"><i class="fa fa-map-marker fa-1x"></i></span> 329
-                  Greystones, Co. Wicklow </ul>
-                <ul><span class="bi bi-phone"></span> <i class="fa fa-phone fa-1x"></i>
-                  (01) 557-0089
-                </ul>
-                <ul><span class="bi bi-envelope"></span><i class="fa fa-envelope fa-1x"></i>
-                  contact@xascapade.com</ul>
-              </ul>
+                </div>
+            </div>
           </div>
-          <!-- ===social links== -->
-          <div class="socials">
-            <ul>
-              <li><a href="https://www.facebook.com/simbapawtrail"><span class="ico-circle"><i
-                      class="fa fa-facebook"></i></span></a>
-              </li>
-              <li><a href="https://www.instagram.com/trysafari.ke/?hl=en>"><span class="ico-circle"><i
-                      class="fa fa-instagram"></i></span></a>
-              </li>
-              <li><a href="https://twitter.com/Safari78047357"><span class="ico-circle"><i
-                      class="fa fa-twitter"></i></span></a>
-              </li>
-              <li><a href="https://www.linkedin.com/company/37523851/admin/"><span class="ico-circle"><i
-                      class="fa fa-linkedin"></i></span></a>
-              </li>
-            </ul>
+        </div>
+    </section>
+    <!-- contact information section -->
+    <section>
+      <div class=" col-md-12">
+        <div class="title-box-2 pt-4 pt-md-0">
+          <h3 class="title mt-0 mb-1 ">
+            Get in Touch
+          </h3>
+          <div>
+            <div class="more-info">
+              <p class="mt-0 mb-1 ">
+                If you are looking for a holiday with rich diversity landscape and
+                extraordinary.
+                Be it the rich wildlife and the beautiful Beaches of Mombasa.
+                Drop us an email and we will be happy to tailor your holiday dream
+                according
+                to your own desire.
+              </p>
+              <ul class="list-ico">
+                <span></span> class="title mt-0 mb-1 ">
+                Xascapade Address
+                </span>
+                <lo>
+                  <ul><span class="bi bi-geo-alt"><i class="fa fa-map-marker fa-1x"></i></span> 329
+                    Greystones, Co. Wicklow </ul>
+                  <ul><span class="bi bi-phone"></span> <i class="fa fa-phone fa-1x"></i>
+                    (01) 557-0089
+                  </ul>
+                  <ul><span class="bi bi-envelope"></span><i class="fa fa-envelope fa-1x"></i>
+                    contact@xascapade.com</ul>
+                </lo>
+            </div>
+
+            <!-- ===social links== -->
+            <div class="socials">
+              <ul>
+                <li><a href="https://www.facebook.com/simbapawtrail"><span class="ico-circle"><i
+                        class="fa fa-facebook"></i></span></a>
+                </li>
+                <li><a href="https://www.instagram.com/trysafari.ke/?hl=en"><span class="ico-circle"><i
+                        class="fa fa-instagram"></i></span></a>
+                </li>
+                <li><a href="https://twitter.com/Safari78047357"><span class="ico-circle"><i
+                        class="fa fa-twitter"></i></span></a>
+                </li>
+                <li><a href="https://www.linkedin.com/company/37523851/admin/"><span class="ico-circle"><i
+                        class="fa fa-linkedin"></i></span></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
+      </div>
     </section>
     <section id="contact" class="paralax-mf footer-paralabg-image sect-mt12 route">
       <div class=" container-fluid map-container-google-12 map-container-7">
@@ -230,121 +197,123 @@ initial-scale=1.0">
                     <div class="col-sm-12 col-md-12">
                       <!-- ===office area map -->
                       <div id="map" id="map-container-google-12" class="z-depth-1-half map-container-7"
-                        style="height: 200px">
+                        style="height: 1600px">
 
                         <iframe src="https://maps.google.com/maps?q=greystones&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                          frameborder="0" style="border:0" allowfullscreen></iframe>
+                          nframeborder="0" style="border:0" allowfullscreen></iframe>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            </main>
+
     </section>
-    <!-- End Contact Section -->
+  </main>
+  <!-- End Contact Section -->
 
 
+  <!----------------  footer  ----------------->
 
 
-    <!--Footer section  bootstrap snippet-->
-    <footer class="blockquote-footer">
-      <ul class="list-inline social-links">
-        <li class="list-inline-item">
-          <a target="_blank" href="https://www.facebook.com/simbapawtrail/">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <span class="sr-only">Facebook</span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a target="_blank" href="https://twitter.com/Safari78047357">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <span class="sr-only">twitter</span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            <span class="sr-only">linkedin</span>
-          </a>
-        </li>
+  <!--Footer section  bootstrap snippet-->
+  <footer class="blockquote-footer">
+    <ul class="list-inline social-links">
+      <li class="list-inline-item">
+        <a target="_blank" href="https://www.facebook.com/simbapawtrail/">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a target="_blank" href="https://twitter.com/Safari78047357">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <span class="sr-only">twitter</span>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <span class="sr-only">linkedin</span>
+        </a>
+      </li>
 
-        <li class="list-inline-item">
-          <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <span class="sr-only">Instagram</span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
-            <i class="fa fa-youtube" aria-hidden="true"></i>
-            <span class="sr-only">YouTube</span>
-          </a>
-        </li>
+      <li class="list-inline-item">
+        <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+          <span class="sr-only">YouTube</span>
+        </a>
+      </li>
 
-      </ul> <cite title="Source Title">
-        <a href="mail@xascapade.com">info@xascapade.com</a>
-        <p>Powered by
-          <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
-            Xascapade</a>
-        </p>
-        <a href="index.html" class="cd-top text-replace js-cd-top">Top</a>
-      </cite>
-      </blockquote>
-      <!-- ======= Footer ======= -->
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="copyright-box">
-                <p class="copyright">&copy; Copyright
-                  <strong>Xascapade Safari guides travel </strong>. All Rights Reserved
-                </p>
-                <li><a href="map.html">Map</a></li>
+    </ul> <cite title="Source Title">
+      <a href="mail@xascapade.com">info@xascapade.com</a>
+      <p>Powered by
+        <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
+          Xascapade</a>
+      </p>
+      <a href="index.html" class="cd-top text-replace js-cd-top">Top</a>
+    </cite>
+    </blockquote>
+    <!-- ======= Footer ======= -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright
+                <strong>Xascapade Safari guides travel </strong>. All Rights Reserved
+              </p>
+              <li><a href="map.html">Map</a></li>
 
-              </div>
             </div>
           </div>
         </div>
-        <a href="#" class="back-to-top  align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-      </section>
+      </div>
+      <a href="#" class="back-to-top  align-items-center justify-content-center"><i
+          class="bi bi-arrow-up-short"></i></a>
+    </section>
 
-      <!-- End Services Section -->
-      <!-- Vendor JS Files -->
+    <!-- End Services Section -->
+    <!-- Vendor JS Files -->
 
-    </footer>
-    <!-- Emailjs section -->
-    <!-- Email js contact form sample  -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script>
-      ( function () {
-        emailjs.init( "user_frKMPC59Co9oA1oL0LV7I" );
-      }
-      )();
-      window.onload = function () {
-        document.getElementById( 'contact_form' ).addEventListener( 'SEND', function ( event ) {
-          event.preventDefault();
-          emailjs.sendForm( 'contact_service', 'contact_form', this )
-            .then( function () {
-              console.log( 'SUCCESS!' );
-            }, function ( error ) {
-              console.log( 'FAILED...', error );
-            } );
-        } );
-      }
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <!-- <script src="assets/js/contact.js"></script>
+  </footer>
+  <!-- Emailjs section -->
+  <!-- Email js contact form sample  -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+  <script>
+    ( function () {
+      emailjs.init( "user_frKMPC59Co9oA1oL0LV7I" );
+    }
+    )();
+    window.onload = function () {
+      document.getElementById( 'contact_form' ).addEventListener( 'SEND', function ( event ) {
+        event.preventDefault();
+        emailjs.sendForm( 'contact_service', 'contact_form', this )
+          .then( function () {
+            console.log( 'SUCCESS!' );
+          }, function ( error ) {
+            console.log( 'FAILED...', error );
+          } );
+      } );
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- <script src="assets/js/contact.js"></script>
     <script src="assets/js/sendEmail.js"></script> -->
 
-    <!--Validated in w3.org
+  <!--Validated in w3.org
 Erro found Error: Parse Error. Style sheets should not 
 include HTML syntax..
 Revit to validate the error-->
-  </body>
+</body>
 
 </html>

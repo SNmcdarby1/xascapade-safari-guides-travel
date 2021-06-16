@@ -46,7 +46,7 @@ function getFormData () {
                 $contact_form.append( '<img class="loading" src=:"../../images/site/loading.gif">' );
 
                 $.ajax( {
-                    type: "get-post",
+                    type: "get_post",
                     url: "../../contact_form",
                     data: $contact_form.serialize(),
                     success: function ( response ) {
@@ -98,7 +98,7 @@ function handleFormSubmit ( event ) { // handles form submit withtout any jquery
     } else {
         var url = event.target.action; //
         var xhr = new XMLHttpRequest();
-        xhr.open( 'get-post', url );
+        xhr.open( 'get_post', url );
         // xhr.withCredentials = true;
         xhr.setRequestHeader( 'Content-Type', 'application' );
         xhr.onreadystatechange = function () {
