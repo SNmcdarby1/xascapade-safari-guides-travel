@@ -33,50 +33,62 @@ function getFormData () {
             }
         }
     } );
-
-    // enquery form 
-    var $contact_form = $( '#enquiry-form' );
-
-    function alert ( message ) {
-        $contact_form.validate( alert_message )( {
-            errorPlacement: function () {
-                return false;
-            },
-            submitHandler: function () {
-                $contact_form.append( '<img class="loading" src=:"../../images/site/loading.gif">' );
-
-                $.ajax( {
-                    type: "get_post",
-                    url: "../../contact_form",
-                    data: $contact_form.serialize(),
-                    success: function ( response ) {
-
-                        var resp = JSON.parse( response );
-
-                        $contact_form.find( 'input' ).remove();
-                        $contact_form.find( 'textarea' ).remove();
-                        $contact_form.append( '<p class="status-code ' + resp.status + '">' + resp.msg + '</p>' );
-                    },
-                    error: function () {
-                        console.log( 'Ajax request not received' );
-                    }
-                } );
-
-                return false; //Stop the redirect after submission via ajax.
+    return new Promise( ( resolve, reject ) => {
+        const xhr = new XMLHttpRequest();
+        xhr.addEventListener( 'load', ( { target } ) => {
+            const responseStatus = new EmailJSResponseStatus( target );
+            if ( responseStatus.status === 200 || responseStatus.text === 'OK' ) {
+                resolve( responseStatus );
             }
-        } )
-    };
+            else {
+                reject( responseStatus );
+            }
+        } );
+        xhr.addEventListener( 'error', ( { target } ) => {
+            reject( new EmailJSResponseStatus( target ) );
+        } );
+        xhr.open( 'POST', store._origin + url, true );
+        Object.keys( headers ).forEach( ( key ) => {
+            xhr.setRequestHeader( key, headers[ key ] );
+        } );
+        xhr.send( data );
+    } );
+};
 
+// enquery form 
+var $contact_form = $( '#enquiry-form' );
 
-    // add form-specific values into the data
-    data.formDataNameOrder = JSON.stringify( fields );
-    data.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
-    data.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+function alert ( message ) {
+    $contact_form.validate( alert_message )( {
+        errorPlacement: function () {
+            return false;
+        },
+        submitHandler: function () {
+            $contact_form.append( '<img class="loading" src=:"../../images/site/loading.gif">' );
 
-    console.log( data );
-    return data;
-}
+            $.ajax( {
+                type: "post",
+                url: "../../contact_form",
+                data: $contact_form.serialize(),
+                success: function ( response ) {
 
+                    var resp = JSON.parse( response );
+
+                    $contact_form.find( 'input' ).remove();
+                    $contact_form.find( 'textarea' ).remove();
+                    $contact_form.append( '<p class="status-code ' + resp.status + '">' + resp.msg + '</p>' );
+                },
+                error: function () {
+                    console.log( 'Ajax request not received' );
+                }
+            } );
+
+            return false; //Stop the redirect after submission via ajax.
+        }
+    } )
+};
+
+console.log();
 function uploadComplete () {
     window.parent.document.getElementById( "popup" ).innerHtml = "";
 
@@ -98,14 +110,15 @@ function handleFormSubmit ( event ) { // handles form submit withtout any jquery
     } else {
         var url = event.target.action; //
         var xhr = new XMLHttpRequest();
-        xhr.open( 'get_post', url );
+        xhr.open( '', url );
         // xhr.withCredentials = true;
         xhr.setRequestHeader( 'Content-Type', 'application' );
         xhr.onreadystatechange = function () {
             console.log( xhr.status, xhr.statusText )
             console.log( xhr.responseText );
-            document.getElementById( 'gform' ).style.display = 'none'; // hide form
+            document.getElementById( 'contact_form' ).style.display = 'none'; // hide form
             document.getElementById( 'thankyou_message' ).style.display = 'block';
+            $( '#contact_form' )[ 0 ].reset();
             return;
         };
         // url encode form data for sending as post data

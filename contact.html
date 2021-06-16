@@ -81,7 +81,7 @@
                     <div class="contact-wrapper col-sm-12">
                       <!-- information- google javascript interactive contact form and was inspired to use the codepen contact form. found that it is simple and clean. And inxorperated with some of my work. -->
 
-                      <form id="contact_form" method="post" class="form-horizontal">
+                      <form id="contact_form" method="post" class="form-horizontal" action="post">
                         <div>
                           <div class="form-group ">
                             <div class="col-sm-12">
@@ -171,20 +171,19 @@
                       <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id="message"
                         required></textarea>
                       <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                        <button class="button">
+                        <div class="button">
                           <i class="fa fa-paper-plane" id="post" method=""></i>
                           <span class="send-text">
                             SEND
                           </span>
-                          </buton>
-                        </button>
+                        </div>
+                      </button>
                     </div>
                 </div>
-            </div>
 
+            </div>
           </div>
         </div>
-      </div>
     </section>
     <!-- contact information section -->
     <section>
@@ -282,7 +281,7 @@
   <footer class="blockquote-footer">
     <ul class="list-inline social-links">
       <li class="list-inline-item">
-        <a target="_blank" href="https://www.facebook.com/simbapawtrail/">
+        <a tar="_blank" href="https://www.facebook.com/simbapawtrail/">
           <i class="fa fa-facebook" aria-hidden="true"></i>
           <span class="sr-only">
             Facebook
@@ -395,6 +394,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="assets/js/contact.js"></script>
   <script src="assets/js/sendEmail.js"></script>
+  <script src="assets/js/email.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/ajax.js"></script>
 
   <!--Validated in w3.org
                 had 78 Errors found and now ihave 56 Errors: 

@@ -209,7 +209,7 @@ After a few trials i changed the images and design. Below is the new design
 - Did more research in google mapping i added more functionality using this link :(google map) [ https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-directions]
 - Encountering a 501 error response in Emailjs.
 - 304 in jquery.js. I managed to do more research using the jquery error samples and stackoverflow.
-- 404 favicon- i haven't resolved this but will get back to it.
+- 404 i haven't resolved this but will get back to it.
 - 304 ajax.js 
 - css : Error: Library prettydiff.beautify.markdown does not exist. I was able to fix the bug by reverting the file, selected my page, right clicked, selected format document with, in the top of the file you are given options of selecting the type of format you would like to use, i selected default format, In accordance to the settings my default formatter is Beautify. I selected it and managed to secure the code. and finally saved the css/style.css file.
 
