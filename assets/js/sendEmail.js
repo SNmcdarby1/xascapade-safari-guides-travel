@@ -33,6 +33,7 @@ function sendEmail ( tempParams ) {
     emailjs.send( "service_uq4jx2r", "template_tlarndr", tempParams, "user_frKMPC59Co9oA1oL0LV7I" )
         .then( function ( res ) {
             console.log( "success", res.status );
+            return;
         },
             function ( error ) {
                 console.log( "failed", error );
@@ -40,25 +41,4 @@ function sendEmail ( tempParams ) {
         );
     return false;
 }
-//
-function sendEmail ( tempParams ) {
-    var tempParams = {
-        from_name: document.getElementById( "fromName" ).value,
-        to_name: document.getElementById( "toName" ).value,
-        message: document.getElementById( "message" ).value,
-        tour: document.getElementById( "tour" ).value,
-        location: document.getElementById( "location" ).value,
-    };
 
-
-    emailjs.send( "service_uq4jx2r", "template_tlarndr", tempParams, "user_frKMPC59Co9oA1oL0LV7I" )
-        .then( function ( res ) {
-            console.log( "success", res.status );
-        },
-            function ( error ) {
-                console.log( "failed", error );
-            }
-        );
-    return false;
-
-}

@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, 
-initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Xascapade Safari guides travel - Index</title>
+  <title>
+    Xascapade Safari guides travel - Index
+  </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     type="text/css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -22,15 +23,40 @@ initial-scale=1.0">
     <div class="  align-items-left justify-content-between">
       <nav id="navbar" class="navbar topnav ">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="sanctuary.html">Animal Sanctaury</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="services.html">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="sanctuary.html">
+              Animal Sanctaury
+            </a>
+          </li>
+          <li>
+            <a href="gallery.html">
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- .navbar -->
     </div>
   </header>
   <!-- End Header -->
@@ -49,15 +75,13 @@ initial-scale=1.0">
                   </h3>
 
                   <section class="col-sm-12">
-
-                    <h4>Please enter your details </h4>
-
+                    <h4>
+                      Please enter your details
+                    </h4>
                     <div class="contact-wrapper col-sm-12">
+                      <!-- information- google javascript interactive contact form and was inspired to use the codepen contact form. found that it is simple and clean. And inxorperated with some of my work. -->
 
-                      <!---------------- information
-  google javascript interactive contact form and was inspired to use the codepen contact form. found that it is simple and clean. And inxorperated with some of my work. ----------------->
-
-                      <form id="contact_form" method="get_post" class="form-horizontal" role="form">
+                      <form id="contact_form" method="post" class="form-horizontal">
                         <div>
                           <div class="form-group ">
                             <div class="col-sm-12">
@@ -71,49 +95,75 @@ initial-scale=1.0">
                               </div>
 
                               <div>
-                                <input type=" email" class="form-control" id="email" placeholder="EMAIL" name="email"
+                                <input type=" text" class="form-control" id="email" placeholder="email" name="email"
                                   value="">
                               </div>
 
                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
                                 required>
-                              <label class="control-label col-sm" for="location">Location:</label>
+                              <label class="control-label col-sm" for="location">
+                                Location:
+                              </label>
                               <select class="form-control" id="location" name="location" class="custom-select"
                                 required="recompile">
-                                <option value="location" name="location" select>Location
+                                <option value="location" name="location" select>
+                                  Location
                                 </option>
-                                <option value="nairobi" id="nairobi" name="nairobi">Nairobi</option>
-                                <option value="mombasa" id="mombasa" name="mombasa">Mombasa</option>
-                                <option value="nakuru" id="nakuru" name="nakuru">Nakuru</option>
-                                <option value="lamu" id="lamu" name="lamu">Lamu</option>
-
-                                <input type="text" class="form-control" name="special request" id="special-request"
-                                  placeholder="Special-request" required>
-                              </select>
-                              <label class="control-label col-sm" for="Tours">Tours:</label>
-                              <select class="form-control" id="tours" placeholder="tour" name="tours"
-                                class="custom-select" required="recompile">
-                                <option value="self_tours" id="selfTour" name="self_tour">4WD self guided
-                                  tour
+                                <option value="nairobi" id="nairobi" name="nairobi">
+                                  Nairobi
                                 </option>
-                                <option value="private" id="privateTour" name="privatetour">Masai guided
-                                  tour
+                                <option value="mombasa" id="mombasa" name="mombasa">
+                                  Mombasa
                                 </option>
-                                <option value="group" id="group" name="group">Tailored tours
+                                <option value="nakuru" id="nakuru" name="nakuru">
+                                  Nakuru
                                 </option>
-                                <option value="local" id="experiencedTour" name="experiecedtour">
-                                  Experienced
-                                  tour guides</option>
-                              </select>
-                              <!-- bootstrap input examples -->
-                              <input type="checkbox" value="check1" id="ch1" name="ch1">
-                              <label for="ch1">Need accommodation</label>
-                              <input type="checkbox" value="check2" checked="checked" id="ch2" name="ch2">
-                              <label for="ch2">No accommodation</label>
-                              <input type="radio" value="radio1" checked="checked" id="r1" name="r1">
-                              <label for="r1">Meal included</label>
-                              <input type="radio" value="radio2" id="r2" name="r2">
-                              <label for="r2">No Meals</label>
+                                <option value="lamu" id="lamu" name="lamu">
+                                  Lamu
+                                </option>
+                                <select class="form-control" id="tours" name="special" class="custom-select"
+                                  required="recompile">
+                                  <input type="text" class="form-control" name="special request" id="special-request"
+                                    placeholder="Special-request" required>
+                                </select>
+                                <label class="control-label col-sm" for="Tours">
+                                  Tours:
+                                </label>
+                                <select class="form-control" id="tours" name="tours" class="custom-select"
+                                  required="recompile">
+                                  <option value="selftours" id="selftour" name="selftour">
+                                    4WD self guided
+                                    tour
+                                  </option>
+                                  <option value="private" id="privatetour" name="privatetour">
+                                    Masai guided
+                                    tour
+                                  </option>
+                                  <option value="group" id="group" name="group">
+                                    Tailored tours
+                                  </option>
+                                  <option value="local" id="experiencedtour" name="experiecedtour">
+                                    Experienced
+                                    tour guides
+                                  </option>
+                                </select>
+                                <!-- bootstrap input examples -->
+                                <input type="checkbox" value="check1" id="ch1" name="ch1">
+                                <label for="ch1">
+                                  Need accommodation
+                                </label>
+                                <input type="checkbox" value="check2" checked="checked" id="ch2" name="ch2">
+                                <label for="ch2">
+                                  No accommodation
+                                </label>
+                                <input type="radio" value="radio1" checked="checked" id="r1" name="r1">
+                                <label for="r1">
+                                  Meal included
+                                </label>
+                                <input type="radio" value="radio2" id="r2" name="r2">
+                                <label for="r2">
+                                  No Meals
+                                </label>
                             </div>
                           </div>
                         </div>
@@ -121,16 +171,20 @@ initial-scale=1.0">
                       <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id="message"
                         required></textarea>
                       <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                        <dl class="button">
-                          <i class="fa fa-paper-plane" id="get_post" method="get_post"></i><span
-                            class="send-text">SEND</span>
-                        </dl>
-                      </button>
+                        <button class="button">
+                          <i class="fa fa-paper-plane" id="post" method=""></i>
+                          <span class="send-text">
+                            SEND
+                          </span>
+                          </buton>
+                        </button>
                     </div>
                 </div>
             </div>
+
           </div>
         </div>
+      </div>
     </section>
     <!-- contact information section -->
     <section>
@@ -139,51 +193,56 @@ initial-scale=1.0">
           <h3 class="title mt-0 mb-1 ">
             Get in Touch
           </h3>
-          <div>
-            <div class="more-info">
-              <p class="mt-0 mb-1 ">
-                If you are looking for a holiday with rich diversity landscape and
-                extraordinary.
-                Be it the rich wildlife and the beautiful Beaches of Mombasa.
-                Drop us an email and we will be happy to tailor your holiday dream
-                according
-                to your own desire.
-              </p>
-              <ul class="list-ico">
-                <span></span> class="title mt-0 mb-1 ">
-                Xascapade Address
-                </span>
-                <lo>
-                  <ul><span class="bi bi-geo-alt"><i class="fa fa-map-marker fa-1x"></i></span> 329
-                    Greystones, Co. Wicklow </ul>
-                  <ul><span class="bi bi-phone"></span> <i class="fa fa-phone fa-1x"></i>
-                    (01) 557-0089
-                  </ul>
-                  <ul><span class="bi bi-envelope"></span><i class="fa fa-envelope fa-1x"></i>
-                    contact@xascapade.com</ul>
-                </lo>
-            </div>
 
-            <!-- ===social links== -->
-            <div class="socials">
+          <div class="more-info">
+            <p class="mt-0 mb-1 ">
+              If you are looking for a holiday with rich diversity landscape and
+              extraordinary.
+              Be it the rich wildlife and the beautiful Beaches of Mombasa.
+              Drop us an email and we will be happy to tailor your holiday dream
+              according
+              to your own desire.
+            </p>
+            <ul class="list-ico">
+              <span>
+                <p class="title mt-0 mb-1 ">
+                  Xascapade Address
+              </span>
               <ul>
-                <li><a href="https://www.facebook.com/simbapawtrail"><span class="ico-circle"><i
-                        class="fa fa-facebook"></i></span></a>
-                </li>
-                <li><a href="https://www.instagram.com/trysafari.ke/?hl=en"><span class="ico-circle"><i
-                        class="fa fa-instagram"></i></span></a>
-                </li>
-                <li><a href="https://twitter.com/Safari78047357"><span class="ico-circle"><i
-                        class="fa fa-twitter"></i></span></a>
-                </li>
-                <li><a href="https://www.linkedin.com/company/37523851/admin/"><span class="ico-circle"><i
-                        class="fa fa-linkedin"></i></span></a>
-                </li>
+                <lo>
+                  <span class="bi bi-geo-alt">
+                    <i class="fa fa-map-marker fa-1x"></i>
+                  </span>
+                  329
+                  Greystones, Co. Wicklow
+                </lo>
+                <lo>
+                  <span class="bi bi-phone"></span>
+                  <i class="fa fa-phone fa-1x"></i>
+                  (01) 557-0089
+                </lo>
+                <lo>
+                  <span class="bi bi-envelope"></span>
+                  <i class="fa fa-envelope fa-1x"></i>
+                  contact@xascapade.com
+                </lo>
               </ul>
-            </div>
           </div>
         </div>
       </div>
+      <!-- ===social links== -->
+      <div class="socials">
+        <ul>
+          <li><a href="https://www.facebook.com/simbapawtrail"><span class="ico-circle"><i
+                  class="fa fa-facebook"></i></span></a></li>
+          <li><a href="https://www.instagram.com/trysafari.ke/?hl=en"><span class="ico-circle"><i
+                  class="fa fa-instagram"></i></span></a></li>
+          <li><a href="https://twitter.com/Safari78047357"><span class="ico-circle"><i
+                  class="fa fa-twitter"></i></span></a></li>
+          <li><a href="https://www.linkedin.com/company/37523851/admin/"><span class="ico-circle"><i
+                  class="fa fa-linkedin"></i></span></a></li>
+        </ul>
+
       </div>
     </section>
     <section id="contact" class="paralax-mf footer-paralabg-image sect-mt12 route">
@@ -207,6 +266,9 @@ initial-scale=1.0">
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
 
     </section>
   </main>
@@ -222,42 +284,59 @@ initial-scale=1.0">
       <li class="list-inline-item">
         <a target="_blank" href="https://www.facebook.com/simbapawtrail/">
           <i class="fa fa-facebook" aria-hidden="true"></i>
-          <span class="sr-only">Facebook</span>
+          <span class="sr-only">
+            Facebook
+          </span>
         </a>
       </li>
       <li class="list-inline-item">
         <a target="_blank" href="https://twitter.com/Safari78047357">
           <i class="fa fa-twitter" aria-hidden="true"></i>
-          <span class="sr-only">twitter</span>
+          <span class="sr-only">
+            twitter
+          </span>
         </a>
       </li>
       <li class="list-inline-item">
         <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
           <i class="fa fa-linkedin" aria-hidden="true"></i>
-          <span class="sr-only">linkedin</span>
+          <span class="sr-only">
+            linkedin
+          </span>
         </a>
       </li>
 
       <li class="list-inline-item">
         <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
           <i class="fa fa-instagram" aria-hidden="true"></i>
-          <span class="sr-only">Instagram</span>
+          <span class="sr-only">
+            Instagram
+          </span>
         </a>
       </li>
       <li class="list-inline-item">
         <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
           <i class="fa fa-youtube" aria-hidden="true"></i>
-          <span class="sr-only">YouTube</span>
+          <span class="sr-only">
+            YouTube
+          </span>
         </a>
       </li>
 
-    </ul> <cite title="Source Title">
-      <a href="mail@xascapade.com">info@xascapade.com</a>
-      <p>Powered by
+    </ul>
+    <cite title="Source Title">
+      <a href="mail@xascapade.com">
+        info@xascapade.com
+      </a>
+      <p>
+        Powered by
         <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
-          Xascapade</a>
+          Xascapade
+        </a>
       </p>
-      <a href="index.html" class="cd-top text-replace js-cd-top">Top</a>
+      <a href="index.html" class="cd-top text-replace js-cd-top">
+        Top
+      </a>
     </cite>
     </blockquote>
     <!-- ======= Footer ======= -->
@@ -266,17 +345,26 @@ initial-scale=1.0">
         <div class="row">
           <div class="col-sm-12">
             <div class="copyright-box">
-              <p class="copyright">&copy; Copyright
-                <strong>Xascapade Safari guides travel </strong>. All Rights Reserved
+              <p class="copyright">
+                &copy; Copyright
+                <strong>
+                  Xascapade Safari guides travel
+                </strong>
+                . All Rights Reserved
               </p>
-              <li><a href="map.html">Map</a></li>
+              <li>
+                <a href="map.html">
+                  Map
+                </a>
+              </li>
 
             </div>
           </div>
         </div>
       </div>
-      <a href="#" class="back-to-top  align-items-center justify-content-center"><i
-          class="bi bi-arrow-up-short"></i></a>
+      <a href="#" class="back-to-top  align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+      </a>
     </section>
 
     <!-- End Services Section -->
@@ -289,17 +377,15 @@ initial-scale=1.0">
   <script>
     ( function () {
       emailjs.init( "user_frKMPC59Co9oA1oL0LV7I" );
-    }
-    )();
+    } )();
     window.onload = function () {
       document.getElementById( 'contact_form' ).addEventListener( 'SEND', function ( event ) {
         event.preventDefault();
-        emailjs.sendForm( 'contact_service', 'contact_form', this )
-          .then( function () {
-            console.log( 'SUCCESS!' );
-          }, function ( error ) {
-            console.log( 'FAILED...', error );
-          } );
+        emailjs.sendForm( 'contact_service', 'contact_form', this ).then( function () {
+          console.log( 'SUCCESS!' );
+        }, function ( error ) {
+          console.log( 'FAILED...', error );
+        } );
       } );
     }
   </script>
@@ -307,13 +393,12 @@ initial-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <!-- <script src="assets/js/contact.js"></script>
-    <script src="assets/js/sendEmail.js"></script> -->
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/sendEmail.js"></script>
 
   <!--Validated in w3.org
-Erro found Error: Parse Error. Style sheets should not 
-include HTML syntax..
-Revit to validate the error-->
+                had 78 Errors found and now ihave 56 Errors: 
+                will Revert to validate the errors-->
 </body>
 
 </html>
