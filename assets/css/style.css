@@ -245,20 +245,21 @@ li {
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #28635e;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 12px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 200;
 }
 
 .topnav a.active {
     background-color: #646866;
-    color: white;
+    color: rgb(4, 61, 61);
 }
 
 .topnav .icon {
-    display: none;
+    display: inline-block;
 }
 
 .container {
@@ -629,7 +630,7 @@ li {
     bottom: -6px;
     left: 0;
     width: 0;
-    background-color: rgb(139, 220, 223);
+    background-color: rgb(2, 49, 51);
     visibility: hidden;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -657,7 +658,7 @@ li {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background: rgb(81, 140, 145);
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
 }
@@ -762,7 +763,7 @@ li {
     bottom: 15px;
     left: 15px;
     padding: 5px 0;
-    background-color: #fff;
+    background-color: rgb(68, 4, 4);
     overflow-y: auto;
     transition: 0.3s;
 }
@@ -780,7 +781,7 @@ li {
 .navbar-mobile a {
     padding: 10px 20px;
     font-size: 15px;
-    color: #4e4e4e;
+    color: #15b4b4;
 }
 
 .navbar-mobile a:hover,
@@ -820,7 +821,7 @@ li {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-    color: #52d6d0;
+    color: #0b0c0c;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -853,7 +854,7 @@ li {
 }
 
 .hero .hero-title {
-    color: #fff;
+    color: rgb(17, 12, 12);
     font-weight: 600;
     font-size: 3rem;
 }
@@ -904,7 +905,7 @@ li {
 }
 
 .hero-single .breadcrumb .breadcrumb-item:before {
-    color: #cde1f8;
+    color: #030508;
 }
 
 .hero-single .breadcrumb .breadcrumb-item.active {
@@ -912,7 +913,7 @@ li {
 }
 
 .hero-single .breadcrumb a {
-    color: #fff;
+    color: rgb(7, 6, 6);
 }
 
 /*--------------------------------------------------------------
@@ -951,7 +952,7 @@ li {
 
 .skill-mf .progress .progress-bar {
     height: 0.7rem;
-    background-color: #52d6d0;
+    background-color: #72a7a4;
 }
 
 /*--------------------------------------------------------------
