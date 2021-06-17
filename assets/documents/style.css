@@ -727,7 +727,7 @@ li {
     }
 
     .navbar ul {
-        display: none;
+        display: inline-block;
     }
 }
 
@@ -771,7 +771,7 @@ li {
 .navbar-mobile a:hover:before,
 .navbar-mobile li:hover>a:before,
 .navbar-mobile .active:before {
-    visibility: hidden;
+    visibility: show;
 }
 
 .navbar-mobile a {
@@ -817,7 +817,7 @@ li {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-    color: #52d6d0;
+    color: #011312;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
