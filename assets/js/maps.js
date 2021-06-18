@@ -1,43 +1,92 @@
-function initMap () {
-  const Nairobi_National_Park = { lat: -1.3764, lng: 36.7443 };
+var map;
+var InforObj = [];
+var centerCords = {
+    lat: 0.0236,
+    lng: 37.9062
 
-  const map = new google.maps.Map( document.getElementById( "map" ), {
-    zoom: 5,
-    center: Nairobi_National_Park,
-  } );
+};
 
-  const contentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Nairobi_National_Park</h1>' +
-    '<div id="bodyContent">' +
-    "<p><b>Full National tours package </b>, also referred to as <b>Nairobi National Park</b>, is a national " +
-    "park in Kenya " +
-    "the park  was established in 1946.  about 7 km( 4.3 mi ) " +
-    "south of Nairobi.It is fenced on three sides, " +
-    "whereas the open southern boundary allows migrating wildlife " +
-    "to move between the park and the adjacent Kitengela plains. " +
-    "Herbivores gather in the park during the dry season. " +
-    " Despite its proximity to the city and its relative small size, " +
-    "it boasts a large and varied wildlife population, " +
-    "and is one of Kenya's most successful rhinoceros sanctuaries.</p>" +
-    '<p>Attribution: Nairobi National Park, <a href="http://www.kws.go.ke/parks/nairobi-national-park">' +
-    "http://www.kws.go.ke/parks/nairobi-national-park</a> " +
-    "</div>" +
-    "</div>";
+var markersOnMap = [ {
+    placeName: "<h5>Nairobi National Park is a national park in Kenya that was established in 1946 about 7 km south of Nairobi. It  allows migrating wildlife to move between the park and the adjacent Kitengela plains. Herbivores gather in the park during the dry season</h5> (<b>Nairobi national park</b>)",
+    LatLng: [ {
+        lat: -1.373333,
+        lng: 36.858889
+    } ]
+},
+{
+    placeName: "<h5>Masai Mara National Park,is an area of preserved savannah wilderness in southwestern Kenya, along the Tanzanian border. Its animals include lions, cheetahs, elephants, zebras and hippos. </h5>(<b>The Wildbeast</b>)",
+    LatLng: [ {
+        lat: -1.490000,
+        lng: 35.143890
+    } ]
+},
+{
+    placeName: "<h5>Mombasa Mombasa is a tourism-based city; it has an extra-large port and an international airport, and is an important regional tourism centre. Located on the east coast of Kenya, it also is the home of one of the state houses, and is considered by some as a second capital in all but name.The city is known as the white and blue city in Kenya. It is the country's oldest (circa 900 AD) and second-largest city (after the capital Nairobi) </h5>(<b>White sandy beaches</b>,)",
+    LatLng: [ {
+        lat: -4.050000,
+        lng: 39.666667
+    } ]
+},
+{
+    placeName: "<h5>Lamu  is one of the longest established, and best preserved remaining settlements of the Swahili tradition in east Africa that remains today. The island has continually been inhabited for over seven hundred years, and continues to be an important center in eastern Africa.</h5>(<b>UNESCO sights</b>,)",
+    LatLng: [ {
+        lat: -2.269444,
+        lng: 40.902222
 
+    } ]
+},
+];
 
-  const infowindow = new google.maps.InfoWindow( {
-    content: contentString,
-  } );
-  const marker = new google.maps.Marker( {
-    position: Nairobi_National_Park,
-    map,
-    title: "Nairobi National Park",
-  } );
-  marker.addListener( "click", () => {
-    infowindow.open( map, marker );
-  } );
+window.onload = function () {
+    initMap();
+};
 
+function addMarkerInfo () {
+    for ( var i = 0; i < markersOnMap.length; i++ ) {
+        var contentString = '<div id="Safari tours"><h4>' + markersOnMap[ i ].placeName +
+            '</h4><p><p><b>Book now, </b> Kenya safaris tours with, <b>Xascapade safari guided tours. </b> </p></div>';
+
+        const marker = new google.maps.Marker( {
+            position: markersOnMap[ i ].LatLng[ 0 ],
+            map: map
+        } );
+
+        const infowindow = new google.maps.InfoWindow( {
+            content: contentString,
+            maxWidth: 200
+        } );
+
+        marker.addListener( 'click', function () {
+            closeOtherInfo();
+            infowindow.open( marker.get( 'map' ), marker );
+            InforObj[ 0 ] = infowindow;
+        } );
+        // marker.addListener('mouseover', function () {
+        //     closeOtherInfo();
+        //     infowindow.open(marker.get('map'), marker);
+        //     InforObj[0] = infowindow;
+        // });
+        // marker.addListener('mouseout', function () {
+        //     closeOtherInfo();
+        //     infowindow.close();
+        //     InforObj[0] = infowindow;
+        // });
+    }
 }
+
+function closeOtherInfo () {
+    if ( InforObj.length > 0 ) {
+        InforObj[ 0 ].set( "marker", null );
+        InforObj[ 0 ].close();
+        InforObj.length = 0;
+    }
+}
+
+function initMap () {
+    map = new google.maps.Map( document.getElementById( 'map' ), {
+        zoom: 7,
+        center: centerCords
+    } );
+    addMarkerInfo();
+}
+

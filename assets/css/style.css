@@ -243,14 +243,14 @@ li {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
+    float: right;
     display: block;
     color: #28635e;
     text-align: center;
     padding: 10px 12px;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 23px;
+    font-weight: 800;
 }
 
 .topnav a.active {
@@ -903,7 +903,7 @@ blockquote {
 }
 
 .hero .hero-title {
-    color: rgb(17, 12, 12);
+    color: #fff;
     font-weight: 600;
     font-size: 3rem;
 }
