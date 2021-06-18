@@ -1,12 +1,17 @@
 /* /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* ---font */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap|100,200,300,400,500,600,700,800,900');
+
 * {
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 0;
     outline: none;
+    font-family: 'Acme', sans-serif;
+    font-size: large;
 }
 
 body {
@@ -235,7 +240,7 @@ li {
 
 /* 3wschool */
 .topnav {
-    background-color: rgb(156, 209, 196);
+    background-color: rgb(6, 170, 143);
     overflow: hidden;
     margin-top: 10px;
     margin-left: 0px;
@@ -245,7 +250,7 @@ li {
 .topnav a {
     float: right;
     display: block;
-    color: #28635e;
+    color: #0c0c00;
     text-align: center;
     padding: 10px 12px;
     text-decoration: none;
@@ -1522,7 +1527,7 @@ footer {
     text-align: center;
     color: #fff;
     padding: 25px 0;
-    background: #a8a895;
+    background: #fdfd73;
 }
 
 footer .copyright {
@@ -1609,9 +1614,9 @@ footer .credits a {
   --------------------------------------------------------------*/
 footer {
     text-align: center;
-    color: #fff;
+    color: rgb(15, 6, 6);
     padding: 25px 0;
-    background: #a8a895;
+    background: #75a79e;
 }
 
 footer .copyright {
