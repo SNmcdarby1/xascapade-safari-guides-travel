@@ -198,6 +198,11 @@ After a few trials i changed the images and design. Below is the new design
 - Using console to rectify the 404 Error
 - youtube tutorial hamberger menu (web dev simplified)[https://www.youtube.com/watch?v=At4B7A4GOPg].(Better dev)[https://www.youtube.com/watch?v=_Ue9_rLIMAQ] [https://www.youtube.com/watch?v=uZNWak44SI8]
 
+
+###  Google mapping 
+ Added google mapping information for different sights [Google mapping info ] ( https://developers.google.com/maps/documentation/javascript/infowindows
+Google DevelopersGoogle Developers)
+ 
 ### 8. Trouble shooting
 
 - Decide to change the li element to lo because the ux appearance was not suitable to the and user friendly 6 Testing
