@@ -250,7 +250,7 @@ The site was deployed in github and i shared the link to family and other users 
 * ![image (1)](https://user-images.githubusercontent.com/69846208/122623324-84b29c80-d093-11eb-916a-bdb2a67e3e69.png)
 * ![image](https://user-images.githubusercontent.com/69846208/122623327-867c6000-d093-11eb-9f8e-db0d78e7a263.png)
 
--
+
 
 ### 11. Media credits
 
