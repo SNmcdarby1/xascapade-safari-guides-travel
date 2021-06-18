@@ -176,7 +176,7 @@ a:hover {
 }
 
 .overlay-mf {
-    background-color: #c0c0c0;
+    background-color: #fff;
 }
 
 .overlay-mf {
@@ -318,7 +318,7 @@ li {
 
 .topnav a.active {
     background-color: #646866;
-    color: white;
+    color: rgb(15, 153, 146);
 }
 
 .topnav .icon {
@@ -410,36 +410,6 @@ li {
 .ico-circle img {
     width: auto;
     height: auto;
-}
-
-/*------/ Owl Carousel /------*/
-.owl-theme .owl-dots {
-    text-align: center;
-    margin-top: 18px;
-}
-
-.owl-theme .owl-dots .owl-dot {
-    display: inline-block;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-    width: 18px;
-    height: 7px;
-    margin: 5px;
-    background: #cde1f8;
-    border: 0 solid #cde1f8;
-    display: block;
-    transition: all 0.6s ease-in-out;
-    cursor: pointer;
-}
-
-.owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #cde1f8;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-    background-color: #1b1b1b;
-    width: 25px;
 }
 
 /*--/ Scrolltop s /--*/
@@ -942,14 +912,15 @@ navbar-mobile {
 }
 
 .hero .overlay-itro {
-    background-color: rgba(40, 44, 44, 0.6);
-    position: absolute;
+    background-color: rgba(173, 221, 221, 0.6);
+    position: fixed;
     top: 0;
     left: 0;
     padding: 0;
     height: 100%;
     width: 100%;
     opacity: 0.9;
+    margin-top: 25px;
 }
 
 .hero .hero-title {
