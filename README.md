@@ -166,7 +166,7 @@ After a few trials i changed the images and design. Below is the new design
 
 ![Xascapade safari tours](https://user-images.githubusercontent.com/69846208/110374911-295f2000-8049-11eb-8f38-d9528ba45b8a.PNG)
 
-! [ Xascapade safari guide tours] 
+! [ Xascapade tours and safari ] 
 ![Modified xascapade travel](https://user-images.githubusercontent.com/69846208/122623901-d6f4bd00-d095-11eb-822f-0a78914bc6ec.PNG)
 
 
