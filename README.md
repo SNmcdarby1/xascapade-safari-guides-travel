@@ -229,7 +229,16 @@ In order to deploy the project, you need to push it to a remote branch and start
 Every gitpod configuration is versioned in the root of your git repository. Once you have committed the changes made in your files.
 Next the git push command is used to transfer or push the commit, which is made on a local branch in your computer to a remote repository like GitHub. The command used for pushing to GitHub as given below.
 git push 'remote_name' 'branch_name.
-Once you have succeeded you access the settings page in github. Select the desired repository. Click on the settings link on the top right side of your github navigation bar. In the settings page scroll down to the Github pages. Select the main-branch under the source. Once selected clickthe save button. A link will be enabled,once you receive the link you select it copy the link on your search engine. This will lead you to your public page. Ad that is how you deploy your repository to a public site.
+Once you have succeeded you access the settings page in github. Select the desired repository. Click on the settings link on the top right side of your github navigation bar. In the settings page scroll down to the Github pages. Select the main-branch under the source. Once selected click the save button. A link will be enabled,once you receive the link you select it copy the link on your search engine. This will lead you to your public page. Ad that is how you deploy your repository to a public site.
+
+#### Accessing  the online link 
+1. Once you log in Git hub
+![settings](https://user-images.githubusercontent.com/69846208/122625678-4bcbf500-d09e-11eb-9caf-a41ed1b442a8.PNG)
+2. On the topnav select settings
+![cap 2](https://user-images.githubusercontent.com/69846208/122625691-58504d80-d09e-11eb-8fc8-5182cac335e4.PNG)
+3. If your page was deployed Scroll down to github pages select "click here". 
+![cap3](https://user-images.githubusercontent.com/69846208/122625705-5f775b80-d09e-11eb-9f76-9388eee6fa5e.PNG)
+4. Will open up a page the link to your online link of your website.
 
 ### 10. Testing
 
@@ -260,6 +269,9 @@ The site was deployed in github and i shared the link to family and other users 
 * ![image (2)](https://user-images.githubusercontent.com/69846208/122623321-82e8d900-d093-11eb-8cad-889223312567.png)
 * ![image (1)](https://user-images.githubusercontent.com/69846208/122623324-84b29c80-d093-11eb-916a-bdb2a67e3e69.png)
 * ![image](https://user-images.githubusercontent.com/69846208/122623327-867c6000-d093-11eb-9f8e-db0d78e7a263.png)
+
+* ![]w3validator] (![w3 validator](https://user-images.githubusercontent.com/69846208/122625665-41a9f680-d09e-11eb-8a85-4fb70e586c36.PNG)
+* ![w3 validator](https://user-images.githubusercontent.com/69846208/122625673-45d61400-d09e-11eb-9322-52710c0da653.PNG))
 
 
 
