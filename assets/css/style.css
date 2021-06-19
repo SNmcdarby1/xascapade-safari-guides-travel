@@ -11,11 +11,11 @@
      border-radius: 0;
      outline: none;
      font-family: 'Acme', sans-serif;
-     font-size: large;
+     font-size: 600;
  }
 
  body {
-     background-color: #1b8686;
+     background-color: #f4f8f8;
      color: #4e4e4e;
  }
 
@@ -66,12 +66,6 @@
  .work-box,
  .card-blog {
      box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
- }
-
- .box-shadow-a,
- .button:hover {
-     text-decoration: none;
-     box-shadow: 0 0 0 4px #51e6cd;
  }
 
  .display-5 {
@@ -240,25 +234,26 @@
 
  /* 3wschool */
  .topnav {
-     background-color: #333;
+     background-color: #16a8ad;
      overflow: hidden;
      margin-top: 10px;
      margin-left: 0px;
+     font-display: bold;
  }
 
  /* Style the links inside the navigation bar */
  .topnav a {
      float: left;
      display: block;
-     color: #f2f2f2;
+     color: #0c0b0b;
      text-align: center;
      padding: 14px 16px;
      text-decoration: none;
-     font-size: 17px;
+     font-size: 25px;
  }
 
  .topnav a.active {
-     background-color: #646866;
+     background-color: #1b8686;
      color: white;
  }
 
@@ -490,92 +485,13 @@
  /*--------------------map*
 
 /*------/ Button /------*/
- .button {
-     display: inline-block;
-     padding: 0.3rem 0.6rem;
-     text-align: center;
-     vertical-align: middle;
-     -webkit-user-select: none;
-     -moz-user-select: none;
-     user-select: none;
-     font-size: 1rem;
-     border-radius: 0.3rem;
-     border: 1px solid transparent;
-     transition: all 500ms ease;
-     cursor: pointer;
- }
 
- .button:focus {
-     outline: 0;
- }
-
- .button:hover {
-     background-color: #52d6d0;
-     color: #fff;
-     transition: all 500ms ease;
- }
-
- .button-a {
-     text-decoration: none;
-     background-color: #52d6d0;
-     color: #fff;
-     border-color: #cde1f8;
- }
-
- .button-big {
-     padding: 0.9rem 2.3rem;
-     font-size: 1.2rem;
- }
-
- .button-rouded {
-     border-radius: 5rem;
- }
 
  .btn-lg {
      padding: 0.5rem 1rem;
      font-size: 1.25rem;
      line-height: 1.5;
      border-radius: 0.3rem;
- }
-
- /*--------------------------------------------------------------
-  # Header
-  --------------------------------------------------------------*/
- #header {
-     transition: all 0.5s;
-     z-index: 997;
-     padding: 10px 0;
- }
-
- #header .logo {
-     font-size: 28px;
-     margin: 0;
-     padding: 0;
-     font-weight: 600;
-     letter-spacing: 1px;
- }
-
- #header .logo a {
-     color: rgb(7, 6, 4);
-     font-size: 30px;
-     font-weight: 12rem;
-     margin-top: 15px;
-     position: left;
-     font-size: 255;
-     white-space: nowrap;
-     transition: 0.3s;
-     letter-spacing: 0.2px;
-     position: relative;
-     text-transform: uppercase;
- }
-
- #header .logo img {
-     max-height: 40px;
- }
-
- #header.header-scrolled {
-     background: rgba(134, 4, 4, 0.9);
-     padding: 12px 0;
  }
 
  /*--------------------------------------------------------------
@@ -1641,39 +1557,6 @@
  /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
- footer {
-     text-align: center;
-     color: #fff;
-     padding: 25px 0;
-     background: #a8a895;
- }
-
- footer .copyright {
-     margin-bottom: .3rem;
- }
-
- footer .credits {
-     margin-bottom: 0;
- }
-
- footer .credits a {
-     color: #fff;
- }
-
- .map-container-7 {
-     overflow: hidden;
-     padding-bottom: 56.25%;
-     position: relative;
-     height: 0;
- }
-
- .map-container-7 iframe {
-     left: 0;
-     top: 0;
-     height: 50%;
-     width: 100%;
-     position: absolute;
- }
 
  /* Style the submit button */
  input[type=submit] {
