@@ -166,6 +166,10 @@ After a few trials i changed the images and design. Below is the new design
 
 ![Xascapade safari tours](https://user-images.githubusercontent.com/69846208/110374911-295f2000-8049-11eb-8f38-d9528ba45b8a.PNG)
 
+! [ Xascapade tours and safari ] 
+![Modified xascapade travel](https://user-images.githubusercontent.com/69846208/122623901-d6f4bd00-d095-11eb-822f-0a78914bc6ec.PNG)
+
+
 - For clarity that all content and typography are clear for users.
 
 - Familiarity that allows users to experience while navigating from page to page.
@@ -194,6 +198,11 @@ After a few trials i changed the images and design. Below is the new design
 - Using console to rectify the 404 Error
 - youtube tutorial hamberger menu (web dev simplified)[https://www.youtube.com/watch?v=At4B7A4GOPg].(Better dev)[https://www.youtube.com/watch?v=_Ue9_rLIMAQ] [https://www.youtube.com/watch?v=uZNWak44SI8]
 
+
+###  Google mapping 
+ Added google mapping information for different sights [Google mapping info ] ( https://developers.google.com/maps/documentation/javascript/infowindows
+Google DevelopersGoogle Developers)
+ 
 ### 8. Trouble shooting
 
 - Decide to change the li element to lo because the ux appearance was not suitable to the and user friendly 6 Testing
@@ -237,7 +246,22 @@ The site was deployed in github and i shared the link to family and other users 
   as shown in the image below.
   ![Inspect](https://user-images.githubusercontent.com/69846208/110378143-21a17a80-804d-11eb-9594-1e1c29a331da.PNG)
 - Validated the website pages in using the 3wc HTML CSS JS vaidator. Some of the errors we npt resolve. My plan is to revisit the pages and fix the errors. Most of the errors read that the <!DOCTYPE html is a parse, needs to be fixed.
--
+- 
+* Images taken during user testing:  Changes that needed to be made.
+
+* ![image (9)](https://user-images.githubusercontent.com/69846208/122623288-6ea4dc00-d093-11eb-99b1-ade18b50ecdf.png)
+* ![image (10)](https://user-images.githubusercontent.com/69846208/122623294-706e9f80-d093-11eb-8fde-65cad588d7db.png)
+* ![image (8)](https://user-images.githubusercontent.com/69846208/122623299-72d0f980-d093-11eb-99e3-a38ba13ab7c3.png)
+* ![image (7)](https://user-images.githubusercontent.com/69846208/122623303-749abd00-d093-11eb-90c8-74ca8752cec1.png)
+* ![image (6)](https://user-images.githubusercontent.com/69846208/122623304-76648080-d093-11eb-8435-3d92aa880724.png)
+* ![image (5)](https://user-images.githubusercontent.com/69846208/122623310-7d8b8e80-d093-11eb-93fc-239167c313ae.png)
+* ![image (4)](https://user-images.githubusercontent.com/69846208/122623313-7f555200-d093-11eb-813f-babc03037f02.png)
+* ![image (3)](https://user-images.githubusercontent.com/69846208/122623316-811f1580-d093-11eb-9ac4-9a3738ef167b.png)
+* ![image (2)](https://user-images.githubusercontent.com/69846208/122623321-82e8d900-d093-11eb-8cad-889223312567.png)
+* ![image (1)](https://user-images.githubusercontent.com/69846208/122623324-84b29c80-d093-11eb-916a-bdb2a67e3e69.png)
+* ![image](https://user-images.githubusercontent.com/69846208/122623327-867c6000-d093-11eb-9f8e-db0d78e7a263.png)
+
+
 
 ### 11. Media credits
 
