@@ -613,7 +613,7 @@ li {
     }
 }
 
-.navbar-mobile {
+/* .navbar-mobile {
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -703,7 +703,7 @@ li {
 
 .navbar-mobile .dropdown>.dropdown-active {
     display: block;
-}
+} */
 
 /*--------------------------------------------------------------
   # Hero Section
