@@ -234,7 +234,7 @@
 
  /* 3wschool */
  .topnav {
-     background-color: #16a8ad;
+     background-color: #04a194;
      overflow: hidden;
      margin-top: 10px;
      margin-left: 0px;
@@ -1470,9 +1470,9 @@
   --------------------------------------------------------------*/
  footer {
      text-align: center;
-     color: #fff;
+     color: rgb(8, 5, 5);
      padding: 25px 0;
-     background: #1b8686;
+     background: #a1bbbb;
  }
 
  footer .copyright {
