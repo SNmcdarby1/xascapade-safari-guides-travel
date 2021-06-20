@@ -169,7 +169,8 @@ After a few trials i changed the images and design. Below is the new design
 ! [ Xascapade tours and safari ] 
 ![Modified xascapade travel](https://user-images.githubusercontent.com/69846208/122623901-d6f4bd00-d095-11eb-822f-0a78914bc6ec.PNG)
 
-
+* The updated mobive navbar  webpage 
+![xascapade safari travel guide](https://user-images.githubusercontent.com/69846208/122686130-91f09800-d207-11eb-966d-58a2a97a987e.PNG)
 - For clarity that all content and typography are clear for users.
 
 - Familiarity that allows users to experience while navigating from page to page.
@@ -254,7 +255,8 @@ The site was deployed in github and i shared the link to family and other users 
 - In the developers tool i accessed the the inspect the DOM by right clicking the mouse right button and select the inspect property. and i could edit different properties such as Appearance, Sources,Elements, Network,performance, Console and the lighthouse settings.
   as shown in the image below.
   ![Inspect](https://user-images.githubusercontent.com/69846208/110378143-21a17a80-804d-11eb-9594-1e1c29a331da.PNG)
-- Validated the website pages in using the 3wc HTML CSS JS vaidator. Some of the errors we npt resolve. My plan is to revisit the pages and fix the errors. Most of the errors read that the <!DOCTYPE html is a parse, needs to be fixed.
+- Validated the website pages in using the 3wc HTML CSS JS validator. Some of the errors we npt resolve. My plan is to revisit the pages and fix the errors. Most of the errors read that the <!DOCTYPE html is a parse, needs to be fixed.
+- I experiensed  the navbar, It was not responsive. I ended up making a couple of changes that included a dropdown menu.
 - 
 * Images taken during user testing:  Changes that needed to be made.
 
