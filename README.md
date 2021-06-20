@@ -1,6 +1,6 @@
 # CODE INSTITUTE MS2 PROJECT
 
-# Xascapade Safari guides travel
+# Xascapade Safari Guides Travel
 
 ---
 
