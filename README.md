@@ -261,8 +261,6 @@ The site was deployed in github and i shared the link to family and other users 
 * Images taken during user testing:  Changes that needed to be made.
 
 
-* ![image](https://user-images.githubusercontent.com/69846208/122623327-867c6000-d093-11eb-9f8e-db0d78e7a263.png)
-
 * ![]w3validator] (![w3 validator](https://user-images.githubusercontent.com/69846208/122625665-41a9f680-d09e-11eb-8a85-4fb70e586c36.PNG)
 * ![w3 validator](https://user-images.githubusercontent.com/69846208/122625673-45d61400-d09e-11eb-9322-52710c0da653.PNG))
 
