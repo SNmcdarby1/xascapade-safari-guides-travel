@@ -260,17 +260,6 @@ The site was deployed in github and i shared the link to family and other users 
 - 
 * Images taken during user testing:  Changes that needed to be made.
 
-* ![image (9)](https://user-images.githubusercontent.com/69846208/122623288-6ea4dc00-d093-11eb-99b1-ade18b50ecdf.png)
-* ![image (10)](https://user-images.githubusercontent.com/69846208/122623294-706e9f80-d093-11eb-8fde-65cad588d7db.png)
-* ![image (8)](https://user-images.githubusercontent.com/69846208/122623299-72d0f980-d093-11eb-99e3-a38ba13ab7c3.png)
-* ![image (7)](https://user-images.githubusercontent.com/69846208/122623303-749abd00-d093-11eb-90c8-74ca8752cec1.png)
-* ![image (6)](https://user-images.githubusercontent.com/69846208/122623304-76648080-d093-11eb-8435-3d92aa880724.png)
-* ![image (5)](https://user-images.githubusercontent.com/69846208/122623310-7d8b8e80-d093-11eb-93fc-239167c313ae.png)
-* ![image (4)](https://user-images.githubusercontent.com/69846208/122623313-7f555200-d093-11eb-813f-babc03037f02.png)
-* ![image (3)](https://user-images.githubusercontent.com/69846208/122623316-811f1580-d093-11eb-9ac4-9a3738ef167b.png)
-* ![image (2)](https://user-images.githubusercontent.com/69846208/122623321-82e8d900-d093-11eb-8cad-889223312567.png)
-* ![image (1)](https://user-images.githubusercontent.com/69846208/122623324-84b29c80-d093-11eb-916a-bdb2a67e3e69.png)
-* ![image](https://user-images.githubusercontent.com/69846208/122623327-867c6000-d093-11eb-9f8e-db0d78e7a263.png)
 
 * ![]w3validator] (![w3 validator](https://user-images.githubusercontent.com/69846208/122625665-41a9f680-d09e-11eb-8a85-4fb70e586c36.PNG)
 * ![w3 validator](https://user-images.githubusercontent.com/69846208/122625673-45d61400-d09e-11eb-9322-52710c0da653.PNG))
